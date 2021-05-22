@@ -1,0 +1,3 @@
+# b/180963348
+dontaudit init overlayfs_file:chr_file { unlink };
+dontaudit init overlayfs_file:file { rename };
