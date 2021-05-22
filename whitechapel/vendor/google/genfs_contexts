@@ -67,7 +67,7 @@ genfscon sysfs /devices/platform/14700000.ufs/host0/target0:0:0/0:0:0:  u:object
 genfscon sysfs /devices/platform/14700000.ufs/ufs_stats                 u:object_r:sysfs_scsi_devices_0000:s0
 
 # Tethering
-genfscon sysfs /devices/platform/11110000.usb/11110000.dwc3/gadget/net  u:object_r:sysfs_net:s0
+genfscon sysfs /devices/platform/11210000.usb/11210000.dwc3/gadget/net  u:object_r:sysfs_net:s0
 
 # Vibrator
 genfscon sysfs /devices/platform/10970000.hsi2c/i2c-4/4-005a            u:object_r:sysfs_vibrator:s0
@@ -90,7 +90,7 @@ genfscon sysfs /devices/platform/gpio_keys/wakeup/wakeup                        
 genfscon sysfs /devices/platform/acpm_mfd_bus@17510000/i2c-7/i2c-s2mpg11mfd/wakeup/wakeup             u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/acpm_mfd_bus@17500000/i2c-6/i2c-s2mpg10mfd/s2mpg10-rtc/rtc/rtc0/alarmtimer.1.auto/wakeup/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/10d40000.spi/spi_master/spi11/spi11.0/wakeup/wakeup          u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/11110000.usb/wakeup/wakeup                                   u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/11210000.usb/wakeup/wakeup                                   u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/acpm_mfd_bus@17500000/i2c-6/i2c-s2mpg10mfd/s2mpg10-rtc/wakeup/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /sys/devices/platform/10d50000.hsi2c/i2c-5/5-0036/power_supply/maxfg/wakeup    u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/10d50000.hsi2c/i2c-5/5-0036/power_supply/maxfg/wakeup        u:object_r:sysfs_wakeup:s0
@@ -99,7 +99,7 @@ genfscon sysfs /devices/platform/10d50000.hsi2c/i2c-5/5-0050/power_supply/tcpm-s
 genfscon sysfs /devices/platform/10960000.hsi2c/i2c-3/i2c-st21nfc/wakeup/wakeup                    u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/acpm_mfd_bus@17500000/i2c-6/i2c-s2mpg10mfd/wakeup/wakeup             u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/19000000.aoc/usb_control/wakeup/wakeup                       u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/11110000.usb/11110000.dwc3/wakeup/wakeup                     u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/11210000.usb/11210000.dwc3/wakeup/wakeup                     u:object_r:sysfs_wakeup:s0
 
 # Touch
 genfscon sysfs /devices/platform/10d40000.spi/spi_master/spi11/spi11.0          u:object_r:sysfs_touch:s0
