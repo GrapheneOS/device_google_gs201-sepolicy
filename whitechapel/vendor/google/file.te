@@ -134,9 +134,6 @@ type persist_camera_file, file_type;
 type vendor_camera_tuning_file, vendor_file_type, file_type;
 type vendor_camera_data_file, file_type, data_file_type;
 
-# Vendor sched files
-type sysfs_vendor_sched, sysfs_type, fs_type;
-
 # GPS
 type vendor_gps_file, file_type, data_file_type;
 userdebug_or_eng(`
