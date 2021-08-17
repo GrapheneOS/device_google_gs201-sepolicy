@@ -21,8 +21,6 @@ set_prop(dmd, vendor_diag_prop)
 set_prop(dmd, vendor_slog_prop)
 set_prop(dmd, vendor_modem_prop)
 
-get_prop(dmd, vendor_persist_config_default_prop)
-
 # Grant to access hwservice manager
 get_prop(dmd, hwservicemanager_prop)
 allow dmd hidl_base_hwservice:hwservice_manager add;
@@ -30,4 +28,3 @@ allow dmd hal_vendor_oem_hwservice:hwservice_manager { add find };
 binder_call(dmd, hwservicemanager)
 binder_call(dmd, modem_diagnostic_app)
 binder_call(dmd, modem_logging_control)
-binder_call(dmd, vendor_telephony_app)

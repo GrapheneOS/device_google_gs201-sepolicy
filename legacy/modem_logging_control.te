@@ -1,8 +1,3 @@
-type modem_logging_control, domain;
-type modem_logging_control_exec, vendor_file_type, exec_type, file_type;
-
-init_daemon_domain(modem_logging_control)
-
 hwbinder_use(modem_logging_control)
 binder_call(modem_logging_control, dmd)
 

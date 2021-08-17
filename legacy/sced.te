@@ -7,7 +7,6 @@ typeattribute sced vendor_executes_system_violators;
 
 hwbinder_use(sced)
 binder_call(sced, dmd)
-binder_call(sced, vendor_telephony_app)
 
 get_prop(sced, hwservicemanager_prop)
 allow sced self:packet_socket create_socket_perms_no_ioctl;

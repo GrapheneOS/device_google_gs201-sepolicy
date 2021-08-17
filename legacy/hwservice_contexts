@@ -2,9 +2,6 @@ vendor.samsung_slsi.hardware.radio::IOemSamsungslsi                   u:object_r
 vendor.samsung_slsi.hardware.ExynosHWCServiceTW::IExynosHWCServiceTW  u:object_r:hal_vendor_surfaceflinger_hwservice:s0
 vendor.samsung_slsi.hardware.configstore::IExynosHWCConfigs  u:object_r:hal_configstore_ISurfaceFlingerConfigs:s0
 
-# dmd HAL
-vendor.samsung_slsi.telephony.hardware.oemservice::IOemService  u:object_r:hal_vendor_oem_hwservice:s0
-
 # rild HAL
 vendor.samsung_slsi.telephony.hardware.radio::IOemSamsungslsi        u:object_r:hal_exynos_rild_hwservice:s0
 android.vendor.samsung_slsi.telephony.hardware.radio::IOemSamsungslsi        u:object_r:hal_exynos_rild_hwservice:s0

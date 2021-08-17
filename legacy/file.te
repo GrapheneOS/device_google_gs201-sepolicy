@@ -6,12 +6,10 @@ type vendor_media_data_file, file_type, data_file_type;
 # Exynos Log Files
 type vendor_log_file, file_type, data_file_type;
 type vendor_cbd_log_file, file_type, data_file_type;
-type vendor_dmd_log_file, file_type, data_file_type;
 type vendor_rfsd_log_file, file_type, data_file_type;
 type vendor_dump_log_file, file_type, data_file_type;
 type vendor_rild_log_file, file_type, data_file_type;
 type vendor_sced_log_file, file_type, data_file_type;
-type vendor_slog_file, file_type, data_file_type, mlstrustedobject;
 type vendor_telephony_log_file, file_type, data_file_type;
 type vendor_vcd_log_file, file_type, data_file_type;
 

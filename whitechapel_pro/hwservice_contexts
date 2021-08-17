@@ -1,0 +1,4 @@
+# dmd HAL
+vendor.samsung_slsi.telephony.hardware.oemservice::IOemService  u:object_r:hal_vendor_oem_hwservice:s0
+
+

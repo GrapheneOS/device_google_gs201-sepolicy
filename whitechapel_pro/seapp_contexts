@@ -1,0 +1,3 @@
+# Modem Diagnostic System
+user=_app isPrivApp=true seinfo=mds name=com.google.mds domain=modem_diagnostic_app type=app_data_file levelFrom=user
+
