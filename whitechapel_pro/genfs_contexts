@@ -1,0 +1,1 @@
+genfscon sysfs /firmware/devicetree/base/chosen                                u:object_r:sysfs_chosen:s0

@@ -1,3 +1,6 @@
+type modem_diagnostic_app, domain;
+
+app_domain(modem_diagnostic_app)
 net_domain(modem_diagnostic_app)
 
 allow modem_diagnostic_app app_api_service:service_manager find;
@@ -19,8 +22,6 @@ userdebug_or_eng(`
   allow modem_diagnostic_app radio_vendor_data_file:file create_file_perms;
 
   allow modem_diagnostic_app mnt_vendor_file:dir r_dir_perms;
-  allow modem_diagnostic_app mnt_vendor_file:file r_file_perms;
-
   allow modem_diagnostic_app modem_img_file:dir r_dir_perms;
   allow modem_diagnostic_app modem_img_file:file r_file_perms;
   allow modem_diagnostic_app modem_img_file:lnk_file r_file_perms;

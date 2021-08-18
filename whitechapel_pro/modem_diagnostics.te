@@ -1,4 +1,0 @@
-type modem_diagnostic_app, domain;
-
-app_domain(modem_diagnostic_app)
-

@@ -2,3 +2,6 @@ vendor_internal_prop(vendor_diag_prop)
 vendor_internal_prop(vendor_slog_prop)
 vendor_internal_prop(vendor_modem_prop)
 vendor_internal_prop(vendor_persist_config_default_prop)
+vendor_internal_prop(vendor_cbd_prop)
+vendor_internal_prop(vendor_rild_prop)
+
