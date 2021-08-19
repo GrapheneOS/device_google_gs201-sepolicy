@@ -1,0 +1,23 @@
+# Binaries
+/vendor/bin/dmd                     u:object_r:dmd_exec:s0
+/vendor/bin/modem_logging_control   u:object_r:modem_logging_control_exec:s0
+
+# Vendor Firmwares
+/vendor/firmware(/.*)?              u:object_r:vendor_fw_file:s0
+
+# Devices
+/dev/ttyGS[0-3]                     u:object_r:serial_device:s0
+/dev/oem_ipc[0-7]                   u:object_r:radio_device:s0
+/dev/umts_boot0                     u:object_r:radio_device:s0
+/dev/umts_ipc0                      u:object_r:radio_device:s0
+/dev/umts_ipc1                      u:object_r:radio_device:s0
+/dev/umts_rfs0                      u:object_r:radio_device:s0
+/dev/umts_dm0                       u:object_r:radio_device:s0
+/dev/umts_router                    u:object_r:radio_device:s0
+
+# Data
+/data/vendor/slog(/.*)?             u:object_r:vendor_slog_file:s0
+/data/vendor/radio(/.*)?            u:object_r:radio_vendor_data_file:s0
+
+# Extra mount images
+/mnt/vendor/modem_img(/.*)?                                   u:object_r:modem_img_file:s0

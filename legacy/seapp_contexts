@@ -1,0 +1,35 @@
+# Samsung S.LSI IMS
+user=_app isPrivApp=true name=com.shannon.imsservice domain=vendor_ims_app levelFrom=all
+user=_app isPrivApp=true name=com.shannon.imsservice:remote domain=vendor_ims_app levelFrom=all
+user=_app isPrivApp=true name=com.shannon.qualifiednetworksservice domain=vendor_ims_app levelFrom=all
+
+# coredump/ramdump
+user=system seinfo=platform name=com.google.SSRestartDetector domain=ssr_detector_app type=system_app_data_file levelFrom=user
+user=_app seinfo=platform name=com.android.ramdump domain=ramdump_app type=app_data_file levelFrom=all
+
+# grilservice
+user=_app isPrivApp=true name=com.google.android.grilservice domain=grilservice_app levelFrom=all
+
+# HbmSVManager
+user=_app seinfo=platform name=com.android.hbmsvmanager domain=hbmsvmanager_app type=app_data_file levelFrom=all
+
+# Hardware Info Collection
+user=_app isPrivApp=true name=com.google.android.hardwareinfo domain=hardware_info_app type=app_data_file levelFrom=user
+
+# Domain for omadm
+user=_app isPrivApp=true seinfo=platform name=com.android.omadm.service domain=omadm_app type=app_data_file levelFrom=all
+
+# Domain for connectivity monitor
+user=_app isPrivApp=true seinfo=platform name=com.google.android.connectivitymonitor domain=con_monitor_app type=app_data_file levelFrom=all
+
+# RIL Config Service
+user=radio isPrivApp=true seinfo=platform name=com.google.RilConfigService domain=ril_config_service_app type=app_data_file
+
+# CBRS setup app
+user=_app seinfo=platform name=com.google.googlecbrs domain=cbrs_setup_app type=app_data_file levelFrom=user
+
+# Domain for OFLBasicAgentApp to support NFC/eSIM fw upgrade
+user=_app isPrivApp=true  seinfo=platform name=com.thales.device.ofl.app.basicagent domain=ofl_app type=app_data_file levelFrom=user
+
+# Qorvo UWB system app
+user=uwb isPrivApp=true seinfo=uwb name=com.qorvo.uwb domain=uwb_vendor_app type=uwb_vendor_data_file levelFrom=all

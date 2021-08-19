@@ -1,17 +1,11 @@
 # sepolicy that are shared among devices using whitechapel
-BOARD_SEPOLICY_DIRS += device/google/gs201-sepolicy/whitechapel/vendor/google
+BOARD_SEPOLICY_DIRS += device/google/gs201-sepolicy/whitechapel_pro
+BOARD_SEPOLICY_DIRS += device/google/gs201-sepolicy/legacy
 
 # unresolved SELinux error log with bug tracking
 BOARD_SEPOLICY_DIRS += device/google/gs201-sepolicy/tracking_denials
 
 PRODUCT_PRIVATE_SEPOLICY_DIRS += device/google/gs201-sepolicy/private
-
-# Display
-BOARD_SEPOLICY_DIRS += device/google/gs201-sepolicy/display/common
-BOARD_SEPOLICY_DIRS += device/google/gs201-sepolicy/display/gs201
-
-# Micro sensor framework (usf)
-BOARD_SEPOLICY_DIRS += device/google/gs201-sepolicy/usf
 
 # system_ext
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += device/google/gs201-sepolicy/system_ext/public
