@@ -260,11 +260,6 @@
 /dev/logbuffer_btlpm                  u:object_r:logbuffer_device:s0
 /dev/logbuffer_tty16                u:object_r:logbuffer_device:s0
 
-# Audio
-/mnt/vendor/persist/audio(/.*)?     u:object_r:persist_audio_file:s0
-/vendor/etc/aoc(/.*)?               u:object_r:aoc_audio_file:s0
-/dev/amcs                           u:object_r:amcs_device:s0
-
 # AudioMetric
 /(vendor|system/vendor)/bin/hw/vendor\.google\.audiometricext@1\.0-service-vendor     u:object_r:hal_audiometricext_default_exec:s0
 

@@ -49,6 +49,3 @@ type vscaler_heap_device, dmabuf_heap_device_type, dev_type;
 # Fingerprint device
 type fingerprint_device, dev_type;
 
-# AMCS device
-type amcs_device, dev_type;
-
