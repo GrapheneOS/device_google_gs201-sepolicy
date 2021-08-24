@@ -89,7 +89,6 @@
 /dev/g2d                       u:object_r:graphics_device:s0
 /dev/tsmux                     u:object_r:video_device:s0
 /dev/repeater                  u:object_r:video_device:s0
-/dev/tui-driver                u:object_r:tui_device:s0
 /dev/logbuffer_usbpd           u:object_r:logbuffer_device:s0
 /dev/logbuffer_ssoc            u:object_r:logbuffer_device:s0
 /dev/logbuffer_wireless        u:object_r:logbuffer_device:s0
@@ -110,7 +109,6 @@
 # GPU device
 /dev/mali0                     u:object_r:gpu_device:s0
 /dev/s5p-smem                  u:object_r:vendor_secmem_device:s0
-/dev/umts_wfc[01]                 u:object_r:pktrouter_device:s0
 
 #
 # Exynos Daemon Exec
@@ -124,9 +122,6 @@
 /(vendor|system/vendor)/bin/sced               u:object_r:sced_exec:s0
 /(vendor|system/vendor)/bin/vcd                u:object_r:vcd_exec:s0
 /(vendor|system/vendor)/bin/bipchmgr           u:object_r:bipchmgr_exec:s0
-
-# WFC
-/(vendor|system/vendor)/bin/wfc-pkt-router     u:object_r:pktrouter_exec:s0
 
 #
 # Exynos Data Files
@@ -310,7 +305,6 @@
 /vendor/bin/trusty_metricsd          u:object_r:trusty_metricsd_exec:s0
 /vendor/bin/hw/android\.hardware\.gatekeeper@1\.0-service\.trusty                u:object_r:hal_gatekeeper_default_exec:s0
 /vendor/bin/hw/android\.hardware\.security\.keymint-service\.trusty              u:object_r:hal_keymint_default_exec:s0
-/vendor/bin/hw/android\.hardware\.confirmationui@1\.0-service\.trusty\.vendor    u:object_r:hal_confirmationui_default_exec:s0
 /dev/trusty-ipc-dev0                 u:object_r:tee_device:s0
 /data/vendor/ss(/.*)?                u:object_r:tee_data_file:s0
 /mnt/vendor/persist/ss(/.*)?         u:object_r:tee_data_file:s0

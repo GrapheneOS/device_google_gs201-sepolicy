@@ -12,11 +12,9 @@ type vendor_m2m1shot_device, dev_type;
 type vendor_gnss_device, dev_type;
 type vendor_nanohub_device, dev_type;
 type vendor_secmem_device, dev_type;
-type pktrouter_device, dev_type;
 type vendor_toe_device, dev_type;
 type custom_ab_block_device, dev_type;
 type devinfo_block_device, dev_type;
-type tui_device, dev_type;
 
 # usbpd
 type logbuffer_device, dev_type;
