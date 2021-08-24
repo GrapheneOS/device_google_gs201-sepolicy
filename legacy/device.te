@@ -46,9 +46,6 @@ type vframe_heap_device, dmabuf_heap_device_type, dev_type;
 #vscaler-secure DMA-BUF heap
 type vscaler_heap_device, dmabuf_heap_device_type, dev_type;
 
-# AOC device
-type aoc_device, dev_type;
-
 # Fingerprint device
 type fingerprint_device, dev_type;
 

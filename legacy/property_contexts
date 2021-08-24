@@ -65,9 +65,6 @@ vendor.battery.defender.                        u:object_r:vendor_battery_defend
 # test battery profile
 persist.vendor.testing_battery_profile          u:object_r:vendor_battery_profile_prop:s0
 
-# AoC
-vendor.aoc.firmware.version                     u:object_r:vendor_aoc_prop:s0
-
 # WiFi
 vendor.wlan.driver.version                      u:object_r:vendor_wifi_version:s0
 vendor.wlan.firmware.version                    u:object_r:vendor_wifi_version:s0
