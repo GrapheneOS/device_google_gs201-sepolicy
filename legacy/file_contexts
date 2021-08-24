@@ -226,9 +226,6 @@
 /vendor/bin/tcpdump_logger          u:object_r:tcpdump_logger_exec:s0
 /data/vendor/tcpdump_logger(/.*)?   u:object_r:tcpdump_vendor_data_file:s0
 
-# Audio logging
-/vendor/bin/aocdump                 u:object_r:aocdump_exec:s0
-
 # modem_svc_sit files
 /vendor/bin/modem_svc_sit           u:object_r:modem_svc_sit_exec:s0
 /data/vendor/modem_stat/debug\.txt  u:object_r:modem_stat_data_file:s0
@@ -265,7 +262,6 @@
 
 # Audio
 /mnt/vendor/persist/audio(/.*)?     u:object_r:persist_audio_file:s0
-/data/vendor/audio(/.*)?            u:object_r:audio_vendor_data_file:s0
 /vendor/etc/aoc(/.*)?               u:object_r:aoc_audio_file:s0
 /dev/amcs                           u:object_r:amcs_device:s0
 
