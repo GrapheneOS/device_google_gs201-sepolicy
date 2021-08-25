@@ -1,6 +1,8 @@
 # Binaries
 /vendor/bin/dmd                     u:object_r:dmd_exec:s0
 /vendor/bin/modem_logging_control   u:object_r:modem_logging_control_exec:s0
+/vendor/bin/sced                    u:object_r:sced_exec:s0
+/vendor/bin/vcd                     u:object_r:vcd_exec:s0
 
 # Vendor Firmwares
 /vendor/firmware(/.*)?              u:object_r:vendor_fw_file:s0
@@ -20,4 +22,4 @@
 /data/vendor/radio(/.*)?            u:object_r:radio_vendor_data_file:s0
 
 # Extra mount images
-/mnt/vendor/modem_img(/.*)?                                   u:object_r:modem_img_file:s0
+/mnt/vendor/modem_img(/.*)?         u:object_r:modem_img_file:s0
