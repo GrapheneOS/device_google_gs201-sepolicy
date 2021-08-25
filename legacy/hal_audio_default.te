@@ -1,1 +1,0 @@
-allow hal_audio_default sysfs_pixelstats:file rw_file_perms;
