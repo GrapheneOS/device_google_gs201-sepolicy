@@ -1,9 +1,3 @@
-# AOC
-genfscon sysfs /devices/platform/19000000.aoc/aoc_clock_and_kernel_boottime u:object_r:sysfs_aoc_boottime:s0
-genfscon sysfs /devices/platform/19000000.aoc/firmware                      u:object_r:sysfs_aoc_firmware:s0
-genfscon sysfs /devices/platform/19000000.aoc                               u:object_r:sysfs_aoc:s0
-genfscon sysfs /devices/platform/19000000.aoc/reset                         u:object_r:sysfs_aoc_reset:s0
-
 # WiFi
 genfscon sysfs /wifi                                                        u:object_r:sysfs_wifi:s0
 # Battery
@@ -287,12 +281,3 @@ genfscon sysfs /devices/platform/wlan/sscoredump/sscd_wlan/report_count         
 # mediacodec
 genfscon sysfs /devices/platform/mfc/video4linux/video                                                  u:object_r:sysfs_video:s0
 
-# pixelstat_vendor
-genfscon sysfs /devices/platform/audiometrics/codec_state              u:object_r:sysfs_pixelstats:s0
-genfscon sysfs /devices/platform/audiometrics/hs_codec_state           u:object_r:sysfs_pixelstats:s0
-genfscon sysfs /devices/platform/audiometrics/speaker_impedance        u:object_r:sysfs_pixelstats:s0
-genfscon sysfs /devices/platform/audiometrics/speaker_excursion        u:object_r:sysfs_pixelstats:s0
-genfscon sysfs /devices/platform/audiometrics/speaker_heartbeat        u:object_r:sysfs_pixelstats:s0
-genfscon sysfs /devices/platform/audiometrics/speaker_temp             u:object_r:sysfs_pixelstats:s0
-genfscon sysfs /devices/platform/audiometrics/mic_broken_degrade       u:object_r:sysfs_pixelstats:s0
-genfscon sysfs /devices/platform/audiometrics/codec_crashed_counter    u:object_r:sysfs_pixelstats:s0
