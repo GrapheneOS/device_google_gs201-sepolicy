@@ -216,9 +216,6 @@
 
 # Sensors
 /data/vendor/sensor(/.*)?              u:object_r:sensor_vendor_data_file:s0
-/dev/acd-com.google.usf                u:object_r:aoc_device:s0
-/dev/acd-logging                       u:object_r:aoc_device:s0
-/dev/aoc                               u:object_r:aoc_device:s0
 
 # Contexthub
 /vendor/bin/hw/android\.hardware\.contexthub@1\.2-service\.generic  u:object_r:hal_contexthub_default_exec:s0
@@ -228,9 +225,6 @@
 # TCP logging
 /vendor/bin/tcpdump_logger          u:object_r:tcpdump_logger_exec:s0
 /data/vendor/tcpdump_logger(/.*)?   u:object_r:tcpdump_vendor_data_file:s0
-
-# Audio logging
-/vendor/bin/aocdump                 u:object_r:aocdump_exec:s0
 
 # modem_svc_sit files
 /vendor/bin/modem_svc_sit           u:object_r:modem_svc_sit_exec:s0
@@ -266,27 +260,6 @@
 /dev/logbuffer_btlpm                  u:object_r:logbuffer_device:s0
 /dev/logbuffer_tty16                u:object_r:logbuffer_device:s0
 
-# Audio
-/mnt/vendor/persist/aoc(/.*)?       u:object_r:persist_aoc_file:s0
-/mnt/vendor/persist/audio(/.*)?     u:object_r:persist_audio_file:s0
-/data/vendor/audio(/.*)?            u:object_r:audio_vendor_data_file:s0
-/vendor/etc/aoc(/.*)?               u:object_r:aoc_audio_file:s0
-/dev/acd-audio_output_tuning        u:object_r:aoc_device:s0
-/dev/acd-audio_bulk_tx              u:object_r:aoc_device:s0
-/dev/acd-audio_bulk_rx              u:object_r:aoc_device:s0
-/dev/acd-audio_input_tuning         u:object_r:aoc_device:s0
-/dev/acd-audio_input_bulk_tx        u:object_r:aoc_device:s0
-/dev/acd-audio_input_bulk_rx        u:object_r:aoc_device:s0
-/dev/acd-sound_trigger              u:object_r:aoc_device:s0
-/dev/acd-hotword_notification       u:object_r:aoc_device:s0
-/dev/acd-hotword_pcm                u:object_r:aoc_device:s0
-/dev/acd-ambient_pcm                u:object_r:aoc_device:s0
-/dev/acd-model_data                 u:object_r:aoc_device:s0
-/dev/acd-debug                      u:object_r:aoc_device:s0
-/dev/acd-audio_tap[0-9]*            u:object_r:aoc_device:s0
-/dev/acd-audio_dcdoff_ref           u:object_r:aoc_device:s0
-/dev/amcs                           u:object_r:amcs_device:s0
-
 # AudioMetric
 /(vendor|system/vendor)/bin/hw/vendor\.google\.audiometricext@1\.0-service-vendor     u:object_r:hal_audiometricext_default_exec:s0
 
@@ -306,9 +279,6 @@
 
 # Battery
 /mnt/vendor/persist/battery(/.*)?    u:object_r:persist_battery_file:s0
-
-# AoC file contexts.
-/vendor/bin/aocd   u:object_r:aocd_exec:s0
 
 # NeuralNetworks file contexts
 /vendor/bin/hw/android\.hardware\.neuralnetworks@1\.3-service-armnn   u:object_r:hal_neuralnetworks_armnn_exec:s0
