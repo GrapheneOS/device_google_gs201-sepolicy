@@ -108,7 +108,6 @@
 # Exynos Daemon Exec
 #
 /(vendor|system/vendor)/bin/cbd                u:object_r:cbd_exec:s0
-/(vendor|system/vendor)/bin/hw/gpsd            u:object_r:gpsd_exec:s0
 /(vendor|system/vendor)/bin/hw/rild_exynos     u:object_r:rild_exec:s0
 /(vendor|system/vendor)/bin/rfsd               u:object_r:rfsd_exec:s0
 /(vendor|system/vendor)/bin/bipchmgr           u:object_r:bipchmgr_exec:s0
