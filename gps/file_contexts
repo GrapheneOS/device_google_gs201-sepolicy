@@ -1,4 +1,10 @@
 # gnss/gps data/log files
 /data/vendor/gps(/.*)?       u:object_r:vendor_gps_file:s0
+
+# devices
+/dev/bbd_control             u:object_r:vendor_gnss_device:s0
+/dev/ttyBCM                  u:object_r:vendor_gnss_device:s0
+
 # vendor binaries
 /vendor/bin/hw/scd           u:object_r:scd_exec:s0
+/vendor/bin/hw/lhd           u:object_r:lhd_exec:s0

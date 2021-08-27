@@ -77,10 +77,7 @@
 #
 # Exynos Devices
 #
-/dev/gnss_ipc                  u:object_r:vendor_gnss_device:s0
-/dev/bbd_control               u:object_r:vendor_gnss_device:s0
 /dev/bbd_pwrstat               u:object_r:power_stats_device:s0
-/dev/ttyBCM                    u:object_r:vendor_gnss_device:s0
 /dev/nanohub                   u:object_r:vendor_nanohub_device:s0
 /dev/nanohub_comms             u:object_r:vendor_nanohub_device:s0
 /dev/m2m1shot_scaler0          u:object_r:vendor_m2m1shot_device:s0
@@ -115,7 +112,6 @@
 #
 /(vendor|system/vendor)/bin/cbd                u:object_r:cbd_exec:s0
 /(vendor|system/vendor)/bin/hw/gpsd            u:object_r:gpsd_exec:s0
-/(vendor|system/vendor)/bin/hw/lhd             u:object_r:lhd_exec:s0
 /(vendor|system/vendor)/bin/hw/rild_exynos     u:object_r:rild_exec:s0
 /(vendor|system/vendor)/bin/rfsd               u:object_r:rfsd_exec:s0
 /(vendor|system/vendor)/bin/bipchmgr           u:object_r:bipchmgr_exec:s0
