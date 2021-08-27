@@ -1,0 +1,4 @@
+# gnss/gps data/log files
+/data/vendor/gps(/.*)?       u:object_r:vendor_gps_file:s0
+# vendor binaries
+/vendor/bin/hw/scd           u:object_r:scd_exec:s0

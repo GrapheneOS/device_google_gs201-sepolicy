@@ -114,18 +114,11 @@
 # Exynos Daemon Exec
 #
 /(vendor|system/vendor)/bin/cbd                u:object_r:cbd_exec:s0
-/(vendor|system/vendor)/bin/hw/scd             u:object_r:scd_exec:s0
 /(vendor|system/vendor)/bin/hw/gpsd            u:object_r:gpsd_exec:s0
 /(vendor|system/vendor)/bin/hw/lhd             u:object_r:lhd_exec:s0
 /(vendor|system/vendor)/bin/hw/rild_exynos     u:object_r:rild_exec:s0
 /(vendor|system/vendor)/bin/rfsd               u:object_r:rfsd_exec:s0
 /(vendor|system/vendor)/bin/bipchmgr           u:object_r:bipchmgr_exec:s0
-
-#
-# Exynos Data Files
-#
-# gnss/gps data/log files
-/data/vendor/gps(/.*)?       u:object_r:vendor_gps_file:s0
 
 #
 # Exynos Log Files
