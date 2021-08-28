@@ -9,7 +9,6 @@ type sda_block_device, dev_type;
 
 # Exynos devices
 type vendor_m2m1shot_device, dev_type;
-type vendor_gnss_device, dev_type;
 type vendor_nanohub_device, dev_type;
 type vendor_secmem_device, dev_type;
 type vendor_toe_device, dev_type;
