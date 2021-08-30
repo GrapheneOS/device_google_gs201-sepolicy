@@ -3,6 +3,7 @@
 /vendor/bin/modem_logging_control   u:object_r:modem_logging_control_exec:s0
 /vendor/bin/sced                    u:object_r:sced_exec:s0
 /vendor/bin/vcd                     u:object_r:vcd_exec:s0
+/vendor/bin/chre                    u:object_r:chre_exec:s0
 
 # Vendor Firmwares
 /vendor/firmware(/.*)?              u:object_r:vendor_fw_file:s0
@@ -16,6 +17,7 @@
 /dev/umts_rfs0                      u:object_r:radio_device:s0
 /dev/umts_dm0                       u:object_r:radio_device:s0
 /dev/umts_router                    u:object_r:radio_device:s0
+/dev/socket/chre                    u:object_r:chre_socket:s0
 
 # Data
 /data/vendor/slog(/.*)?             u:object_r:vendor_slog_file:s0

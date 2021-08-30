@@ -51,9 +51,6 @@ type sysfs_nanoapp_cmd, sysfs_type, fs_type;
 # Fingerprint
 type sysfs_fingerprint, sysfs_type, fs_type;
 
-# CHRE
-type chre_socket, file_type;
-
 # IOMMU
 type sysfs_iommu, sysfs_type, fs_type;
 

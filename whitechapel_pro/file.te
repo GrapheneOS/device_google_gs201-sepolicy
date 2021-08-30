@@ -16,3 +16,6 @@ type sysfs_chosen, sysfs_type, fs_type;
 type modem_img_file, contextmount_type, file_type, vendor_file_type;
 allow modem_img_file self:filesystem associate;
 
+# CHRE
+type chre_socket, file_type;
+
