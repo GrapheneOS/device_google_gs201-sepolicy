@@ -11,6 +11,7 @@ type vendor_fw_file, vendor_file_type, file_type;
 
 # sysfs
 type sysfs_chosen, sysfs_type, fs_type;
+type sysfs_ota, sysfs_type, fs_type;
 
 # vendor extra images
 type modem_img_file, contextmount_type, file_type, vendor_file_type;
