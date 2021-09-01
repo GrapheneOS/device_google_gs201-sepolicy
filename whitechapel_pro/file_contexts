@@ -19,6 +19,7 @@
 /dev/umts_rfs0                                                u:object_r:radio_device:s0
 /dev/umts_dm0                                                 u:object_r:radio_device:s0
 /dev/umts_router                                              u:object_r:radio_device:s0
+/dev/logbuffer_tcpm                                           u:object_r:logbuffer_device:s0
 /dev/sys/block/bootdevice(/.*)?                               u:object_r:bootdevice_sysdev:s0
 /dev/socket/chre                                              u:object_r:chre_socket:s0
 /dev/block/sda                                                u:object_r:sda_block_device:s0
