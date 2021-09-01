@@ -14,7 +14,6 @@ dontaudit domain fs_type:filesystem *;
 dontaudit domain dev_type:file *;
 dontaudit domain dev_type:chr_file *;
 dontaudit domain dev_type:blk_file *;
-dontaudit domain hwservice_manager_type:hwservice_manager *;
 dontaudit domain service_manager_type:service_manager *;
 dontaudit domain domain:capability *;
 dontaudit domain domain:binder *;

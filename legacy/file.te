@@ -32,7 +32,6 @@ type vendor_sjtag_debugfs, fs_type, debugfs_type;
 # Exynos sysfs
 type sysfs_exynos_bts, sysfs_type, fs_type;
 type sysfs_exynos_bts_stats, sysfs_type, fs_type;
-type sysfs_ota, sysfs_type, fs_type;
 
 # ACPM
 type sysfs_acpm_stats, sysfs_type, fs_type;
@@ -50,9 +49,6 @@ type sysfs_nanoapp_cmd, sysfs_type, fs_type;
 
 # Fingerprint
 type sysfs_fingerprint, sysfs_type, fs_type;
-
-# CHRE
-type chre_socket, file_type;
 
 # IOMMU
 type sysfs_iommu, sysfs_type, fs_type;

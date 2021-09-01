@@ -1,0 +1,2 @@
+type sda_block_device, dev_type, bdev_type;
+type devinfo_block_device, dev_type, bdev_type;
