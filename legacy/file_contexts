@@ -29,11 +29,6 @@
 /(vendor|system/vendor)/bin/hw/vendor\.google\.wireless_charger@1\.3-service-vendor             u:object_r:hal_wlc_exec:s0
 
 #
-# Exynos Block Devices
-#
-/dev/sys/block/bootdevice(/.*)?                               u:object_r:bootdevice_sysdev:s0
-
-#
 # Exynos Devices
 #
 /dev/bbd_pwrstat               u:object_r:power_stats_device:s0
