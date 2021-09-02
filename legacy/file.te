@@ -82,10 +82,6 @@ type sysfs_touch, sysfs_type, fs_type;
 # RILD
 type rild_vendor_data_file, file_type, data_file_type;
 
-# Modem
-type modem_stat_data_file, file_type, data_file_type;
-type sysfs_modem, sysfs_type, fs_type;
-
 # TCP logging
 type tcpdump_vendor_data_file, file_type, data_file_type, mlstrustedobject;
 

@@ -5,9 +5,6 @@ init_daemon_domain(modem_svc_sit)
 hwbinder_use(modem_svc_sit)
 binder_call(modem_svc_sit, rild)
 
-# Grant sysfs_modem access
-allow modem_svc_sit sysfs_modem:file rw_file_perms;
-
 # Grant radio device access
 allow modem_svc_sit radio_device:chr_file rw_file_perms;
 
