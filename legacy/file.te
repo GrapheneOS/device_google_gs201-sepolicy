@@ -3,10 +3,6 @@
 type vendor_cbd_boot_file, file_type, data_file_type;
 type vendor_media_data_file, file_type, data_file_type;
 
-# Exynos Log Files
-type vendor_log_file, file_type, data_file_type;
-type vendor_rfsd_log_file, file_type, data_file_type;
-
 # app data files
 type vendor_test_data_file, file_type, data_file_type;
 type vendor_telephony_data_file, file_type, data_file_type;

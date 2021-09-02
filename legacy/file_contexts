@@ -68,12 +68,6 @@
 /(vendor|system/vendor)/bin/rfsd               u:object_r:rfsd_exec:s0
 /(vendor|system/vendor)/bin/bipchmgr           u:object_r:bipchmgr_exec:s0
 
-#
-# Exynos Log Files
-#
-/data/vendor/log(/.*)?       u:object_r:vendor_log_file:s0
-/data/vendor/log/rfsd(/.*)?  u:object_r:vendor_rfsd_log_file:s0
-
 /persist/sensorcal\.json     u:object_r:sensors_cal_file:s0
 
 # data files
