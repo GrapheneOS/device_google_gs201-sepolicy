@@ -1,4 +1,6 @@
 # Data
+type vendor_log_file, file_type, data_file_type;
+type vendor_rfsd_log_file, file_type, data_file_type;
 type modem_stat_data_file, file_type, data_file_type;
 type vendor_slog_file, file_type, data_file_type;
 type radio_vendor_data_file, file_type, data_file_type;
@@ -13,6 +15,7 @@ type vendor_fw_file, vendor_file_type, file_type;
 # sysfs
 type sysfs_chosen, sysfs_type, fs_type;
 type sysfs_ota, sysfs_type, fs_type;
+type bootdevice_sysdev, dev_type;
 
 # vendor extra images
 type modem_img_file, contextmount_type, file_type, vendor_file_type;

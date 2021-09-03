@@ -3,10 +3,6 @@
 type vendor_cbd_boot_file, file_type, data_file_type;
 type vendor_media_data_file, file_type, data_file_type;
 
-# Exynos Log Files
-type vendor_log_file, file_type, data_file_type;
-type vendor_rfsd_log_file, file_type, data_file_type;
-
 # app data files
 type vendor_test_data_file, file_type, data_file_type;
 type vendor_telephony_data_file, file_type, data_file_type;
@@ -69,8 +65,6 @@ type mediadrm_vendor_data_file, file_type, data_file_type;
 type sysfs_scsi_devices_0000, sysfs_type, fs_type;
 type debugfs_f2fs, debugfs_type, fs_type;
 type proc_f2fs, proc_type, fs_type;
-
-type bootdevice_sysdev, dev_type;
 
 # ZRam
 type per_boot_file, file_type, data_file_type, core_data_file_type;

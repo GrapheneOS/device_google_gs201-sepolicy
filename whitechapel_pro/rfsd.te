@@ -2,9 +2,6 @@ type rfsd, domain;
 type rfsd_exec, vendor_file_type, exec_type, file_type;
 init_daemon_domain(rfsd)
 
-# Allow to setuid from root to radio
-allow rfsd self:capability { chown setuid };
-
 # Allow to search block device and mnt dir for modem EFS partitions
 allow rfsd mnt_vendor_file:dir search;
 allow rfsd block_device:dir search;
