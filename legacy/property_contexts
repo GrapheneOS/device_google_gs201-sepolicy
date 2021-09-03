@@ -26,8 +26,6 @@ persist.vendor.pixellogger.  u:object_r:vendor_logger_prop:s0
 
 # vendor default
 vendor.config.               u:object_r:vendor_config_default_prop:s0
-ro.vendor.config.            u:object_r:vendor_ro_config_default_prop:s0
-vendor.sys.                  u:object_r:vendor_sys_default_prop:s0
 ro.vendor.sys.               u:object_r:vendor_ro_sys_default_prop:s0
 persist.vendor.sys.          u:object_r:vendor_persist_sys_default_prop:s0
 

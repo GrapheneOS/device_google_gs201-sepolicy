@@ -61,13 +61,6 @@
 /dev/mali0                     u:object_r:gpu_device:s0
 /dev/s5p-smem                  u:object_r:vendor_secmem_device:s0
 
-#
-# Exynos Daemon Exec
-#
-/(vendor|system/vendor)/bin/hw/rild_exynos     u:object_r:rild_exec:s0
-/(vendor|system/vendor)/bin/rfsd               u:object_r:rfsd_exec:s0
-/(vendor|system/vendor)/bin/bipchmgr           u:object_r:bipchmgr_exec:s0
-
 /persist/sensorcal\.json     u:object_r:sensors_cal_file:s0
 
 # data files
@@ -212,9 +205,6 @@
 # Uwb
 # R4
 /vendor/bin/hw/hardware\.qorvo\.uwb-service                          u:object_r:hal_uwb_vendor_default_exec:s0
-
-# RILD files
-/data/vendor/rild(/.*)?                                                     u:object_r:rild_vendor_data_file:s0
 
 # Citadel StrongBox
 /dev/gsc0                                                                   u:object_r:citadel_device:s0
