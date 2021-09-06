@@ -1,8 +1,3 @@
-# Samsung S.LSI IMS
-user=_app isPrivApp=true name=com.shannon.imsservice domain=vendor_ims_app levelFrom=all
-user=_app isPrivApp=true name=com.shannon.imsservice:remote domain=vendor_ims_app levelFrom=all
-user=_app isPrivApp=true name=com.shannon.qualifiednetworksservice domain=vendor_ims_app levelFrom=all
-
 # coredump/ramdump
 user=system seinfo=platform name=com.google.SSRestartDetector domain=ssr_detector_app type=system_app_data_file levelFrom=user
 user=_app seinfo=platform name=com.android.ramdump domain=ramdump_app type=app_data_file levelFrom=all
