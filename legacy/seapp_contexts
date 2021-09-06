@@ -14,9 +14,6 @@ user=_app isPrivApp=true name=com.google.android.hardwareinfo domain=hardware_in
 # Domain for omadm
 user=_app isPrivApp=true seinfo=platform name=com.android.omadm.service domain=omadm_app type=app_data_file levelFrom=all
 
-# Domain for connectivity monitor
-user=_app isPrivApp=true seinfo=platform name=com.google.android.connectivitymonitor domain=con_monitor_app type=app_data_file levelFrom=all
-
 # RIL Config Service
 user=radio isPrivApp=true seinfo=platform name=com.google.RilConfigService domain=ril_config_service_app type=app_data_file
 
