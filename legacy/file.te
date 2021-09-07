@@ -73,9 +73,6 @@ type per_boot_file, file_type, data_file_type, core_data_file_type;
 type proc_touch, proc_type, fs_type, mlstrustedobject;
 type sysfs_touch, sysfs_type, fs_type;
 
-# RILD
-type rild_vendor_data_file, file_type, data_file_type;
-
 # TCP logging
 type tcpdump_vendor_data_file, file_type, data_file_type, mlstrustedobject;
 
