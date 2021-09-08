@@ -5,6 +5,9 @@ user=_app isPrivApp=true name=com.shannon.qualifiednetworksservice domain=vendor
 user=_app isPrivApp=true name=com.shannon.rcsservice domain=vendor_rcs_app levelFrom=all
 user=_app isPrivApp=true name=com.shannon.rcsservice:shannonrcsservice domain=vendor_rcs_service_app levelFrom=all
 
+# Domain for OFLBasicAgentApp to support NFC/eSIM fw upgrade
+user=_app isPrivApp=true  seinfo=platform name=com.thales.device.ofl.app.basicagent domain=ofl_app type=app_data_file levelFrom=user
+
 # Domain for omadm
 user=_app isPrivApp=true seinfo=platform name=com.android.omadm.service domain=omadm_app type=app_data_file levelFrom=all
 
