@@ -8,12 +8,6 @@ user=_app seinfo=platform name=com.android.hbmsvmanager domain=hbmsvmanager_app 
 # Hardware Info Collection
 user=_app isPrivApp=true name=com.google.android.hardwareinfo domain=hardware_info_app type=app_data_file levelFrom=user
 
-# Domain for omadm
-user=_app isPrivApp=true seinfo=platform name=com.android.omadm.service domain=omadm_app type=app_data_file levelFrom=all
-
-# RIL Config Service
-user=radio isPrivApp=true seinfo=platform name=com.google.RilConfigService domain=ril_config_service_app type=app_data_file
-
 # Domain for OFLBasicAgentApp to support NFC/eSIM fw upgrade
 user=_app isPrivApp=true  seinfo=platform name=com.thales.device.ofl.app.basicagent domain=ofl_app type=app_data_file levelFrom=user
 
