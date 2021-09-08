@@ -1,8 +1,5 @@
 # Block Devices
-type efs_block_device, dev_type;
 type fat_block_device, dev_type;
-type modem_userdata_block_device, dev_type;
-type persist_block_device, dev_type;
 type vendor_block_device, dev_type;
 
 # Exynos devices
