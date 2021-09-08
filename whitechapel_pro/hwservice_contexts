@@ -3,3 +3,6 @@ vendor.samsung_slsi.telephony.hardware.oemservice::IOemService                  
 
 # rild HAL
 vendor.samsung_slsi.telephony.hardware.radioExternal::IOemSlsiRadioExternal        u:object_r:hal_exynos_rild_hwservice:s0
+
+# GRIL HAL
+vendor.google.radioext::IRadioExt                                                  u:object_r:hal_radioext_hwservice:s0

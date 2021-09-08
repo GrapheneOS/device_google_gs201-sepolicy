@@ -85,7 +85,6 @@ type vendor_camera_tuning_file, vendor_file_type, file_type;
 type vendor_camera_data_file, file_type, data_file_type;
 
 # Display
-type sysfs_display, sysfs_type, fs_type;
 type persist_display_file, file_type, vendor_persist_type;
 
 # Backlight
