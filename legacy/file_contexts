@@ -32,9 +32,6 @@
 # Exynos Devices
 #
 /dev/bbd_pwrstat               u:object_r:power_stats_device:s0
-/dev/nanohub                   u:object_r:vendor_nanohub_device:s0
-/dev/nanohub_comms             u:object_r:vendor_nanohub_device:s0
-/dev/m2m1shot_scaler0          u:object_r:vendor_m2m1shot_device:s0
 /dev/dri/card0                 u:object_r:graphics_device:s0
 /dev/fimg2d                    u:object_r:graphics_device:s0
 /dev/g2d                       u:object_r:graphics_device:s0
@@ -59,7 +56,6 @@
 
 # GPU device
 /dev/mali0                     u:object_r:gpu_device:s0
-/dev/s5p-smem                  u:object_r:vendor_secmem_device:s0
 
 /persist/sensorcal\.json     u:object_r:sensors_cal_file:s0
 
