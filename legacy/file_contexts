@@ -1,8 +1,6 @@
 #
 # Exynos HAL
 #
-/(vendor|system/vendor)/bin/hw/android\.hardware\.drm@1\.4-service\.widevine                    u:object_r:hal_drm_default_exec:s0
-/(vendor|system/vendor)/bin/hw/android\.hardware\.drm@[0-9]+\.[0-9]+-service\.clearkey          u:object_r:hal_drm_clearkey_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.usb@1\.0-service32                            u:object_r:hal_usb_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.samsung_slsi\.hardware\.ExynosHWCServiceTW@1\.0-service  u:object_r:hal_vendor_hwcservice_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.samsung_slsi\.hardware\.power@1\.0-service               u:object_r:hal_power_default_exec:s0
@@ -58,9 +56,6 @@
 /dev/mali0                     u:object_r:gpu_device:s0
 
 /persist/sensorcal\.json     u:object_r:sensors_cal_file:s0
-
-# data files
-/data/vendor/mediadrm(/.*)?  u:object_r:mediadrm_vendor_data_file:s0
 
 # Camera
 /vendor/bin/hw/android\.hardware\.camera\.provider@2\.7-service-google  u:object_r:hal_camera_default_exec:s0
