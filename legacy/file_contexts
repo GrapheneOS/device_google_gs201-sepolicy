@@ -183,9 +183,6 @@
 # R4
 /vendor/bin/hw/hardware\.qorvo\.uwb-service                          u:object_r:hal_uwb_vendor_default_exec:s0
 
-# Citadel StrongBox
-/dev/gsc0                                                                   u:object_r:citadel_device:s0
-
 # Tetheroffload Service
 /dev/dit2                      u:object_r:vendor_toe_device:s0
 /vendor/bin/hw/vendor\.samsung_slsi\.hardware\.tetheroffload@1\.0-service     u:object_r:hal_tetheroffload_default_exec:s0
