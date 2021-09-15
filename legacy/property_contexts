@@ -1,10 +1,6 @@
 # Ramdump
 persist.vendor.sys.crash_rcu    u:object_r:vendor_ramdump_prop:s0
 
-# SSR Detector
-vendor.debug.ssrdump.           u:object_r:vendor_ssrdump_prop:s0
-persist.vendor.sys.ssr.         u:object_r:vendor_ssrdump_prop:s0
-
 # Kernel modules related
 vendor.common.modules.ready     u:object_r:vendor_device_prop:s0
 vendor.device.modules.ready     u:object_r:vendor_device_prop:s0
@@ -52,10 +48,6 @@ vendor.battery.defender.                        u:object_r:vendor_battery_defend
 
 # test battery profile
 persist.vendor.testing_battery_profile          u:object_r:vendor_battery_profile_prop:s0
-
-# WiFi
-vendor.wlan.driver.version                      u:object_r:vendor_wifi_version:s0
-vendor.wlan.firmware.version                    u:object_r:vendor_wifi_version:s0
 
 # Touchpanel
 vendor.mfgapi.touchpanel.permission             u:object_r:vendor_touchpanel_prop:s0

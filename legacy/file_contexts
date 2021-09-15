@@ -206,13 +206,6 @@
 
 # Touch
 /dev/touch_offload                                                               u:object_r:touch_offload_device:s0
-/vendor/bin/twoshay                                                              u:object_r:twoshay_exec:s0
-
-# Fingerprint
-/vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.goodix        u:object_r:hal_fingerprint_default_exec:s0
-/vendor/bin/hw/android\.hardware\.biometrics\.fingerprint-service\.goodix             u:object_r:hal_fingerprint_default_exec:s0
-/vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.fpc           u:object_r:hal_fingerprint_default_exec:s0
-/vendor/bin/hw/android\.hardware\.biometrics\.fingerprint-service\.fpc                u:object_r:hal_fingerprint_default_exec:s0
 
 # Zram
 /data/per_boot(/.*)?                                                          u:object_r:per_boot_file:s0

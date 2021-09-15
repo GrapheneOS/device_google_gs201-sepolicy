@@ -1,7 +1,6 @@
 # For Exynos Properties
 vendor_internal_prop(vendor_prop)
 vendor_internal_prop(sensors_prop)
-vendor_internal_prop(vendor_ssrdump_prop)
 vendor_internal_prop(vendor_device_prop)
 vendor_internal_prop(vendor_usb_config_prop)
 vendor_internal_prop(vendor_secure_element_prop)
@@ -27,9 +26,6 @@ vendor_internal_prop(vendor_logger_prop)
 
 # NFC
 vendor_internal_prop(vendor_nfc_prop)
-
-# WiFi
-vendor_internal_prop(vendor_wifi_version)
 
 # Touchpanel
 vendor_internal_prop(vendor_touchpanel_prop)
