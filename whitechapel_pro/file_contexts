@@ -20,6 +20,9 @@
 /vendor/firmware(/.*)?                                                      u:object_r:vendor_fw_file:s0
 
 # Devices
+/dev/dri/card0                                                              u:object_r:graphics_device:s0
+/dev/fimg2d                                                                 u:object_r:graphics_device:s0
+/dev/g2d                                                                    u:object_r:graphics_device:s0
 /dev/trusty-ipc-dev0                                                        u:object_r:tee_device:s0
 /dev/sg1                                                                    u:object_r:sg_device:s0
 /dev/st54spi                                                                u:object_r:secure_element_device:s0
