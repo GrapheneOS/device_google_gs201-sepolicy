@@ -50,7 +50,6 @@
 /persist/sensorcal\.json     u:object_r:sensors_cal_file:s0
 
 # Camera
-/vendor/bin/hw/android\.hardware\.camera\.provider@2\.7-service-google  u:object_r:hal_camera_default_exec:s0
 /vendor/lib64/camera                                                    u:object_r:vendor_camera_tuning_file:s0
 /vendor/lib64/camera/ghawb_para_lut\.bin                                u:object_r:vendor_camera_tuning_file:s0
 /vendor/lib64/camera/slider_.*\.binarypb                                u:object_r:vendor_camera_tuning_file:s0
