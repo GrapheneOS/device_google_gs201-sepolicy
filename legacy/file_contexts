@@ -54,7 +54,6 @@
 /vendor/lib64/camera                                                    u:object_r:vendor_camera_tuning_file:s0
 /vendor/lib64/camera/ghawb_para_lut\.bin                                u:object_r:vendor_camera_tuning_file:s0
 /vendor/lib64/camera/slider_.*\.binarypb                                u:object_r:vendor_camera_tuning_file:s0
-/vendor/bin/rlsservice                                                  u:object_r:rlsservice_exec:s0
 /mnt/vendor/persist/camera(/.*)?                                        u:object_r:persist_camera_file:s0
 /data/vendor/camera(/.*)?                                               u:object_r:vendor_camera_data_file:s0
 
