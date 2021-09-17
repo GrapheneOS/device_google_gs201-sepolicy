@@ -15,6 +15,7 @@
 /vendor/bin/storageproxyd                                                   u:object_r:tee_exec:s0
 /vendor/bin/init\.radio\.sh                                                 u:object_r:init_radio_exec:s0
 /vendor/bin/hw/android\.hardware\.biometrics\.fingerprint-service\.goodix   u:object_r:hal_fingerprint_default_exec:s0
+/vendor/bin/hw/android\.hardware\.nfc@1\.2-service\.st                      u:object_r:hal_nfc_default_exec:s0
 
 # Vendor Firmwares
 /vendor/firmware(/.*)?                                                      u:object_r:vendor_fw_file:s0
@@ -25,6 +26,7 @@
 /dev/g2d                                                                    u:object_r:graphics_device:s0
 /dev/trusty-ipc-dev0                                                        u:object_r:tee_device:s0
 /dev/sg1                                                                    u:object_r:sg_device:s0
+/dev/st21nfc                                                                u:object_r:nfc_device:s0
 /dev/st54spi                                                                u:object_r:secure_element_device:s0
 /dev/st33spi                                                                u:object_r:secure_element_device:s0
 /dev/ttyGS[0-3]                                                             u:object_r:serial_device:s0
@@ -76,6 +78,7 @@
 /data/vendor/log/rfsd(/.*)?                                                 u:object_r:vendor_rfsd_log_file:s0
 /data/vendor/rild(/.*)?                                                     u:object_r:rild_vendor_data_file:s0
 /data/vendor/ss(/.*)?                                                       u:object_r:tee_data_file:s0
+/data/nfc(/.*)?                                                             u:object_r:nfc_data_file:s0
 
 # Persist
 /mnt/vendor/persist/modem(/.*)?                                             u:object_r:persist_modem_file:s0

@@ -37,12 +37,6 @@ vendor.camera.fatp.                  u:object_r:vendor_camera_fatp_prop:s0
 # for gps
 vendor.gps                   u:object_r:vendor_gps_prop:s0
 
-# SecureElement
-persist.vendor.se.                              u:object_r:vendor_secure_element_prop:s0
-
-# NFC
-persist.vendor.nfc.                             u:object_r:vendor_nfc_prop:s0
-
 # Battery
 vendor.battery.defender.                        u:object_r:vendor_battery_defender_prop:s0
 
