@@ -156,9 +156,6 @@
 # Battery
 /mnt/vendor/persist/battery(/.*)?    u:object_r:persist_battery_file:s0
 
-# NeuralNetworks file contexts
-/vendor/bin/hw/android\.hardware\.neuralnetworks@1\.3-service-armnn   u:object_r:hal_neuralnetworks_armnn_exec:s0
-
 # GRIL
 /vendor/bin/hw/vendor\.google\.radioext@1\.0-service                 u:object_r:hal_radioext_default_exec:s0
 
