@@ -11,6 +11,9 @@ user=_app isPrivApp=true  seinfo=platform name=com.thales.device.ofl.app.basicag
 # Domain for omadm
 user=_app isPrivApp=true seinfo=platform name=com.android.omadm.service domain=omadm_app type=app_data_file levelFrom=all
 
+# HbmSVManager
+user=_app seinfo=platform name=com.android.hbmsvmanager domain=hbmsvmanager_app type=app_data_file levelFrom=all
+
 # grilservice
 user=_app isPrivApp=true name=com.google.android.grilservice domain=grilservice_app levelFrom=all
 

@@ -1,0 +1,3 @@
+type hbmsvmanager_app, domain;
+app_domain(hbmsvmanager_app);
+allow hbmsvmanager_app app_api_service:service_manager find;

@@ -134,11 +134,6 @@
 # Kernel modules related
 /vendor/bin/init\.insmod\.sh    u:object_r:init-insmod-sh_exec:s0
 
-# NFC
-/(vendor|system/vendor)/bin/hw/android\.hardware\.nfc@1\.2-service\.st                u:object_r:hal_nfc_default_exec:s0
-/dev/st21nfc                                                                          u:object_r:nfc_device:s0
-/data/nfc(/.*)?                                                                       u:object_r:nfc_data_file:s0
-
 # Bluetooth
 /(vendor|system/vendor)/bin/hw/android\.hardware\.bluetooth@1\.1-service\.bcmbtlinux    u:object_r:hal_bluetooth_btlinux_exec:s0
 /dev/wbrc                           u:object_r:wb_coexistence_dev:s0
