@@ -4,9 +4,6 @@ type hal_vendor_surfaceflinger_hwservice, hwservice_manager_type;
 # rild service
 type hal_exynos_rild_hwservice, hwservice_manager_type;
 
-# WLC
-type hal_wlc_hwservice, hwservice_manager_type;
-
 # Bluetooth HAL extension
 type hal_bluetooth_coexistence_hwservice, hwservice_manager_type, vendor_hwservice_type;
 
