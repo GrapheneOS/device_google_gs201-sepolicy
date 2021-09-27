@@ -7,20 +7,6 @@ genfscon sysfs /devices/platform/10d30000.spi/spi_master/spi10/spi10.0/uwb/power
 genfscon debugfs /f2fs                                u:object_r:debugfs_f2fs:s0
 genfscon proc /fs/f2fs                                u:object_r:proc_f2fs:s0
 genfscon proc /sys/vm/swappiness                      u:object_r:proc_dirty:s0
-genfscon sysfs /devices/platform/14700000.ufs/slowio_read_cnt           u:object_r:sysfs_scsi_devices_0000:s0
-genfscon sysfs /devices/platform/14700000.ufs/slowio_write_cnt          u:object_r:sysfs_scsi_devices_0000:s0
-genfscon sysfs /devices/platform/14700000.ufs/slowio_unmap_cnt          u:object_r:sysfs_scsi_devices_0000:s0
-genfscon sysfs /devices/platform/14700000.ufs/slowio_sync_cnt           u:object_r:sysfs_scsi_devices_0000:s0
-genfscon sysfs /devices/platform/14700000.ufs/manual_gc                 u:object_r:sysfs_scsi_devices_0000:s0
-genfscon sysfs /devices/platform/14700000.ufs/io_stats                  u:object_r:sysfs_scsi_devices_0000:s0
-genfscon sysfs /devices/platform/14700000.ufs/req_stats                 u:object_r:sysfs_scsi_devices_0000:s0
-genfscon sysfs /devices/platform/14700000.ufs/err_stats                 u:object_r:sysfs_scsi_devices_0000:s0
-genfscon sysfs /devices/platform/14700000.ufs/device_descriptor         u:object_r:sysfs_scsi_devices_0000:s0
-genfscon sysfs /devices/platform/14700000.ufs/clkgate_enable            u:object_r:sysfs_scsi_devices_0000:s0
-genfscon sysfs /devices/platform/14700000.ufs/hibern8_on_idle_enable    u:object_r:sysfs_scsi_devices_0000:s0
-genfscon sysfs /devices/platform/14700000.ufs/health_descriptor         u:object_r:sysfs_scsi_devices_0000:s0
-genfscon sysfs /devices/platform/14700000.ufs/host0/target0:0:0/0:0:0:  u:object_r:sysfs_scsi_devices_0000:s0
-genfscon sysfs /devices/platform/14700000.ufs/ufs_stats                 u:object_r:sysfs_scsi_devices_0000:s0
 
 # Tethering
 genfscon sysfs /devices/platform/11210000.usb/11210000.dwc3/gadget/net  u:object_r:sysfs_net:s0

@@ -84,6 +84,7 @@
 # Persist
 /mnt/vendor/persist/modem(/.*)?                                             u:object_r:persist_modem_file:s0
 /mnt/vendor/persist/ss(/.*)?                                                u:object_r:persist_ss_file:s0
+/mnt/vendor/persist/battery(/.*)?                                           u:object_r:persist_battery_file:s0
 
 # Extra mount images
 /mnt/vendor/modem_img(/.*)?                                                 u:object_r:modem_img_file:s0

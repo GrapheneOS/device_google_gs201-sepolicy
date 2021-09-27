@@ -58,7 +58,6 @@ type sysfs_wifi, sysfs_type, fs_type;
 type updated_wifi_firmware_data_file, file_type, data_file_type;
 
 # Storage Health HAL
-type sysfs_scsi_devices_0000, sysfs_type, fs_type;
 type debugfs_f2fs, debugfs_type, fs_type;
 type proc_f2fs, proc_type, fs_type;
 
@@ -98,9 +97,6 @@ type sysfs_bcl, sysfs_type, fs_type;
 
 type sysfs_chip_id, sysfs_type, fs_type;
 type sysfs_spi, sysfs_type, fs_type;
-
-# Battery
-type persist_battery_file, file_type, vendor_persist_type;
 
 # CPU
 type sysfs_cpu, sysfs_type, fs_type;
