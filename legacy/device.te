@@ -4,9 +4,6 @@ type vendor_toe_device, dev_type;
 # usbpd
 type logbuffer_device, dev_type;
 
-#cpuctl
-type cpuctl_device, dev_type;
-
 # Bt Wifi Coexistence device
 type wb_coexistence_dev, dev_type;
 

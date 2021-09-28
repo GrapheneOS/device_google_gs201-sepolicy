@@ -37,7 +37,7 @@ vendor.debug.ssrdump.                      u:object_r:vendor_ssrdump_prop:s0
 persist.vendor.testing_battery_profile     u:object_r:vendor_battery_profile_prop:s0
 
 # Battery
-vendor.battery.defender.                        u:object_r:vendor_battery_defender_prop:s0
+vendor.battery.defender.                   u:object_r:vendor_battery_defender_prop:s0
 
 # NFC
 persist.vendor.nfc.                        u:object_r:vendor_nfc_prop:s0
@@ -48,4 +48,7 @@ persist.vendor.se.                         u:object_r:vendor_secure_element_prop
 # WiFi
 vendor.wlan.driver.version                 u:object_r:vendor_wifi_version:s0
 vendor.wlan.firmware.version               u:object_r:vendor_wifi_version:s0
+
+# Camera
+vendor.camera.                             u:object_r:vendor_camera_prop:s0
 

@@ -101,12 +101,6 @@ type sysfs_spi, sysfs_type, fs_type;
 # CPU
 type sysfs_cpu, sysfs_type, fs_type;
 
-# GPU
-type sysfs_gpu, sysfs_type, fs_type;
-
-# Fabric
-type sysfs_fabric, sysfs_type, fs_type;
-
 # Memory
 type sysfs_memory, sysfs_type, fs_type;
 
