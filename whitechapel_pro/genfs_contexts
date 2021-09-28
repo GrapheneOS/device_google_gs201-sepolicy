@@ -1,5 +1,11 @@
 genfscon sysfs /firmware/devicetree/base/chosen                                u:object_r:sysfs_chosen:s0
 
+# WiFi
+genfscon sysfs /wifi                                                           u:object_r:sysfs_wifi:s0
+
+# ACPM
+genfscon sysfs /devices/platform/acpm_stats                                    u:object_r:sysfs_acpm_stats:s0
+
 # Fabric
 genfscon sysfs /devices/platform/17000010.devfreq_mif/devfreq/17000010.devfreq_mif/min_freq  u:object_r:sysfs_fabric:s0
 

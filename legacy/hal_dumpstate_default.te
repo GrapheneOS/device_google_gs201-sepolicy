@@ -5,7 +5,6 @@ allow hal_dumpstate_default sysfs_bcmdhd:dir search;
 allow hal_dumpstate_default sysfs_bcmdhd:file r_file_perms;
 
 allow hal_dumpstate_default sysfs_memory:file r_file_perms;
-allow hal_dumpstate_default sysfs_cpu:file r_file_perms;
 
 vndbinder_use(hal_dumpstate_default)
 

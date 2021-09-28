@@ -15,7 +15,6 @@
 #
 /(vendor|system/vendor)/bin/hw/android\.hardware\.boot@1\.[0-2]-service-gs201                   u:object_r:hal_bootctl_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.dumpstate@1\.1-service\.gs201                 u:object_r:hal_dumpstate_default_exec:s0
-/(vendor|system/vendor)/bin/hw/android\.hardware\.power\.stats@1\.0-service\.gs201              u:object_r:hal_power_stats_default_exec:s0
 
 #
 # Exynos Devices
@@ -169,9 +168,6 @@
 
 # Zram
 /data/per_boot(/.*)?                                                          u:object_r:per_boot_file:s0
-
-# ODPM
-/data/vendor/powerstats(/.*)?                                              u:object_r:odpm_config_file:s0
 
 # sensor direct DMA-BUF heap
 /dev/dma_heap/sensor_direct_heap                                               u:object_r:sensor_direct_heap_device:s0

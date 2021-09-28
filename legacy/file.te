@@ -28,9 +28,6 @@ type vendor_battery_debugfs, fs_type, debugfs_type;
 type sysfs_exynos_bts, sysfs_type, fs_type;
 type sysfs_exynos_bts_stats, sysfs_type, fs_type;
 
-# ACPM
-type sysfs_acpm_stats, sysfs_type, fs_type;
-
 # Vendor tools
 type vendor_usf_stats, vendor_file_type, file_type;
 type vendor_usf_reg_edit, vendor_file_type, file_type;
@@ -50,9 +47,6 @@ type sysfs_iommu, sysfs_type, fs_type;
 
 type sysfs_devicetree, sysfs_type, fs_type;
 type sysfs_mem, sysfs_type, fs_type;
-
-# WiFi
-type sysfs_wifi, sysfs_type, fs_type;
 
 # All files under /data/vendor/firmware/wifi
 type updated_wifi_firmware_data_file, file_type, data_file_type;
@@ -82,24 +76,14 @@ type vendor_camera_data_file, file_type, data_file_type;
 # Display
 type persist_display_file, file_type, vendor_persist_type;
 
-# Backlight
-type sysfs_backlight, sysfs_type, fs_type;
-
 # Charger
 type sysfs_chargelevel, sysfs_type, fs_type;
-
-# ODPM
-type odpm_config_file, file_type, data_file_type;
-type sysfs_odpm, sysfs_type, fs_type;
 
 # bcl
 type sysfs_bcl, sysfs_type, fs_type;
 
 type sysfs_chip_id, sysfs_type, fs_type;
 type sysfs_spi, sysfs_type, fs_type;
-
-# CPU
-type sysfs_cpu, sysfs_type, fs_type;
 
 # Memory
 type sysfs_memory, sysfs_type, fs_type;
