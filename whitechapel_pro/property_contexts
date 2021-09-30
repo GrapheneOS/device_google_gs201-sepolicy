@@ -4,6 +4,10 @@ persist.vendor.sys.diag.                   u:object_r:vendor_diag_prop:s0
 vendor.sys.dmd.                            u:object_r:vendor_diag_prop:s0
 vendor.sys.diag.                           u:object_r:vendor_diag_prop:s0
 
+# Tcpdump_logger
+persist.vendor.tcpdump.log.alwayson        u:object_r:vendor_tcpdump_log_prop:s0
+vendor.tcpdump.                            u:object_r:vendor_tcpdump_log_prop:s0
+
 # USB HAL
 persist.vendor.usb.                        u:object_r:vendor_usb_config_prop:s0
 vendor.usb.                                u:object_r:vendor_usb_config_prop:s0
