@@ -19,6 +19,9 @@ type sysfs_ota, sysfs_type, fs_type;
 type bootdevice_sysdev, dev_type;
 type sysfs_display, sysfs_type, fs_type;
 type sysfs_scsi_devices_0000, sysfs_type, fs_type;
+type sysfs_fabric, sysfs_type, fs_type;
+type sysfs_acpm_stats, sysfs_type, fs_type;
+type sysfs_wifi, sysfs_type, fs_type;
 
 # vendor extra images
 type modem_img_file, contextmount_type, file_type, vendor_file_type;
