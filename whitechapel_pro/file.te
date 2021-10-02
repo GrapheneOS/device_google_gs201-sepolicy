@@ -5,7 +5,10 @@ type vendor_rfsd_log_file, file_type, data_file_type;
 type modem_stat_data_file, file_type, data_file_type;
 type vendor_slog_file, file_type, data_file_type;
 type radio_vendor_data_file, file_type, data_file_type;
+type updated_wifi_firmware_data_file, file_type, data_file_type;
+type tcpdump_vendor_data_file, file_type, data_file_type;
 userdebug_or_eng(`
+  typeattribute tcpdump_vendor_data_file mlstrustedobject;
   typeattribute vendor_slog_file mlstrustedobject;
   typeattribute radio_vendor_data_file mlstrustedobject;
 ')

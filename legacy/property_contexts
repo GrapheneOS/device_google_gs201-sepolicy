@@ -12,10 +12,6 @@ vendor.debug.c2.level       u:object_r:vendor_codec2_debug_prop:s0
 vendor.debug.c2.dump        u:object_r:vendor_codec2_debug_prop:s0
 vendor.debug.c2.dump.opt    u:object_r:vendor_codec2_debug_prop:s0
 
-# USB HAL
-persist.vendor.usb.    u:object_r:vendor_usb_config_prop:s0
-vendor.usb.            u:object_r:vendor_usb_config_prop:s0
-
 # for logger app
 vendor.pixellogger.          u:object_r:vendor_logger_prop:s0
 persist.vendor.pixellogger.  u:object_r:vendor_logger_prop:s0
@@ -33,12 +29,6 @@ vendor.gps                   u:object_r:vendor_gps_prop:s0
 
 # Touchpanel
 vendor.mfgapi.touchpanel.permission             u:object_r:vendor_touchpanel_prop:s0
-
-# Tcpdump_logger
-persist.vendor.tcpdump.log.alwayson             u:object_r:vendor_tcpdump_log_prop:s0
-vendor.tcpdump.log.ondemand                     u:object_r:vendor_tcpdump_log_prop:s0
-vendor.tcpdump.log.alwayson                     u:object_r:vendor_tcpdump_log_prop:s0
-vendor.tcpdump.output.dir                       u:object_r:vendor_tcpdump_log_prop:s0
 
 # Fingerprint
 vendor.fingerprint.disable.fake                 u:object_r:vendor_fingerprint_fake_prop:s0

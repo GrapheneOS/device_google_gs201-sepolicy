@@ -48,9 +48,6 @@ type sysfs_iommu, sysfs_type, fs_type;
 type sysfs_devicetree, sysfs_type, fs_type;
 type sysfs_mem, sysfs_type, fs_type;
 
-# All files under /data/vendor/firmware/wifi
-type updated_wifi_firmware_data_file, file_type, data_file_type;
-
 # Storage Health HAL
 type debugfs_f2fs, debugfs_type, fs_type;
 type proc_f2fs, proc_type, fs_type;
@@ -61,9 +58,6 @@ type per_boot_file, file_type, data_file_type, core_data_file_type;
 # Touch
 type proc_touch, proc_type, fs_type, mlstrustedobject;
 type sysfs_touch, sysfs_type, fs_type;
-
-# TCP logging
-type tcpdump_vendor_data_file, file_type, data_file_type, mlstrustedobject;
 
 # Wireless
 type sysfs_wlc, sysfs_type, fs_type;
