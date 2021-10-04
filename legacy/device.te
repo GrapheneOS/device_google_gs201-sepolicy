@@ -1,6 +1,3 @@
-# Exynos devices
-type vendor_toe_device, dev_type;
-
 # usbpd
 type logbuffer_device, dev_type;
 
