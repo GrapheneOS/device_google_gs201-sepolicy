@@ -11,6 +11,7 @@
 /vendor/bin/storageproxyd                                                   u:object_r:tee_exec:s0
 /vendor/bin/init\.radio\.sh                                                 u:object_r:init_radio_exec:s0
 /vendor/bin/tcpdump_logger                                                  u:object_r:tcpdump_logger_exec:s0
+/vendor/bin/init\.insmod\.sh                                                u:object_r:init-insmod-sh_exec:s0
 /vendor/bin/hw/android\.hardware\.secure_element@1\.2-service-gto           u:object_r:hal_secure_element_gto_exec:s0
 /vendor/bin/hw/android\.hardware\.secure_element@1\.2-service-gto-ese2      u:object_r:hal_secure_element_gto_ese2_exec:s0
 /vendor/bin/hw/android\.hardware\.secure_element@1\.2-uicc-service          u:object_r:hal_secure_element_uicc_exec:s0
