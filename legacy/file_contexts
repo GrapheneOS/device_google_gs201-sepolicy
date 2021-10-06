@@ -115,9 +115,6 @@
 # Contexthub
 /vendor/bin/hw/android\.hardware\.contexthub-service\.generic               u:object_r:hal_contexthub_default_exec:s0
 
-# Kernel modules related
-/vendor/bin/init\.insmod\.sh    u:object_r:init-insmod-sh_exec:s0
-
 # Bluetooth
 /(vendor|system/vendor)/bin/hw/android\.hardware\.bluetooth@1\.1-service\.bcmbtlinux    u:object_r:hal_bluetooth_btlinux_exec:s0
 /dev/wbrc                           u:object_r:wb_coexistence_dev:s0
@@ -143,10 +140,6 @@
 # Uwb
 # R4
 /vendor/bin/hw/hardware\.qorvo\.uwb-service                          u:object_r:hal_uwb_vendor_default_exec:s0
-
-# Tetheroffload Service
-/dev/dit2                      u:object_r:vendor_toe_device:s0
-/vendor/bin/hw/vendor\.samsung_slsi\.hardware\.tetheroffload@1\.0-service     u:object_r:hal_tetheroffload_default_exec:s0
 
 # pixelstats binary
 /vendor/bin/pixelstats-vendor           u:object_r:pixelstats_vendor_exec:s0
