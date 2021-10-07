@@ -1,8 +1,2 @@
-# coredump/ramdump
-user=_app seinfo=platform name=com.android.ramdump domain=ramdump_app type=app_data_file levelFrom=all
-
 # Hardware Info Collection
 user=_app isPrivApp=true name=com.google.android.hardwareinfo domain=hardware_info_app type=app_data_file levelFrom=user
-
-# Qorvo UWB system app
-user=uwb isPrivApp=true seinfo=uwb name=com.qorvo.uwb domain=uwb_vendor_app type=uwb_vendor_data_file levelFrom=all
