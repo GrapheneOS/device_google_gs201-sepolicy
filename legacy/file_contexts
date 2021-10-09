@@ -126,8 +126,6 @@
 
 # Trusty
 /vendor/bin/securedpud.slider        u:object_r:securedpud_slider_exec:s0
-/vendor/bin/trusty_apploader         u:object_r:trusty_apploader_exec:s0
-/vendor/bin/trusty_metricsd          u:object_r:trusty_metricsd_exec:s0
 /vendor/bin/hw/android\.hardware\.gatekeeper@1\.0-service\.trusty                u:object_r:hal_gatekeeper_default_exec:s0
 /vendor/bin/hw/android\.hardware\.security\.keymint-service\.trusty              u:object_r:hal_keymint_default_exec:s0
 /dev/trusty-log0                     u:object_r:logbuffer_device:s0
