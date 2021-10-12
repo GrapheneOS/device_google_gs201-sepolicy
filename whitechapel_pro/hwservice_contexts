@@ -1,6 +1,9 @@
 # dmd HAL
 vendor.samsung_slsi.telephony.hardware.oemservice::IOemService                     u:object_r:hal_vendor_oem_hwservice:s0
 
+# Fingerprint
+vendor.goodix.hardware.biometrics.fingerprint::IGoodixFingerprintDaemon            u:object_r:hal_fingerprint_ext_hwservice:s0
+
 # Wireless charger hal
 vendor.google.wireless_charger::IWirelessCharger                                   u:object_r:hal_wlc_hwservice:s0
 
