@@ -133,9 +133,6 @@
 # GRIL
 /vendor/bin/hw/vendor\.google\.radioext@1\.0-service                 u:object_r:hal_radioext_default_exec:s0
 
-# pixelstats binary
-/vendor/bin/pixelstats-vendor           u:object_r:pixelstats_vendor_exec:s0
-
 # Vendor_kernel_modules
 /vendor_dlkm/lib/modules/.*\.ko                                               u:object_r:vendor_kernel_modules:s0
 
