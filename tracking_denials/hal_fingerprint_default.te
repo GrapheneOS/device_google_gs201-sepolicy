@@ -1,0 +1,4 @@
+# b/202906981
+dontaudit hal_fingerprint_default block_device:dir { search };
+dontaudit hal_fingerprint_default hal_fingerprint_ext_hwservice:hwservice_manager { add };
+dontaudit hal_fingerprint_default hal_fingerprint_ext_hwservice:hwservice_manager { find };

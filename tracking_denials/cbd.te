@@ -1,0 +1,2 @@
+# b/202906831
+dontaudit cbd unlabeled:lnk_file { read };
