@@ -7,4 +7,5 @@ type efs_block_device, dev_type, bdev_type;
 type modem_userdata_block_device, dev_type, bdev_type;
 type sg_device, dev_type;
 type vendor_toe_device, dev_type;
+type lwis_device, dev_type;
 
