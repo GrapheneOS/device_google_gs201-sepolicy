@@ -32,3 +32,14 @@ genfscon sysfs /devices/platform/14700000.ufs/health_descriptor         u:object
 genfscon sysfs /devices/platform/14700000.ufs/host0/target0:0:0/0:0:0:  u:object_r:sysfs_scsi_devices_0000:s0
 genfscon sysfs /devices/platform/14700000.ufs/ufs_stats                 u:object_r:sysfs_scsi_devices_0000:s0
 
+# debugfs
+genfscon debugfs /f2fs                                                  u:object_r:debugfs_f2fs:s0
+genfscon debugfs /maxfg                                                 u:object_r:vendor_maxfg_debugfs:s0
+genfscon debugfs /dma_buf/bufinfo                                       u:object_r:vendor_dmabuf_debugfs:s0
+genfscon debugfs /pm_genpd/pm_genpd_summary                             u:object_r:vendor_pm_genpd_debugfs:s0
+genfscon debugfs /regmap                                                u:object_r:vendor_regmap_debugfs:s0
+genfscon debugfs /usb                                                   u:object_r:vendor_usb_debugfs:s0
+genfscon debugfs /google_charger                                        u:object_r:vendor_charger_debugfs:s0
+genfscon debugfs /gvotables                                             u:object_r:vendor_votable_debugfs:s0
+genfscon debugfs /google_battery                                        u:object_r:vendor_battery_debugfs:s0
+

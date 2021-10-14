@@ -1,7 +1,4 @@
-genfscon sysfs /devices/platform/10d30000.spi/spi_master/spi10/spi10.0/uwb/power_stats u:object_r:sysfs_power_stats:s0
-
 # Storage
-genfscon debugfs /f2fs                                u:object_r:debugfs_f2fs:s0
 genfscon proc /fs/f2fs                                u:object_r:proc_f2fs:s0
 genfscon proc /sys/vm/swappiness                      u:object_r:proc_dirty:s0
 
@@ -134,22 +131,6 @@ genfscon sysfs /devices/platform/10960000.hsi2c/i2c-3/i2c-st21nfc/power_stats   
 genfscon sysfs /devices/platform/10960000.hsi2c/i2c-4/i2c-st21nfc/power_stats                           u:object_r:sysfs_power_stats:s0
 genfscon sysfs /devices/platform/11920000.pcie/power_stats                                              u:object_r:sysfs_power_stats:s0
 genfscon sysfs /devices/platform/14520000.pcie/power_stats                                              u:object_r:sysfs_power_stats:s0
-
-# debugfs
-
-genfscon debugfs /maxfg                                                                                   u:object_r:vendor_maxfg_debugfs:s0
-genfscon debugfs /maxfg_base                                                                              u:object_r:vendor_maxfg_debugfs:s0
-genfscon debugfs /maxfg_flip                                                                              u:object_r:vendor_maxfg_debugfs:s0
-genfscon debugfs /dma_buf/bufinfo                                                                         u:object_r:vendor_dmabuf_debugfs:s0
-genfscon debugfs /dri/0/crtc-                                                                             u:object_r:vendor_dri_debugfs:s0
-genfscon debugfs /ion                                                                                     u:object_r:vendor_ion_debugfs:s0
-genfscon debugfs /page_pinner                                                                             u:object_r:vendor_page_pinner_debugfs:s0
-genfscon debugfs /pm_genpd/pm_genpd_summary                                                               u:object_r:vendor_pm_genpd_debugfs:s0
-genfscon debugfs /regmap                                                                                  u:object_r:vendor_regmap_debugfs:s0
-genfscon debugfs /usb                                                                                     u:object_r:vendor_usb_debugfs:s0
-genfscon debugfs /google_charger                                                                          u:object_r:vendor_charger_debugfs:s0
-genfscon debugfs /gvotables                                                                               u:object_r:vendor_votable_debugfs:s0
-genfscon debugfs /google_battery                                                                          u:object_r:vendor_battery_debugfs:s0
 
 # tracefs
 genfscon tracefs /events/dmabuf_heap/dma_heap_stat                                                        u:object_r:debugfs_tracing:s0
