@@ -53,15 +53,6 @@ type sysfs_chargelevel, sysfs_type, fs_type;
 
 type sysfs_spi, sysfs_type, fs_type;
 
-# Memory
-type sysfs_memory, sysfs_type, fs_type;
-
-# bcmdhd (Broadcom FullMAC wireless cards support)
-type sysfs_bcmdhd, sysfs_type, fs_type;
-
-# Video
-type sysfs_video, sysfs_type, fs_type;
-
 # TODO(b/184768835): remove this once the bug is fixed
 # LHBM (Local High Brightness Mode)
 type sysfs_lhbm, sysfs_type, fs_type, mlstrustedobject;
