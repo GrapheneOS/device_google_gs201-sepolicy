@@ -18,6 +18,12 @@
 /vendor/bin/usf_stats                                                       u:object_r:vendor_usf_stats:s0
 /vendor/bin/usf_reg_edit                                                    u:object_r:vendor_usf_reg_edit:s0
 /vendor/bin/dumpsys                                                         u:object_r:vendor_dumpsys:s0
+/vendor/bin/hw/android\.hardware\.gatekeeper@1\.0-service\.trusty           u:object_r:hal_gatekeeper_default_exec:s0
+/vendor/bin/hw/android\.hardware\.security\.keymint-service\.trusty         u:object_r:hal_keymint_default_exec:s0
+/vendor/bin/hw/vendor\.google\.radioext@1\.0-service                        u:object_r:hal_radioext_default_exec:s0
+/vendor/bin/hw/android\.hardware\.contexthub-service\.generic               u:object_r:hal_contexthub_default_exec:s0
+/vendor/bin/hw/android\.hardware\.boot@1\.2-service-gs201                   u:object_r:hal_bootctl_default_exec:s0
+/vendor/bin/hw/android\.hardware\.dumpstate@1\.1-service\.gs201             u:object_r:hal_dumpstate_default_exec:s0
 /vendor/bin/hw/samsung\.hardware\.media\.c2@1\.0-service                    u:object_r:mediacodec_samsung_exec:s0
 /vendor/bin/hw/google\.hardware\.media\.c2@1\.0-service                     u:object_r:mediacodec_google_exec:s0
 /vendor/bin/hw/android\.hardware\.secure_element@1\.2-service-gto           u:object_r:hal_secure_element_gto_exec:s0
@@ -34,7 +40,35 @@
 # Vendor Firmwares
 /vendor/firmware(/.*)?                                                      u:object_r:vendor_fw_file:s0
 
+# Vendor kernel modules
+/vendor_dlkm/lib/modules/.*\.ko                                             u:object_r:vendor_kernel_modules:s0
+
 # Devices
+/dev/trusty-log0                                                            u:object_r:logbuffer_device:s0
+/dev/dma_heap/sensor_direct_heap                                            u:object_r:sensor_direct_heap_device:s0
+/dev/ttySAC0                                                                u:object_r:tty_device:s0
+/dev/dma_heap/faceauth_tpu-secure                                           u:object_r:faceauth_heap_device:s0
+/dev/dma_heap/faimg-secure                                                  u:object_r:faceauth_heap_device:s0
+/dev/dma_heap/famodel-secure                                                u:object_r:faceauth_heap_device:s0
+/dev/dma_heap/faprev-secure                                                 u:object_r:faceauth_heap_device:s0
+/dev/dma_heap/farawimg-secure                                               u:object_r:faceauth_heap_device:s0
+/dev/dma_heap/vframe-secure                                                 u:object_r:vframe_heap_device:s0
+/dev/dma_heap/vscaler-secure                                                u:object_r:vscaler_heap_device:s0
+/dev/dma_heap/vstream-secure                                                u:object_r:dmabuf_system_secure_heap_device:s0
+/dev/bigocean                                                               u:object_r:video_device:s0
+/dev/goodix_fp                                                              u:object_r:fingerprint_device:s0
+/dev/touch_offload                                                          u:object_r:touch_offload_device:s0
+/dev/stmvl53l1_ranging                                                      u:object_r:rls_device:s0
+/dev/watchdog0                                                              u:object_r:watchdog_device:s0
+/dev/mali0                                                                  u:object_r:gpu_device:s0
+/dev/logbuffer_usbpd                                                        u:object_r:logbuffer_device:s0
+/dev/logbuffer_ssoc                                                         u:object_r:logbuffer_device:s0
+/dev/logbuffer_wireless                                                     u:object_r:logbuffer_device:s0
+/dev/logbuffer_ttf                                                          u:object_r:logbuffer_device:s0
+/dev/logbuffer_maxq                                                         u:object_r:logbuffer_device:s0
+/dev/logbuffer_rtx                                                          u:object_r:logbuffer_device:s0
+/dev/logbuffer_maxfg                                                        u:object_r:logbuffer_device:s0
+/dev/bbd_pwrstat                                                            u:object_r:power_stats_device:s0
 /dev/lwis-act-ak7377                                                        u:object_r:lwis_device:s0
 /dev/lwis-act-ak7377-imx386                                                 u:object_r:lwis_device:s0
 /dev/lwis-act-sem1215sa                                                     u:object_r:lwis_device:s0
@@ -127,11 +161,17 @@
 /data/nfc(/.*)?                                                             u:object_r:nfc_data_file:s0
 /data/vendor/firmware/wifi(/.*)?                                            u:object_r:updated_wifi_firmware_data_file:s0
 /data/vendor/tcpdump_logger(/.*)?                                           u:object_r:tcpdump_vendor_data_file:s0
+/data/vendor/camera(/.*)?                                                   u:object_r:vendor_camera_data_file:s0
+/data/vendor/media(/.*)?                                                    u:object_r:vendor_media_data_file:s0
+/data/vendor/misc(/.*)?                                                     u:object_r:vendor_misc_data_file:s0
+/data/per_boot(/.*)?                                                        u:object_r:per_boot_file:s0
+/data/vendor/sensors/registry(/.*)?                                         u:object_r:sensor_reg_data_file:s0
 
 # Persist
 /mnt/vendor/persist/modem(/.*)?                                             u:object_r:persist_modem_file:s0
 /mnt/vendor/persist/ss(/.*)?                                                u:object_r:persist_ss_file:s0
 /mnt/vendor/persist/battery(/.*)?                                           u:object_r:persist_battery_file:s0
+/mnt/vendor/persist/sensors/registry(/.*)?                                  u:object_r:persist_sensor_reg_file:s0
 
 # Extra mount images
 /mnt/vendor/modem_img(/.*)?                                                 u:object_r:modem_img_file:s0
