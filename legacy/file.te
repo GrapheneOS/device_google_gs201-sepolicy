@@ -35,9 +35,6 @@ type sysfs_iommu, sysfs_type, fs_type;
 type sysfs_devicetree, sysfs_type, fs_type;
 type sysfs_mem, sysfs_type, fs_type;
 
-# Storage Health HAL
-type proc_f2fs, proc_type, fs_type;
-
 # ZRam
 type per_boot_file, file_type, data_file_type, core_data_file_type;
 
