@@ -1,0 +1,2 @@
+# b/202906787
+dontaudit platform_app hal_wlc_hwservice:hwservice_manager { find };

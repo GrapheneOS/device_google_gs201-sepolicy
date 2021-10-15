@@ -1,0 +1,11 @@
+type convert-to-f2fs-sh, domain;
+
+type convert-to-f2fs-sh_exec, vendor_file_type, exec_type, file_type;
+
+init_daemon_domain(convert-to-f2fs-sh)
+
+allow convert-to-f2fs-sh vendor_file:file execute_no_trans;
+allow convert-to-f2fs-sh persist_block_device:blk_file r_file_perms;
+allow convert-to-f2fs-sh efs_block_device:blk_file r_file_perms;
+allow convert-to-f2fs-sh block_device:dir search;
+allow convert-to-f2fs-sh kernel:process setsched;

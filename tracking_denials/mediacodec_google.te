@@ -1,0 +1,4 @@
+# b/202906901
+dontaudit mediacodec_google hal_codec2_hwservice:hwservice_manager { add };
+dontaudit mediacodec_google hal_codec2_hwservice:hwservice_manager { find };
+dontaudit mediacodec_google hidl_base_hwservice:hwservice_manager { add };

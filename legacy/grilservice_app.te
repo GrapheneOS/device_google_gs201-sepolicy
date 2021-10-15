@@ -1,8 +1,0 @@
-allow grilservice_app hal_bluetooth_coexistence_hwservice:hwservice_manager find;
-allow grilservice_app hal_radioext_hwservice:hwservice_manager find;
-allow grilservice_app hal_wifi_ext_hwservice:hwservice_manager find;
-allow grilservice_app hal_audiometricext_hwservice:hwservice_manager find;
-binder_call(grilservice_app, hal_bluetooth_btlinux)
-binder_call(grilservice_app, hal_radioext_default)
-binder_call(grilservice_app, hal_wifi_ext)
-binder_call(grilservice_app, hal_audiometricext_default)

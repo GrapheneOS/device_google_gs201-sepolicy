@@ -1,0 +1,9 @@
+# b/202907040
+dontaudit hal_weaver_citadel default_android_vndservice:service_manager { find };
+dontaudit hal_weaver_citadel hal_authsecret_hwservice:hwservice_manager { add };
+dontaudit hal_weaver_citadel hal_authsecret_hwservice:hwservice_manager { find };
+dontaudit hal_weaver_citadel hal_oemlock_hwservice:hwservice_manager { add };
+dontaudit hal_weaver_citadel hal_oemlock_hwservice:hwservice_manager { find };
+dontaudit hal_weaver_citadel hal_weaver_hwservice:hwservice_manager { add };
+dontaudit hal_weaver_citadel hal_weaver_hwservice:hwservice_manager { find };
+dontaudit hal_weaver_citadel hidl_base_hwservice:hwservice_manager { add };
