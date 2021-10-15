@@ -1,24 +1,3 @@
-# Tethering
-genfscon sysfs /devices/platform/11210000.usb/11210000.dwc3/gadget/net  u:object_r:sysfs_net:s0
-
-# Vibrator
-genfscon sysfs /devices/platform/10970000.hsi2c/i2c-4/4-005a            u:object_r:sysfs_vibrator:s0
-genfscon sysfs /devices/platform/10970000.hsi2c/i2c-4/i2c-cs40l25a            u:object_r:sysfs_vibrator:s0
-genfscon sysfs /devices/platform/10970000.hsi2c/i2c-5/5-0042            u:object_r:sysfs_vibrator:s0
-genfscon sysfs /devices/platform/10970000.hsi2c/i2c-5/i2c-cs40l25a            u:object_r:sysfs_vibrator:s0
-
-# Fingerprint
-genfscon sysfs /devices/platform/odm/odm:fp_fpc1020                 u:object_r:sysfs_fingerprint:s0
-
-# Touch
-genfscon sysfs /devices/platform/10d40000.spi/spi_master/spi11/spi11.0          u:object_r:sysfs_touch:s0
-genfscon sysfs /devices/platform/10950000.spi/spi_master/spi6/spi6.0            u:object_r:sysfs_touch:s0
-genfscon sysfs /devices/virtual/sec/tsp                                         u:object_r:sysfs_touch:s0
-
-# TODO(b/184768835): remove this once the bug is fixed
-# Display / LHBM (Local High Brightness Mode)
-genfscon sysfs /devices/platform/1c2c0000.drmdsim/1c2c0000.drmdsim.0/backlight/panel0-backlight/local_hbm_mode u:object_r:sysfs_lhbm:s0
-
 # Bluetooth
 genfscon sysfs /devices/platform/175b0000.serial/serial0/serial0-0/bluetooth/hci0/rfkill0/state u:object_r:sysfs_bluetooth_writable:s0
 genfscon sysfs /devices/platform/odm/odm:btbcm/rfkill/rfkill0/state                             u:object_r:sysfs_bluetooth_writable:s0
@@ -27,22 +6,6 @@ genfscon proc /bluetooth/sleep/lpm                                              
 genfscon proc /bluetooth/sleep/btwrite                                                          u:object_r:proc_bluetooth_writable:s0
 genfscon proc /bluetooth/sleep/btwake                                                           u:object_r:proc_bluetooth_writable:s0
 genfscon proc /bluetooth/timesync                                                               u:object_r:proc_bluetooth_writable:s0
-
-# bcl sysfs files
-genfscon sysfs /devices/virtual/pmic/mitigation                                 u:object_r:sysfs_bcl:s0
-
-genfscon sysfs /devices/system/chip-id/ap_hw_tune_str  u:object_r:sysfs_chip_id:s0
-genfscon sysfs /devices/system/chip-id/evt_ver         u:object_r:sysfs_chip_id:s0
-genfscon sysfs /devices/system/chip-id/lot_id          u:object_r:sysfs_chip_id:s0
-genfscon sysfs /devices/system/chip-id/product_id      u:object_r:sysfs_chip_id:s0
-genfscon sysfs /devices/system/chip-id/revision        u:object_r:sysfs_chip_id:s0
-genfscon sysfs /devices/system/chip-id/raw_str         u:object_r:sysfs_chip_id:s0
-
-genfscon sysfs /devices/platform/10d40000.spi/spi_master                                                u:object_r:sysfs_spi:s0
-
-# Exynos
-genfscon sysfs /devices/platform/exynos-bts                                                             u:object_r:sysfs_exynos_bts:s0
-genfscon sysfs /devices/platform/exynos-bts/bts_stats                                                   u:object_r:sysfs_exynos_bts_stats:s0
 
 # Devfreq current frequency
 genfscon sysfs /devices/platform/17000010.devfreq_mif/devfreq/17000010.devfreq_mif/cur_freq             u:object_r:sysfs_devfreq_cur:s0

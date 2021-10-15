@@ -1,4 +1,18 @@
+# Exynos
+genfscon sysfs /devices/platform/exynos-bts                                    u:object_r:sysfs_exynos_bts:s0
+genfscon sysfs /devices/platform/exynos-bts/bts_stats                          u:object_r:sysfs_exynos_bts_stats:s0
+
 genfscon sysfs /firmware/devicetree/base/chosen                                u:object_r:sysfs_chosen:s0
+genfscon sysfs /devices/virtual/pmic/mitigation                                u:object_r:sysfs_bcl:s0
+genfscon sysfs /devices/system/chip-id/ap_hw_tune_str                          u:object_r:sysfs_chip_id:s0
+genfscon sysfs /devices/system/chip-id/evt_ver                                 u:object_r:sysfs_chip_id:s0
+genfscon sysfs /devices/system/chip-id/lot_id                                  u:object_r:sysfs_chip_id:s0
+genfscon sysfs /devices/system/chip-id/product_id                              u:object_r:sysfs_chip_id:s0
+genfscon sysfs /devices/system/chip-id/revision                                u:object_r:sysfs_chip_id:s0
+genfscon sysfs /devices/system/chip-id/raw_str                                 u:object_r:sysfs_chip_id:s0
+
+# Touch
+genfscon sysfs /devices/virtual/sec/tsp                                        u:object_r:sysfs_touch:s0
 
 # tracefs
 genfscon tracefs /events/dmabuf_heap/dma_heap_stat                             u:object_r:debugfs_tracing:s0
