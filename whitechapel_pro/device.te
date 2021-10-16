@@ -1,10 +1,11 @@
-type sda_block_device, dev_type, bdev_type;
-type devinfo_block_device, dev_type, bdev_type;
-type modem_block_device, dev_type, bdev_type;
-type custom_ab_block_device, dev_type, bdev_type;
-type persist_block_device, dev_type, bdev_type;
-type efs_block_device, dev_type, bdev_type;
-type modem_userdata_block_device, dev_type, bdev_type;
+type sda_block_device, dev_type;
+type devinfo_block_device, dev_type;
+type modem_block_device, dev_type;
+type custom_ab_block_device, dev_type;
+type persist_block_device, dev_type;
+type efs_block_device, dev_type;
+type modem_userdata_block_device, dev_type;
 type sg_device, dev_type;
 type vendor_toe_device, dev_type;
+type lwis_device, dev_type;
 

@@ -12,26 +12,9 @@ type vendor_rpmbmock_data_file, file_type, data_file_type;
 
 # Exynos debugfs
 type vendor_ion_debugfs, fs_type, debugfs_type;
-type vendor_dmabuf_debugfs, fs_type, debugfs_type;
 type vendor_page_pinner_debugfs, fs_type, debugfs_type, sysfs_type;
 type vendor_mali_debugfs, fs_type, debugfs_type;
 type vendor_dri_debugfs, fs_type, debugfs_type;
-type vendor_pm_genpd_debugfs, fs_type, debugfs_type;
-type vendor_regmap_debugfs, fs_type, debugfs_type;
-type vendor_usb_debugfs, fs_type, debugfs_type;
-type vendor_maxfg_debugfs, fs_type, debugfs_type;
-type vendor_charger_debugfs, fs_type, debugfs_type;
-type vendor_votable_debugfs, fs_type, debugfs_type;
-type vendor_battery_debugfs, fs_type, debugfs_type;
-
-# Exynos sysfs
-type sysfs_exynos_bts, sysfs_type, fs_type;
-type sysfs_exynos_bts_stats, sysfs_type, fs_type;
-
-# Vendor tools
-type vendor_usf_stats, vendor_file_type, file_type;
-type vendor_usf_reg_edit, vendor_file_type, file_type;
-type vendor_dumpsys, vendor_file_type, file_type;
 
 # Sensors
 type nanohub_lock_file, file_type, data_file_type;
@@ -48,16 +31,11 @@ type sysfs_iommu, sysfs_type, fs_type;
 type sysfs_devicetree, sysfs_type, fs_type;
 type sysfs_mem, sysfs_type, fs_type;
 
-# Storage Health HAL
-type debugfs_f2fs, debugfs_type, fs_type;
-type proc_f2fs, proc_type, fs_type;
-
 # ZRam
 type per_boot_file, file_type, data_file_type, core_data_file_type;
 
 # Touch
 type proc_touch, proc_type, fs_type, mlstrustedobject;
-type sysfs_touch, sysfs_type, fs_type;
 
 # Wireless
 type sysfs_wlc, sysfs_type, fs_type;
@@ -73,20 +51,7 @@ type persist_display_file, file_type, vendor_persist_type;
 # Charger
 type sysfs_chargelevel, sysfs_type, fs_type;
 
-# bcl
-type sysfs_bcl, sysfs_type, fs_type;
-
-type sysfs_chip_id, sysfs_type, fs_type;
 type sysfs_spi, sysfs_type, fs_type;
-
-# Memory
-type sysfs_memory, sysfs_type, fs_type;
-
-# bcmdhd (Broadcom FullMAC wireless cards support)
-type sysfs_bcmdhd, sysfs_type, fs_type;
-
-# Video
-type sysfs_video, sysfs_type, fs_type;
 
 # TODO(b/184768835): remove this once the bug is fixed
 # LHBM (Local High Brightness Mode)
