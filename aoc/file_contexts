@@ -21,6 +21,7 @@
 # AoC vendor binaries
 /vendor/bin/aocd                    u:object_r:aocd_exec:s0
 /vendor/bin/aocdump                 u:object_r:aocdump_exec:s0
+/vendor/bin/hw/vendor\.google\.audiometricext@1\.0-service-vendor           u:object_r:hal_audiometricext_default_exec:s0
 
 # AoC audio files
 /vendor/etc/aoc(/.*)?               u:object_r:aoc_audio_file:s0
