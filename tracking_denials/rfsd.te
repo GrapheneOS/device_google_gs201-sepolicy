@@ -1,2 +1,0 @@
-# b/202906886
-dontaudit rfsd unlabeled:lnk_file { read };

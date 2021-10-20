@@ -1,2 +1,0 @@
-# b/202907136
-dontaudit rild unlabeled:lnk_file { read };
