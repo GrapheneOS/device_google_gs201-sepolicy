@@ -68,3 +68,13 @@ vendor.wlan.firmware.version               u:object_r:vendor_wifi_version:s0
 # Camera
 vendor.camera.                             u:object_r:vendor_camera_prop:s0
 
+# for logger app
+persist.vendor.pixellogger.                u:object_r:vendor_logger_prop:s0
+
+# vendor default
+ro.vendor.sys.                             u:object_r:vendor_ro_sys_default_prop:s0
+persist.vendor.sys.                        u:object_r:vendor_persist_sys_default_prop:s0
+
+# for gps
+vendor.gps                                 u:object_r:vendor_gps_prop:s0
+
