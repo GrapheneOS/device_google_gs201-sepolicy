@@ -1,2 +1,0 @@
-# b/202907039
-dontaudit hal_keymint_citadel default_android_vndservice:service_manager { find };
