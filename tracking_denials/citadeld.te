@@ -1,3 +1,0 @@
-# b/202906931
-dontaudit citadeld default_android_vndservice:service_manager { add };
-dontaudit citadeld hal_power_stats_vendor_service:service_manager { find };
