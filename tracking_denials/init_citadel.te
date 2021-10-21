@@ -1,2 +1,0 @@
-# b/202906904
-dontaudit init_citadel default_android_vndservice:service_manager { find };

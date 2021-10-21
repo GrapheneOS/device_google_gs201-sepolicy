@@ -1,4 +1,0 @@
-# b/202906980
-dontaudit hal_drm_widevine hal_drm_hwservice:hwservice_manager { add };
-dontaudit hal_drm_widevine hal_drm_hwservice:hwservice_manager { find };
-dontaudit hal_drm_widevine hidl_base_hwservice:hwservice_manager { add };
