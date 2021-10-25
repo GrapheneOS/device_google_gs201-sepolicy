@@ -2,3 +2,5 @@ type mediacodec_samsung, domain;
 type mediacodec_samsung_exec, vendor_file_type, exec_type, file_type;
 init_daemon_domain(mediacodec_samsung)
 
+hal_server_domain(mediacodec_samsung, hal_codec2)
+add_service(mediacodec_samsung, eco_service)
