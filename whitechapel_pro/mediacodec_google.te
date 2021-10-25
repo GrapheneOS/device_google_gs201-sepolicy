@@ -2,3 +2,4 @@ type mediacodec_google, domain;
 type mediacodec_google_exec, vendor_file_type, exec_type, file_type;
 init_daemon_domain(mediacodec_google)
 
+hal_server_domain(mediacodec_google, hal_codec2)
