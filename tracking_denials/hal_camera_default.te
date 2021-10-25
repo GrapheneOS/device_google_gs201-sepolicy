@@ -1,3 +1,0 @@
-# b/202906784
-dontaudit hal_camera_default edgetpu_vendor_server:fd { use };
-dontaudit hal_camera_default hal_radioext_hwservice:hwservice_manager { find };
