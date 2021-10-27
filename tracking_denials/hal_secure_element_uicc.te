@@ -1,2 +1,0 @@
-# b/202902683
-dontaudit hal_secure_element_uicc hal_exynos_rild_hwservice:hwservice_manager { find };
