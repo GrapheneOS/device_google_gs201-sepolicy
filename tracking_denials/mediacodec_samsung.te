@@ -1,5 +1,0 @@
-# b/202906949
-dontaudit mediacodec_samsung eco_service:service_manager { add };
-dontaudit mediacodec_samsung hal_codec2_hwservice:hwservice_manager { add };
-dontaudit mediacodec_samsung hal_codec2_hwservice:hwservice_manager { find };
-dontaudit mediacodec_samsung hidl_base_hwservice:hwservice_manager { add };
