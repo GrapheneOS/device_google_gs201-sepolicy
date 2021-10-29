@@ -1,2 +1,0 @@
-# b/202907058
-dontaudit vendor_rcs_app hal_exynos_rild_hwservice:hwservice_manager { find };
