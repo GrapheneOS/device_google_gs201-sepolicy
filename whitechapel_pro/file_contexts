@@ -18,6 +18,7 @@
 /vendor/bin/usf_stats                                                       u:object_r:vendor_usf_stats:s0
 /vendor/bin/usf_reg_edit                                                    u:object_r:vendor_usf_reg_edit:s0
 /vendor/bin/dumpsys                                                         u:object_r:vendor_dumpsys:s0
+/vendor/bin/init\.uwb\.calib\.sh                                            u:object_r:vendor_uwb_init_exec:s0
 /vendor/bin/hw/android\.hardware\.gatekeeper@1\.0-service\.trusty           u:object_r:hal_gatekeeper_default_exec:s0
 /vendor/bin/hw/android\.hardware\.security\.keymint-service\.trusty         u:object_r:hal_keymint_default_exec:s0
 /vendor/bin/hw/vendor\.google\.radioext@1\.0-service                        u:object_r:hal_radioext_default_exec:s0
@@ -36,6 +37,7 @@
 /vendor/bin/hw/android\.hardware\.usb@1\.3-service\.gs201                   u:object_r:hal_usb_impl_exec:s0
 /vendor/bin/hw/rild_exynos                                                  u:object_r:rild_exec:s0
 /vendor/bin/hw/vendor\.samsung_slsi\.hardware\.tetheroffload@1\.0-service   u:object_r:hal_tetheroffload_default_exec:s0
+/vendor/bin/hw/hardware\.qorvo\.uwb-service                                 u:object_r:hal_uwb_vendor_default_exec:s0
 
 # Vendor Firmwares
 /vendor/firmware(/.*)?                                                      u:object_r:vendor_fw_file:s0
@@ -166,12 +168,14 @@
 /data/vendor/misc(/.*)?                                                     u:object_r:vendor_misc_data_file:s0
 /data/per_boot(/.*)?                                                        u:object_r:per_boot_file:s0
 /data/vendor/sensors/registry(/.*)?                                         u:object_r:sensor_reg_data_file:s0
+/data/vendor/uwb(/.*)?                                                      u:object_r:uwb_data_vendor:s0
 
 # Persist
 /mnt/vendor/persist/modem(/.*)?                                             u:object_r:persist_modem_file:s0
 /mnt/vendor/persist/ss(/.*)?                                                u:object_r:persist_ss_file:s0
 /mnt/vendor/persist/battery(/.*)?                                           u:object_r:persist_battery_file:s0
 /mnt/vendor/persist/sensors/registry(/.*)?                                  u:object_r:persist_sensor_reg_file:s0
+/mnt/vendor/persist/uwb(/.*)?                                               u:object_r:persist_uwb_file:s0
 
 # Extra mount images
 /mnt/vendor/modem_img(/.*)?                                                 u:object_r:modem_img_file:s0

@@ -1,0 +1,2 @@
+allow platform_app hal_pixel_display_service:service_manager find;
+allow platform_app hal_wlc_hwservice:hwservice_manager find;
