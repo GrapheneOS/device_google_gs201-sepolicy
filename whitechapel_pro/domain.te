@@ -3,8 +3,6 @@ dontaudit domain file_type:chr_file *;
 dontaudit domain file_type:dir *;
 dontaudit domain file_type:capability *;
 dontaudit domain file_type:sock_file *;
-dontaudit domain property_type:file *;
-dontaudit domain property_type:property_service *;
 dontaudit domain fs_type:chr_file *;
 dontaudit domain fs_type:file *;
 dontaudit domain fs_type:blk_file *;
