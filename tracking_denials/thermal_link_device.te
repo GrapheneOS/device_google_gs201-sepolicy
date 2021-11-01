@@ -1,0 +1,2 @@
+# b/204718864
+dontaudit thermal_link_device sysfs:filesystem { associate };

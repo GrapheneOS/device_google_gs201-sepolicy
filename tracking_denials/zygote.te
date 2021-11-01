@@ -1,0 +1,8 @@
+# b/204717520
+dontaudit zygote activity_service:service_manager { find };
+dontaudit zygote content_capture_service:service_manager { find };
+dontaudit zygote default_android_service:service_manager { add };
+dontaudit zygote default_android_service:service_manager { find };
+dontaudit zygote game_service:service_manager { find };
+dontaudit zygote nfc_service:service_manager { find };
+dontaudit zygote radio_service:service_manager { find };

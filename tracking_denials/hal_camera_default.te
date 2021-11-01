@@ -1,0 +1,3 @@
+# b/204718762
+dontaudit hal_camera_default edgetpu_vendor_service:service_manager { find };
+dontaudit hal_camera_default hal_power_service:service_manager { find };
