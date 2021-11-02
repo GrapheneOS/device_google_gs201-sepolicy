@@ -1,0 +1,2 @@
+# b/204718782
+dontaudit priv_app hal_exynos_rild_hwservice:hwservice_manager { find };

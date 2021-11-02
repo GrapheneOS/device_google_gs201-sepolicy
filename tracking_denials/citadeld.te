@@ -1,0 +1,2 @@
+# b/204718569
+dontaudit citadeld citadeld_service:service_manager { add };
