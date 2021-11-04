@@ -1,0 +1,5 @@
+# b/205073229
+dontaudit hal_keymint_citadel vendor_security_patch_level_prop:file { getattr };
+dontaudit hal_keymint_citadel vendor_security_patch_level_prop:file { map };
+dontaudit hal_keymint_citadel vendor_security_patch_level_prop:file { open };
+dontaudit hal_keymint_citadel vendor_security_patch_level_prop:file { read };
