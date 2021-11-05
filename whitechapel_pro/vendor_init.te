@@ -5,5 +5,5 @@ set_prop(vendor_init, vendor_carrier_prop)
 set_prop(vendor_init, vendor_cbd_prop)
 set_prop(vendor_init, vendor_ready_prop)
 get_prop(vendor_init, vendor_battery_profile_prop)
-get_prop(vendor_init, vendor_device_prop)
+set_prop(vendor_init, vendor_device_prop)
 
