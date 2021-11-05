@@ -1,0 +1,4 @@
+# b/205070818
+dontaudit vendor_init vendor_device_prop:property_service { set };
+dontaudit vendor_init vendor_nfc_prop:property_service { set };
+dontaudit vendor_init vendor_secure_element_prop:property_service { set };

@@ -1,0 +1,6 @@
+# b/205073003
+dontaudit hal_health_default vendor_battery_defender_prop:file { getattr };
+dontaudit hal_health_default vendor_battery_defender_prop:file { map };
+dontaudit hal_health_default vendor_battery_defender_prop:file { open };
+dontaudit hal_health_default vendor_battery_defender_prop:file { read };
+dontaudit hal_health_default vendor_battery_defender_prop:property_service { set };

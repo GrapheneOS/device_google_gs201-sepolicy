@@ -1,0 +1,6 @@
+# b/205073023
+dontaudit rild vendor_default_prop:property_service { set };
+dontaudit rild vendor_persist_config_default_prop:file { getattr };
+dontaudit rild vendor_persist_config_default_prop:file { map };
+dontaudit rild vendor_persist_config_default_prop:file { open };
+dontaudit rild vendor_persist_config_default_prop:file { read };

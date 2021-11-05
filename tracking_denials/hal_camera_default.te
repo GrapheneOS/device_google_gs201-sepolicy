@@ -1,3 +1,10 @@
 # b/204718762
 dontaudit hal_camera_default edgetpu_vendor_service:service_manager { find };
 dontaudit hal_camera_default hal_power_service:service_manager { find };
+# b/205072921
+dontaudit hal_camera_default kernel:process { setsched };
+dontaudit hal_camera_default vendor_camera_prop:file { getattr };
+dontaudit hal_camera_default vendor_camera_prop:file { map };
+dontaudit hal_camera_default vendor_camera_prop:file { open };
+dontaudit hal_camera_default vendor_camera_prop:file { read };
+dontaudit hal_camera_default vendor_camera_prop:property_service { set };

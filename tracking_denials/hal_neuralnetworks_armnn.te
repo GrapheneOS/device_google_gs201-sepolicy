@@ -1,0 +1,3 @@
+# b/205073167
+dontaudit hal_neuralnetworks_armnn default_prop:file { open };
+dontaudit hal_neuralnetworks_armnn default_prop:file { read };

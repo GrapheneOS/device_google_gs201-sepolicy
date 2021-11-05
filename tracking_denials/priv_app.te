@@ -1,2 +1,6 @@
 # b/204718782
 dontaudit priv_app hal_exynos_rild_hwservice:hwservice_manager { find };
+# b/205073117
+dontaudit priv_app vendor_default_prop:file { getattr };
+dontaudit priv_app vendor_default_prop:file { map };
+dontaudit priv_app vendor_default_prop:file { open };

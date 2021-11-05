@@ -3,5 +3,7 @@ type citadeld_exec, exec_type, vendor_file_type, file_type;
 
 init_daemon_domain(citadeld)
 
+add_service(citadeld, citadeld_service)
+
 allow citadeld fwk_stats_service:service_manager find;
 allow citadeld hal_power_stats_vendor_service:service_manager find;
