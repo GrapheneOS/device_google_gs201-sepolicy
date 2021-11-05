@@ -1,2 +1,0 @@
-# b/205073038
-dontaudit hal_wifi_ext vendor_wifi_version:property_service { set };
