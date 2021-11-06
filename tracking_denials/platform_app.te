@@ -1,8 +1,2 @@
 # b/204718221
 dontaudit platform_app touch_service:service_manager { find };
-# b/205073024
-dontaudit platform_app default_prop:property_service { set };
-dontaudit platform_app fingerprint_ghbm_prop:file { getattr };
-dontaudit platform_app fingerprint_ghbm_prop:file { map };
-dontaudit platform_app fingerprint_ghbm_prop:file { open };
-dontaudit platform_app fingerprint_ghbm_prop:file { read };

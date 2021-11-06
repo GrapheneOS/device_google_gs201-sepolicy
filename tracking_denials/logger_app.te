@@ -1,0 +1,6 @@
+# b/205202541
+dontaudit logger_app vendor_gps_prop:property_service { set };
+dontaudit logger_app vendor_ssrdump_prop:file { getattr };
+dontaudit logger_app vendor_ssrdump_prop:file { map };
+dontaudit logger_app vendor_ssrdump_prop:file { open };
+dontaudit logger_app vendor_ssrdump_prop:file { read };
