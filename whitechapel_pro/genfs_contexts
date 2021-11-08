@@ -87,3 +87,6 @@ genfscon debugfs /google_charger                                        u:object
 genfscon debugfs /gvotables                                             u:object_r:vendor_votable_debugfs:s0
 genfscon debugfs /google_battery                                        u:object_r:vendor_battery_debugfs:s0
 
+# C10 battery
+genfscon sysfs /sys/devices/platform/10da0000.hsi2c/i2c-6/6-0050/eeprom u:object_r:sysfs_batteryinfo:s0
+
