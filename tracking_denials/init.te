@@ -1,0 +1,2 @@
+# b/205657025
+dontaudit init ram_device:blk_file { write };

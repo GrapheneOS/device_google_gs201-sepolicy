@@ -1,0 +1,11 @@
+# b/205657132
+dontaudit rlsservice aoc_device:chr_file { getattr };
+dontaudit rlsservice aoc_device:chr_file { open };
+dontaudit rlsservice aoc_device:chr_file { read write };
+dontaudit rlsservice rls_device:chr_file { open };
+dontaudit rlsservice rls_device:chr_file { read write };
+dontaudit rlsservice vndbinder_device:chr_file { ioctl };
+dontaudit rlsservice vndbinder_device:chr_file { map };
+dontaudit rlsservice vndbinder_device:chr_file { open };
+dontaudit rlsservice vndbinder_device:chr_file { read };
+dontaudit rlsservice vndbinder_device:chr_file { write };

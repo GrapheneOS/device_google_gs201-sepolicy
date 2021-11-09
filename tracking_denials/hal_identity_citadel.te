@@ -1,0 +1,6 @@
+# b/205657024
+dontaudit hal_identity_citadel vndbinder_device:chr_file { ioctl };
+dontaudit hal_identity_citadel vndbinder_device:chr_file { map };
+dontaudit hal_identity_citadel vndbinder_device:chr_file { open };
+dontaudit hal_identity_citadel vndbinder_device:chr_file { read };
+dontaudit hal_identity_citadel vndbinder_device:chr_file { write };

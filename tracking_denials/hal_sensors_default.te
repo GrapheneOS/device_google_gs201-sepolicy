@@ -1,2 +1,5 @@
 # b/204718449
 dontaudit hal_sensors_default fwk_stats_service:service_manager { find };
+# b/205657063
+dontaudit hal_sensors_default aoc_device:chr_file { open };
+dontaudit hal_sensors_default aoc_device:chr_file { read write };

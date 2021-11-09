@@ -1,0 +1,5 @@
+# b/205657090
+dontaudit toolbox ram_device:blk_file { getattr };
+dontaudit toolbox ram_device:blk_file { ioctl };
+dontaudit toolbox ram_device:blk_file { open };
+dontaudit toolbox ram_device:blk_file { read write };

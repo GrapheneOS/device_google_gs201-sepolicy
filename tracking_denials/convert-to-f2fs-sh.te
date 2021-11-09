@@ -1,0 +1,5 @@
+# b/205657040
+dontaudit convert-to-f2fs-sh kmsg_device:chr_file { open };
+dontaudit convert-to-f2fs-sh kmsg_device:chr_file { write };
+dontaudit convert-to-f2fs-sh modem_userdata_block_device:blk_file { open };
+dontaudit convert-to-f2fs-sh modem_userdata_block_device:blk_file { read };

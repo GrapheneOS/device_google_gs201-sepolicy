@@ -1,0 +1,6 @@
+# b/205655298
+dontaudit init_citadel vndbinder_device:chr_file { ioctl };
+dontaudit init_citadel vndbinder_device:chr_file { map };
+dontaudit init_citadel vndbinder_device:chr_file { open };
+dontaudit init_citadel vndbinder_device:chr_file { read };
+dontaudit init_citadel vndbinder_device:chr_file { write };
