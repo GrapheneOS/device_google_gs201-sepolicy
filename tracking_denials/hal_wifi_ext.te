@@ -1,0 +1,2 @@
+# b/205779850
+dontaudit hal_wifi_ext updated_wifi_firmware_data_file:dir { search };

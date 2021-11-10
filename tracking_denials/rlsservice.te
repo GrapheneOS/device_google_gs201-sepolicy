@@ -9,3 +9,8 @@ dontaudit rlsservice vndbinder_device:chr_file { map };
 dontaudit rlsservice vndbinder_device:chr_file { open };
 dontaudit rlsservice vndbinder_device:chr_file { read };
 dontaudit rlsservice vndbinder_device:chr_file { write };
+# b/205780186
+dontaudit rlsservice apex_info_file:file { getattr };
+dontaudit rlsservice apex_info_file:file { open };
+dontaudit rlsservice apex_info_file:file { read };
+dontaudit rlsservice apex_info_file:file { watch };

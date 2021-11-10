@@ -4,3 +4,6 @@ dontaudit init_citadel vndbinder_device:chr_file { map };
 dontaudit init_citadel vndbinder_device:chr_file { open };
 dontaudit init_citadel vndbinder_device:chr_file { read };
 dontaudit init_citadel vndbinder_device:chr_file { write };
+# b/205779736
+dontaudit init_citadel citadel_updater:file { execute_no_trans };
+dontaudit init_citadel vendor_toolbox_exec:file { execute_no_trans };

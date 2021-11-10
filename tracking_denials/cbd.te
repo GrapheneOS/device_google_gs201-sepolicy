@@ -1,0 +1,2 @@
+# b/205779872
+dontaudit cbd persist_file:dir { search };

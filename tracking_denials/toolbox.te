@@ -3,3 +3,13 @@ dontaudit toolbox ram_device:blk_file { getattr };
 dontaudit toolbox ram_device:blk_file { ioctl };
 dontaudit toolbox ram_device:blk_file { open };
 dontaudit toolbox ram_device:blk_file { read write };
+# b/205779799
+dontaudit toolbox per_boot_file:dir { getattr };
+dontaudit toolbox per_boot_file:dir { open };
+dontaudit toolbox per_boot_file:dir { read };
+dontaudit toolbox per_boot_file:dir { remove_name };
+dontaudit toolbox per_boot_file:dir { rmdir };
+dontaudit toolbox per_boot_file:dir { search };
+dontaudit toolbox per_boot_file:dir { write };
+dontaudit toolbox per_boot_file:file { getattr };
+dontaudit toolbox per_boot_file:file { unlink };

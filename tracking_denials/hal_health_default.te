@@ -4,3 +4,6 @@ dontaudit hal_health_default vendor_battery_defender_prop:file { map };
 dontaudit hal_health_default vendor_battery_defender_prop:file { open };
 dontaudit hal_health_default vendor_battery_defender_prop:file { read };
 dontaudit hal_health_default vendor_battery_defender_prop:property_service { set };
+# b/205779737
+dontaudit hal_health_default mnt_vendor_file:dir { search };
+dontaudit hal_health_default persist_file:dir { search };
