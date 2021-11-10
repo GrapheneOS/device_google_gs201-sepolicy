@@ -7,3 +7,13 @@ dontaudit hal_fingerprint_default fingerprint_ghbm_prop:file { getattr };
 dontaudit hal_fingerprint_default fingerprint_ghbm_prop:file { map };
 dontaudit hal_fingerprint_default fingerprint_ghbm_prop:file { open };
 dontaudit hal_fingerprint_default fingerprint_ghbm_prop:file { read };
+# b/205656936
+dontaudit hal_fingerprint_default dmabuf_system_heap_device:chr_file { ioctl };
+dontaudit hal_fingerprint_default dmabuf_system_heap_device:chr_file { open };
+dontaudit hal_fingerprint_default dmabuf_system_heap_device:chr_file { read };
+dontaudit hal_fingerprint_default fingerprint_device:chr_file { ioctl };
+dontaudit hal_fingerprint_default fingerprint_device:chr_file { open };
+dontaudit hal_fingerprint_default fingerprint_device:chr_file { read write };
+dontaudit hal_fingerprint_default tee_device:chr_file { ioctl };
+dontaudit hal_fingerprint_default tee_device:chr_file { open };
+dontaudit hal_fingerprint_default tee_device:chr_file { read write };

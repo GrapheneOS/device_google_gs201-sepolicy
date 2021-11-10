@@ -1,2 +1,5 @@
 # b/205073164
 dontaudit hal_secure_element_gto vendor_secure_element_prop:property_service { set };
+# b/205656951
+dontaudit hal_secure_element_gto secure_element_device:chr_file { open };
+dontaudit hal_secure_element_gto secure_element_device:chr_file { read write };

@@ -1,0 +1,3 @@
+# b/205657039
+dontaudit hal_secure_element_gto_ese2 secure_element_device:chr_file { open };
+dontaudit hal_secure_element_gto_ese2 secure_element_device:chr_file { read write };
