@@ -6,10 +6,3 @@ dontaudit zygote default_android_service:service_manager { find };
 dontaudit zygote game_service:service_manager { find };
 dontaudit zygote nfc_service:service_manager { find };
 dontaudit zygote radio_service:service_manager { find };
-# b/205780068
-dontaudit zygote user_profile_data_file:file { getattr };
-dontaudit zygote vendor_file:file { execute };
-dontaudit zygote vendor_file:file { getattr };
-dontaudit zygote vendor_file:file { map };
-dontaudit zygote vendor_file:file { open };
-dontaudit zygote vendor_file:file { read };
