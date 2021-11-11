@@ -1,0 +1,9 @@
+# b/205780088
+dontaudit bootanim system_data_file:dir { read };
+dontaudit bootanim system_data_file:dir { search };
+dontaudit bootanim system_data_file:dir { watch };
+dontaudit bootanim vendor_file:file { execute };
+dontaudit bootanim vendor_file:file { getattr };
+dontaudit bootanim vendor_file:file { map };
+dontaudit bootanim vendor_file:file { open };
+dontaudit bootanim vendor_file:file { read };

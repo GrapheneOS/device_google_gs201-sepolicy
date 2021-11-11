@@ -4,3 +4,12 @@ dontaudit logger_app vendor_ssrdump_prop:file { getattr };
 dontaudit logger_app vendor_ssrdump_prop:file { map };
 dontaudit logger_app vendor_ssrdump_prop:file { open };
 dontaudit logger_app vendor_ssrdump_prop:file { read };
+# b/205779798
+dontaudit logger_app radio_vendor_data_file:dir { getattr };
+dontaudit logger_app radio_vendor_data_file:dir { open };
+dontaudit logger_app radio_vendor_data_file:dir { read };
+dontaudit logger_app radio_vendor_data_file:dir { remove_name };
+dontaudit logger_app radio_vendor_data_file:dir { search };
+dontaudit logger_app radio_vendor_data_file:dir { setattr };
+dontaudit logger_app radio_vendor_data_file:dir { write };
+dontaudit logger_app radio_vendor_data_file:file { unlink };

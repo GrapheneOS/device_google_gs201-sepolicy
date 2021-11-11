@@ -1,2 +1,11 @@
 # b/205072689
 dontaudit surfaceflinger kernel:process { setsched };
+# b/205779849
+dontaudit surfaceflinger vendor_file:file { execute };
+dontaudit surfaceflinger vendor_file:file { getattr };
+dontaudit surfaceflinger vendor_file:file { map };
+dontaudit surfaceflinger vendor_file:file { open };
+dontaudit surfaceflinger vendor_file:file { read };
+dontaudit surfaceflinger vendor_fw_file:dir { search };
+dontaudit surfaceflinger vendor_fw_file:file { open };
+dontaudit surfaceflinger vendor_fw_file:file { read };

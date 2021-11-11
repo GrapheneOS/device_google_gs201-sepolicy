@@ -3,3 +3,9 @@ dontaudit hal_sensors_default fwk_stats_service:service_manager { find };
 # b/205657063
 dontaudit hal_sensors_default aoc_device:chr_file { open };
 dontaudit hal_sensors_default aoc_device:chr_file { read write };
+# b/205780093
+dontaudit hal_sensors_default mnt_vendor_file:dir { search };
+dontaudit hal_sensors_default persist_file:dir { search };
+dontaudit hal_sensors_default sensor_reg_data_file:dir { getattr };
+dontaudit hal_sensors_default sensor_reg_data_file:dir { open };
+dontaudit hal_sensors_default sensor_reg_data_file:dir { read };

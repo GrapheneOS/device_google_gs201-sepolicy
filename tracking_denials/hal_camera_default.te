@@ -27,3 +27,17 @@ dontaudit hal_camera_default vndbinder_device:chr_file { map };
 dontaudit hal_camera_default vndbinder_device:chr_file { open };
 dontaudit hal_camera_default vndbinder_device:chr_file { read };
 dontaudit hal_camera_default vndbinder_device:chr_file { write };
+# b/205780065
+dontaudit hal_camera_default apex_info_file:file { getattr };
+dontaudit hal_camera_default apex_info_file:file { open };
+dontaudit hal_camera_default apex_info_file:file { read };
+dontaudit hal_camera_default apex_info_file:file { watch };
+dontaudit hal_camera_default mnt_vendor_file:dir { search };
+dontaudit hal_camera_default persist_file:dir { search };
+dontaudit hal_camera_default system_data_file:dir { search };
+dontaudit hal_camera_default vendor_camera_data_file:dir { getattr };
+dontaudit hal_camera_default vendor_camera_data_file:dir { open };
+dontaudit hal_camera_default vendor_camera_data_file:dir { read };
+dontaudit hal_camera_default vendor_camera_data_file:dir { search };
+dontaudit hal_camera_default vendor_camera_data_file:file { open };
+dontaudit hal_camera_default vendor_camera_data_file:file { read };
