@@ -1,2 +1,4 @@
 # b/205779872
 dontaudit cbd persist_file:dir { search };
+# b/205904432
+dontaudit cbd cbd:capability { setuid };

@@ -9,3 +9,6 @@ dontaudit hal_keymint_citadel vndbinder_device:chr_file { map };
 dontaudit hal_keymint_citadel vndbinder_device:chr_file { open };
 dontaudit hal_keymint_citadel vndbinder_device:chr_file { read };
 dontaudit hal_keymint_citadel vndbinder_device:chr_file { write };
+# b/205904323
+dontaudit hal_keymint_citadel citadeld:binder { call };
+dontaudit hal_keymint_citadel vndservicemanager:binder { call };

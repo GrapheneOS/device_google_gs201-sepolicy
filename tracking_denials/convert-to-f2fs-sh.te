@@ -12,3 +12,5 @@ dontaudit convert-to-f2fs-sh toolbox_exec:file { execute };
 dontaudit convert-to-f2fs-sh toolbox_exec:file { execute_no_trans };
 dontaudit convert-to-f2fs-sh toolbox_exec:file { getattr };
 dontaudit convert-to-f2fs-sh toolbox_exec:file { read open };
+# b/205904438
+dontaudit convert-to-f2fs-sh toolbox_exec:file { map };

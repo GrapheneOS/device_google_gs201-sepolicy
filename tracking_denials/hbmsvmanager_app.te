@@ -1,2 +1,4 @@
 # b/204718757
 dontaudit hbmsvmanager_app hal_pixel_display_service:service_manager { find };
+# b/205904380
+dontaudit hbmsvmanager_app hal_graphics_composer_default:binder { call };

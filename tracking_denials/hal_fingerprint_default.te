@@ -17,3 +17,7 @@ dontaudit hal_fingerprint_default fingerprint_device:chr_file { read write };
 dontaudit hal_fingerprint_default tee_device:chr_file { ioctl };
 dontaudit hal_fingerprint_default tee_device:chr_file { open };
 dontaudit hal_fingerprint_default tee_device:chr_file { read write };
+# b/205904310
+dontaudit hal_fingerprint_default hal_fingerprint_default:netlink_socket { bind };
+dontaudit hal_fingerprint_default hal_fingerprint_default:netlink_socket { create };
+dontaudit hal_fingerprint_default hal_fingerprint_default:netlink_socket { write };

@@ -14,3 +14,6 @@ dontaudit rlsservice apex_info_file:file { getattr };
 dontaudit rlsservice apex_info_file:file { open };
 dontaudit rlsservice apex_info_file:file { read };
 dontaudit rlsservice apex_info_file:file { watch };
+# b/205904324
+dontaudit rlsservice vndservicemanager:binder { call };
+dontaudit rlsservice vndservicemanager:binder { transfer };

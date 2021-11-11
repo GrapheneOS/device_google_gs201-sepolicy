@@ -1,0 +1,2 @@
+# b/205904367
+dontaudit hal_power_stats_default hal_bluetooth_btlinux:binder { call };

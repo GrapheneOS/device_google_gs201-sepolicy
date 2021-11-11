@@ -4,3 +4,6 @@ dontaudit priv_app hal_exynos_rild_hwservice:hwservice_manager { find };
 dontaudit priv_app vendor_default_prop:file { getattr };
 dontaudit priv_app vendor_default_prop:file { map };
 dontaudit priv_app vendor_default_prop:file { open };
+# b/205904553
+dontaudit priv_app rild:binder { call };
+dontaudit priv_app rild:binder { transfer };

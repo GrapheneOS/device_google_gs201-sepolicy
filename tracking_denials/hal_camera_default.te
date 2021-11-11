@@ -41,3 +41,12 @@ dontaudit hal_camera_default vendor_camera_data_file:dir { read };
 dontaudit hal_camera_default vendor_camera_data_file:dir { search };
 dontaudit hal_camera_default vendor_camera_data_file:file { open };
 dontaudit hal_camera_default vendor_camera_data_file:file { read };
+# b/205904406
+dontaudit hal_camera_default hal_camera_default:capability { sys_nice };
+dontaudit hal_camera_default hal_power_default:binder { call };
+dontaudit hal_camera_default hal_radioext_default:binder { call };
+dontaudit hal_camera_default init:unix_stream_socket { connectto };
+dontaudit hal_camera_default property_socket:sock_file { write };
+dontaudit hal_camera_default servicemanager:binder { call };
+dontaudit hal_camera_default servicemanager:binder { transfer };
+dontaudit hal_camera_default system_server:binder { call };

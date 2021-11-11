@@ -6,3 +6,9 @@ dontaudit zygote default_android_service:service_manager { find };
 dontaudit zygote game_service:service_manager { find };
 dontaudit zygote nfc_service:service_manager { find };
 dontaudit zygote radio_service:service_manager { find };
+# b/205904384
+dontaudit zygote adbd:unix_stream_socket { connectto };
+dontaudit zygote nfc:binder { call };
+dontaudit zygote servicemanager:binder { call };
+dontaudit zygote system_server:binder { call };
+dontaudit zygote system_server:binder { transfer };
