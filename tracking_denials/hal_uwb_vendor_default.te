@@ -1,2 +1,6 @@
 # b/204718220
 dontaudit hal_uwb_vendor_default default_android_service:service_manager { add };
+# b/206045367
+dontaudit hal_uwb_vendor_default hal_uwb_vendor_default:capability { net_admin };
+dontaudit hal_uwb_vendor_default zygote:binder { call };
+dontaudit hal_uwb_vendor_default zygote:binder { transfer };
