@@ -9,3 +9,7 @@ dontaudit hal_sensors_default persist_file:dir { search };
 dontaudit hal_sensors_default sensor_reg_data_file:dir { getattr };
 dontaudit hal_sensors_default sensor_reg_data_file:dir { open };
 dontaudit hal_sensors_default sensor_reg_data_file:dir { read };
+# b/205904379
+dontaudit hal_sensors_default chre:unix_stream_socket { connectto };
+dontaudit hal_sensors_default chre_socket:sock_file { write };
+dontaudit hal_sensors_default system_server:binder { call };

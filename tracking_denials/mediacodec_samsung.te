@@ -8,3 +8,6 @@ dontaudit mediacodec_samsung vndbinder_device:chr_file { map };
 dontaudit mediacodec_samsung vndbinder_device:chr_file { open };
 dontaudit mediacodec_samsung vndbinder_device:chr_file { read };
 dontaudit mediacodec_samsung vndbinder_device:chr_file { write };
+# b/205904381
+dontaudit mediacodec_samsung vndservicemanager:binder { call };
+dontaudit mediacodec_samsung vndservicemanager:binder { transfer };

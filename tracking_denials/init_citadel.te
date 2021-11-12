@@ -7,3 +7,6 @@ dontaudit init_citadel vndbinder_device:chr_file { write };
 # b/205779736
 dontaudit init_citadel citadel_updater:file { execute_no_trans };
 dontaudit init_citadel vendor_toolbox_exec:file { execute_no_trans };
+# b/205904401
+dontaudit init_citadel citadeld:binder { call };
+dontaudit init_citadel vndservicemanager:binder { call };

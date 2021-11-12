@@ -1,0 +1,2 @@
+# b/205904442
+dontaudit hal_power_default hal_camera_default:binder { transfer };

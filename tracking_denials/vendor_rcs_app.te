@@ -1,2 +1,5 @@
 # b/205779581
 dontaudit vendor_rcs_app radio_service:service_manager { find };
+# b/205904435
+dontaudit vendor_rcs_app rild:binder { call };
+dontaudit vendor_rcs_app rild:binder { transfer };
