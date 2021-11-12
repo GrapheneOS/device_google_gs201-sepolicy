@@ -1,7 +1,0 @@
-# b/205657135
-dontaudit mediacodec_google dmabuf_system_heap_device:chr_file { getattr };
-dontaudit mediacodec_google vndbinder_device:chr_file { ioctl };
-dontaudit mediacodec_google vndbinder_device:chr_file { map };
-dontaudit mediacodec_google vndbinder_device:chr_file { open };
-dontaudit mediacodec_google vndbinder_device:chr_file { read };
-dontaudit mediacodec_google vndbinder_device:chr_file { write };
