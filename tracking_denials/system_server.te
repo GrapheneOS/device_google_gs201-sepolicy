@@ -1,2 +1,4 @@
 # b/205904404
 dontaudit system_server zygote:binder { call };
+# b/206045368
+dontaudit system_server zygote:binder { transfer };

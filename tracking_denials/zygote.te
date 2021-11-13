@@ -12,3 +12,13 @@ dontaudit zygote nfc:binder { call };
 dontaudit zygote servicemanager:binder { call };
 dontaudit zygote system_server:binder { call };
 dontaudit zygote system_server:binder { transfer };
+# b/206045471
+dontaudit zygote hal_uwb_vendor_default:binder { call };
+dontaudit zygote hal_uwb_vendor_default:binder { transfer };
+dontaudit zygote radio:binder { call };
+dontaudit zygote user_profile_data_file:file { getattr };
+dontaudit zygote vendor_file:file { execute };
+dontaudit zygote vendor_file:file { getattr };
+dontaudit zygote vendor_file:file { map };
+dontaudit zygote vendor_file:file { open };
+dontaudit zygote vendor_file:file { read };
