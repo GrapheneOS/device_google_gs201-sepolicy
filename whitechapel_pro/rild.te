@@ -18,6 +18,7 @@ binder_call(rild, bipchmgr)
 binder_call(rild, gpsd)
 binder_call(rild, hal_audio_default)
 binder_call(rild, modem_svc_sit)
+binder_call(rild, oemrilservice_app)
 
 # for hal service
 add_hwservice(rild, hal_exynos_rild_hwservice)
