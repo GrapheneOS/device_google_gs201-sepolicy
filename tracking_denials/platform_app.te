@@ -1,4 +1,2 @@
 # b/204718221
 dontaudit platform_app touch_service:service_manager { find };
-# b/205904327
-dontaudit platform_app hal_wlc:binder { call };
