@@ -1,4 +1,5 @@
 binder_call(hal_camera_default, edgetpu_vendor_server)
+binder_use(hal_camera_default)
 
 allow hal_camera_default fwk_stats_service:service_manager find;
 
