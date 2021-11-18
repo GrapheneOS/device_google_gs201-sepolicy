@@ -7,3 +7,8 @@ set_prop(vendor_init, vendor_ready_prop)
 get_prop(vendor_init, vendor_battery_profile_prop)
 set_prop(vendor_init, vendor_device_prop)
 
+# NFC vendor property
+set_prop(vendor_init, vendor_nfc_prop)
+# SecureElement vendor property
+set_prop(vendor_init, vendor_secure_element_prop)
+

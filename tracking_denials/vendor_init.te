@@ -1,6 +1,3 @@
-# b/205070818
-dontaudit vendor_init vendor_nfc_prop:property_service { set };
-dontaudit vendor_init vendor_secure_element_prop:property_service { set };
 # b/205656950
 dontaudit vendor_init thermal_link_device:file { create };
 # b/206045605
