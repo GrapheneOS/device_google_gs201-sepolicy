@@ -2,3 +2,7 @@ type hardware_info_app, domain;
 app_domain(hardware_info_app)
 
 allow hardware_info_app app_api_service:service_manager find;
+
+# Storage
+allow hardware_info_app sysfs_scsi_devices_0000:dir search;
+allow hardware_info_app sysfs_scsi_devices_0000:file r_file_perms;
