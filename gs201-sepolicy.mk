@@ -18,6 +18,3 @@ BOARD_SEPOLICY_DIRS += device/google/gs201-sepolicy/dauntless
 
 #   PowerStats HAL
 BOARD_SEPOLICY_DIRS += hardware/google/pixel-sepolicy/powerstats
-
-# Wifi Logger
-BOARD_SEPOLICY_DIRS += hardware/google/pixel-sepolicy/wifi_logger

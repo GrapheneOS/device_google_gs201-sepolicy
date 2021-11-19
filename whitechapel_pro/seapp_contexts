@@ -33,5 +33,8 @@ user=_app isPrivApp=true seinfo=mds name=com.google.mds domain=modem_diagnostic_
 # CBRS setup app
 user=_app seinfo=platform name=com.google.googlecbrs domain=cbrs_setup_app type=app_data_file levelFrom=user
 
+# Qorvo UWB system app
+user=uwb isPrivApp=true seinfo=uwb name=com.qorvo.uwb domain=uwb_vendor_app type=uwb_vendor_data_file levelFrom=all
+
 # Sub System Ramdump
 user=system seinfo=platform name=com.google.SSRestartDetector domain=ssr_detector_app type=system_app_data_file levelFrom=user
