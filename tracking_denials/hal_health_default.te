@@ -1,0 +1,9 @@
+# b/207062562
+dontaudit hal_health_default sysfs:file { getattr };
+dontaudit hal_health_default sysfs:file { open };
+dontaudit hal_health_default sysfs:file { read };
+dontaudit hal_health_default sysfs:file { write };
+dontaudit hal_health_default sysfs_scsi_devices_0000:dir { search };
+dontaudit hal_health_default sysfs_scsi_devices_0000:file { getattr };
+dontaudit hal_health_default sysfs_scsi_devices_0000:file { open };
+dontaudit hal_health_default sysfs_scsi_devices_0000:file { read };

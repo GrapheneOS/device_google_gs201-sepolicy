@@ -1,0 +1,11 @@
+# b/207062564
+dontaudit hal_power_default sysfs:file { open };
+dontaudit hal_power_default sysfs:file { write };
+dontaudit hal_power_default sysfs_fs_f2fs:dir { search };
+dontaudit hal_power_default sysfs_fs_f2fs:file { open };
+dontaudit hal_power_default sysfs_fs_f2fs:file { write };
+dontaudit hal_power_default sysfs_scsi_devices_0000:file { open };
+dontaudit hal_power_default sysfs_scsi_devices_0000:file { write };
+dontaudit hal_power_default sysfs_vendor_sched:dir { search };
+dontaudit hal_power_default sysfs_vendor_sched:file { open };
+dontaudit hal_power_default sysfs_vendor_sched:file { write };

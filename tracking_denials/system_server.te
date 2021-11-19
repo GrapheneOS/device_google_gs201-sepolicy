@@ -2,3 +2,9 @@
 dontaudit system_server zygote:binder { call };
 # b/206045368
 dontaudit system_server zygote:binder { transfer };
+# b/207062229
+dontaudit system_server sysfs:dir { open };
+dontaudit system_server sysfs:dir { read };
+dontaudit system_server sysfs:file { getattr };
+dontaudit system_server sysfs:file { open };
+dontaudit system_server sysfs:file { read };

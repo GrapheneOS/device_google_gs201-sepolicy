@@ -1,0 +1,5 @@
+# b/207062776
+dontaudit init sysfs_scsi_devices_0000:file { open };
+dontaudit init sysfs_scsi_devices_0000:file { write };
+dontaudit init sysfs_vendor_sched:file { open };
+dontaudit init sysfs_vendor_sched:file { write };

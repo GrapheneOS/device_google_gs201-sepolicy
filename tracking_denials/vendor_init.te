@@ -5,3 +5,6 @@ dontaudit vendor_init vendor_modem_prop:file { getattr };
 dontaudit vendor_init vendor_modem_prop:file { map };
 dontaudit vendor_init vendor_modem_prop:file { open };
 dontaudit vendor_init vendor_modem_prop:file { read };
+# b/207062206
+dontaudit vendor_init proc_dirty:file { write };
+dontaudit vendor_init proc_sched:file { write };

@@ -1,2 +1,13 @@
 # b/205904367
 dontaudit hal_power_stats_default hal_bluetooth_btlinux:binder { call };
+# b/207062210
+dontaudit hal_power_stats_default sysfs:file { getattr };
+dontaudit hal_power_stats_default sysfs:file { open };
+dontaudit hal_power_stats_default sysfs:file { read };
+dontaudit hal_power_stats_default sysfs_edgetpu:dir { search };
+dontaudit hal_power_stats_default sysfs_edgetpu:file { getattr };
+dontaudit hal_power_stats_default sysfs_edgetpu:file { open };
+dontaudit hal_power_stats_default sysfs_edgetpu:file { read };
+dontaudit hal_power_stats_default sysfs_iio_devices:dir { read open };
+dontaudit hal_power_stats_default sysfs_iio_devices:dir { read };
+dontaudit hal_power_stats_default sysfs_iio_devices:dir { search };
