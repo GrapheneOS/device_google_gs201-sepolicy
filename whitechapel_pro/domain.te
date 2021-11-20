@@ -1,6 +1,0 @@
-dontaudit domain fs_type:chr_file *;
-dontaudit domain fs_type:file *;
-dontaudit domain fs_type:blk_file *;
-dontaudit domain fs_type:dir *;
-dontaudit domain fs_type:filesystem *;
-

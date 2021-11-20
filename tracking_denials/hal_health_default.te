@@ -1,0 +1,5 @@
+# b/207062562
+dontaudit hal_health_default sysfs:file { getattr };
+dontaudit hal_health_default sysfs:file { open };
+dontaudit hal_health_default sysfs:file { read };
+dontaudit hal_health_default sysfs:file { write };

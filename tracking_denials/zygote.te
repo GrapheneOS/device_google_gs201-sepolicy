@@ -1,0 +1,4 @@
+# b/207062208
+dontaudit zygote sysfs_vendor_sched:dir { search };
+dontaudit zygote sysfs_vendor_sched:file { open };
+dontaudit zygote sysfs_vendor_sched:file { write };

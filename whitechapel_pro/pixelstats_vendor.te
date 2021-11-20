@@ -1,1 +1,3 @@
 binder_use(pixelstats_vendor)
+
+allow pixelstats_vendor sysfs_scsi_devices_0000:file rw_file_perms;

@@ -21,3 +21,11 @@ dontaudit hal_fingerprint_default tee_device:chr_file { read write };
 dontaudit hal_fingerprint_default hal_fingerprint_default:netlink_socket { bind };
 dontaudit hal_fingerprint_default hal_fingerprint_default:netlink_socket { create };
 dontaudit hal_fingerprint_default hal_fingerprint_default:netlink_socket { write };
+# b/207062260
+dontaudit hal_fingerprint_default default_prop:property_service { set };
+dontaudit hal_fingerprint_default hal_fingerprint_default:netlink_socket { read };
+dontaudit hal_fingerprint_default init:unix_stream_socket { connectto };
+dontaudit hal_fingerprint_default property_socket:sock_file { write };
+dontaudit hal_fingerprint_default sysfs_chosen:dir { search };
+dontaudit hal_fingerprint_default sysfs_chosen:file { open };
+dontaudit hal_fingerprint_default sysfs_chosen:file { read };

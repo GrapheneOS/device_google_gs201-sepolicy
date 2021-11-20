@@ -22,3 +22,7 @@ dontaudit logger_app radio_vendor_data_file:file { getattr };
 dontaudit logger_app radio_vendor_data_file:file { setattr };
 dontaudit logger_app radio_vendor_data_file:file { write open };
 dontaudit logger_app vendor_gps_file:dir { search };
+# b/207062780
+dontaudit logger_app vendor_gps_file:dir { getattr };
+dontaudit logger_app vendor_gps_file:dir { open };
+dontaudit logger_app vendor_gps_file:dir { read };

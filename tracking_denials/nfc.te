@@ -1,2 +1,4 @@
 # b/205904208
 dontaudit nfc zygote:binder { transfer };
+# b/207062484
+dontaudit nfc sysfs_vendor_sched:dir { search };

@@ -17,3 +17,8 @@ dontaudit rlsservice apex_info_file:file { watch };
 # b/205904324
 dontaudit rlsservice vndservicemanager:binder { call };
 dontaudit rlsservice vndservicemanager:binder { transfer };
+# b/207062258
+dontaudit rlsservice device:dir { read };
+dontaudit rlsservice device:dir { watch };
+dontaudit rlsservice sysfs:file { open };
+dontaudit rlsservice sysfs:file { read };
