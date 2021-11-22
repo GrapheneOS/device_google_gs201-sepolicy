@@ -1,2 +1,0 @@
-# b/207062877
-dontaudit logpersist sysfs_vendor_sched:dir { search };

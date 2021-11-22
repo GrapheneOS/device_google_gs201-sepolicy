@@ -1,3 +1,0 @@
-# b/207062776
-dontaudit init sysfs_vendor_sched:file { open };
-dontaudit init sysfs_vendor_sched:file { write };

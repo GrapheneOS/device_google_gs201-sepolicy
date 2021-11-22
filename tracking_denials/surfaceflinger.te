@@ -4,5 +4,3 @@ dontaudit surfaceflinger kernel:process { setsched };
 dontaudit surfaceflinger vendor_fw_file:dir { search };
 dontaudit surfaceflinger vendor_fw_file:file { open };
 dontaudit surfaceflinger vendor_fw_file:file { read };
-# b/207062211
-dontaudit surfaceflinger sysfs_vendor_sched:dir { search };
