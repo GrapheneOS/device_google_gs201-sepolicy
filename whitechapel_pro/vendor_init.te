@@ -13,4 +13,5 @@ allow vendor_init proc_dirty:file w_file_perms;
 set_prop(vendor_init, vendor_nfc_prop)
 # SecureElement vendor property
 set_prop(vendor_init, vendor_secure_element_prop)
+allow vendor_init sysfs_st33spi:file w_file_perms;
 

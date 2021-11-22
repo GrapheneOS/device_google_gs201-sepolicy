@@ -124,3 +124,7 @@ genfscon sysfs /devices/platform/gpio_keys/wakeup/wakeup u:object_r:sysfs_wakeup
 genfscon sysfs /devices/platform/odm/odm:btbcm/wakeup/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/sound-aoc/wakeup/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/wakeup/wakeup u:object_r:sysfs_wakeup:s0
+
+#SecureElement
+genfscon sysfs /devices/platform/181c0000.spi/spi_master/spi17/spi17.0/st33spi u:object_r:sysfs_st33spi:s0
+
