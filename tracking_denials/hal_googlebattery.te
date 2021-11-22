@@ -1,4 +1,0 @@
-# b/207062874
-dontaudit hal_googlebattery sysfs:file { getattr };
-dontaudit hal_googlebattery sysfs:file { open };
-dontaudit hal_googlebattery sysfs:file { read };
