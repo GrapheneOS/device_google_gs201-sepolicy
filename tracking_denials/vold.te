@@ -1,2 +1,0 @@
-# b/207062540
-dontaudit vold sysfs_scsi_devices_0000:file { write };

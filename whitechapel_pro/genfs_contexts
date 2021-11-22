@@ -75,6 +75,7 @@ genfscon sysfs /devices/platform/14700000.ufs/hibern8_on_idle_enable    u:object
 genfscon sysfs /devices/platform/14700000.ufs/health_descriptor         u:object_r:sysfs_scsi_devices_0000:s0
 genfscon sysfs /devices/platform/14700000.ufs/host0/target0:0:0/0:0:0:  u:object_r:sysfs_scsi_devices_0000:s0
 genfscon sysfs /devices/platform/14700000.ufs/ufs_stats                 u:object_r:sysfs_scsi_devices_0000:s0
+genfscon sysfs /devices/platform/14700000.ufs/attributes/wb_avail_buf   u:object_r:sysfs_scsi_devices_0000:s0
 
 # debugfs
 genfscon debugfs /f2fs                                                  u:object_r:debugfs_f2fs:s0
