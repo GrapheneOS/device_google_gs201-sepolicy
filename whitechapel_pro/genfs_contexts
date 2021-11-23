@@ -92,6 +92,9 @@ genfscon debugfs /google_battery                                        u:object
 genfscon sysfs /devices/platform/10da0000.hsi2c/i2c-6/6-0050/eeprom     u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/google,battery/power_supply/battery    u:object_r:sysfs_batteryinfo:s0
 
+# Extcon
+genfscon sysfs /devices/platform/10d60000.hsi2c/i2c-5/i2c-max77759tcpc/extcon   u:object_r:sysfs_extcon:s0
+
 # system suspend wakeup files
 genfscon sysfs /devices/platform/10970000.hsi2c/i2c-4/i2c-st21nfc/wakeup/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/10d10000.spi/spi_master/spi0/spi0.0/synaptics_tcm.0/wakeup/wakeup u:object_r:sysfs_wakeup:s0
