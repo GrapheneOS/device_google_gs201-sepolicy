@@ -1,3 +1,0 @@
-# b/204718809
-dontaudit mediacodec_samsung system_server:fifo_file { append };
-dontaudit mediacodec_samsung system_server:fifo_file { write };
