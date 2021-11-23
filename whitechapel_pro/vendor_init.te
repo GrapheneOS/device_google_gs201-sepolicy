@@ -7,6 +7,8 @@ set_prop(vendor_init, vendor_ready_prop)
 get_prop(vendor_init, vendor_battery_profile_prop)
 set_prop(vendor_init, vendor_device_prop)
 
+allow vendor_init proc_dirty:file w_file_perms;
+
 # NFC vendor property
 set_prop(vendor_init, vendor_nfc_prop)
 # SecureElement vendor property
