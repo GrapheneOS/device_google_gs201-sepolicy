@@ -4,3 +4,6 @@ init_daemon_domain(mediacodec_samsung)
 
 hal_server_domain(mediacodec_samsung, hal_codec2)
 add_service(mediacodec_samsung, eco_service)
+
+# can route /dev/binder traffic to /dev/vndbinder
+vndbinder_use(mediacodec_samsung)
