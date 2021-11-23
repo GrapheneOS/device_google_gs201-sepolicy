@@ -10,3 +10,6 @@ vndbinder_use(mediacodec_samsung)
 
 allow mediacodec_samsung video_device:chr_file rw_file_perms;
 allow mediacodec_samsung dmabuf_system_heap_device:chr_file r_file_perms;
+
+# can use graphics allocator
+hal_client_domain(mediacodec_samsung, hal_graphics_allocator)
