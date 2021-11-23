@@ -48,9 +48,5 @@ dontaudit hal_camera_default hal_radioext_default:binder { call };
 dontaudit hal_camera_default init:unix_stream_socket { connectto };
 dontaudit hal_camera_default property_socket:sock_file { write };
 dontaudit hal_camera_default system_server:binder { call };
-# b/207062209
-dontaudit hal_camera_default device:chr_file { ioctl };
-dontaudit hal_camera_default device:chr_file { open };
-dontaudit hal_camera_default device:chr_file { read };
 # b/207300298
 dontaudit hal_camera_default vendor_camera_data_file:file { getattr };
