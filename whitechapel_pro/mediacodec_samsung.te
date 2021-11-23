@@ -7,3 +7,6 @@ add_service(mediacodec_samsung, eco_service)
 
 # can route /dev/binder traffic to /dev/vndbinder
 vndbinder_use(mediacodec_samsung)
+
+allow mediacodec_samsung video_device:chr_file rw_file_perms;
+allow mediacodec_samsung dmabuf_system_heap_device:chr_file r_file_perms;
