@@ -1,5 +1,0 @@
-# b/205073025
-dontaudit vcd vendor_persist_config_default_prop:file { getattr };
-dontaudit vcd vendor_persist_config_default_prop:file { map };
-dontaudit vcd vendor_persist_config_default_prop:file { open };
-dontaudit vcd vendor_persist_config_default_prop:file { read };

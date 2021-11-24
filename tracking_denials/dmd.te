@@ -1,5 +1,0 @@
-# b/205073232
-dontaudit dmd vendor_persist_config_default_prop:file { getattr };
-dontaudit dmd vendor_persist_config_default_prop:file { map };
-dontaudit dmd vendor_persist_config_default_prop:file { open };
-dontaudit dmd vendor_persist_config_default_prop:file { read };

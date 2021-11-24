@@ -4,6 +4,7 @@ userdebug_or_eng(`
   init_daemon_domain(vcd)
 
   get_prop(vcd, vendor_rild_prop);
+  get_prop(vcd, vendor_persist_config_default_prop);
 
   allow vcd serial_device:chr_file rw_file_perms;
   allow vcd radio_device:chr_file rw_file_perms;

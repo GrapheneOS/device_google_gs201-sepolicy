@@ -26,3 +26,5 @@ dontaudit logger_app vendor_gps_file:dir { search };
 dontaudit logger_app vendor_gps_file:dir { getattr };
 dontaudit logger_app vendor_gps_file:dir { open };
 dontaudit logger_app vendor_gps_file:dir { read };
+# b/207431041
+dontaudit logger_app sysfs_vendor_sched:dir { search };

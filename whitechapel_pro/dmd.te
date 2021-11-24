@@ -20,6 +20,7 @@ allow dmd self:tcp_socket { create_socket_perms_no_ioctl listen accept bind };
 set_prop(dmd, vendor_diag_prop)
 set_prop(dmd, vendor_slog_prop)
 set_prop(dmd, vendor_modem_prop)
+get_prop(dmd, vendor_persist_config_default_prop)
 
 # Grant to access hwservice manager
 get_prop(dmd, hwservicemanager_prop)
