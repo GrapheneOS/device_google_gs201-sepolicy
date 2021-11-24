@@ -57,6 +57,8 @@ genfscon sysfs /devices/platform/14700000.ufs/pixel/boot_lun_enabled           u
 # Display
 genfscon sysfs /devices/platform/1c2c0000.drmdsim/1c2c0000.drmdsim.0/gamma     u:object_r:sysfs_display:s0
 genfscon sysfs /devices/platform/1c2c0000.drmdsim/hs_clock                     u:object_r:sysfs_display:s0
+genfscon sysfs /devices/platform/1c240000.drmdecon/early_wakeup                u:object_r:sysfs_display:s0
+genfscon sysfs /devices/platform/1c242000.drmdecon/early_wakeup                u:object_r:sysfs_display:s0
 
 # mediacodec_samsung
 genfscon sysfs /devices/platform/mfc/video4linux/video                         u:object_r:sysfs_mfc:s0
