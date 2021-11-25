@@ -1,5 +1,7 @@
 allow platform_app hal_pixel_display_service:service_manager find;
 allow platform_app hal_wlc_hwservice:hwservice_manager find;
+allow platform_app sysfs_vendor_sched:dir r_dir_perms;
+allow platform_app sysfs_vendor_sched:file w_file_perms;
 
 # Fingerprint (UDFPS) GHBM/LHBM toggle
 get_prop(platform_app, fingerprint_ghbm_prop)
