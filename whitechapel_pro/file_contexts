@@ -93,6 +93,7 @@
 /dev/lwis-csi                                                               u:object_r:lwis_device:s0
 /dev/lwis-dpm                                                               u:object_r:lwis_device:s0
 /dev/lwis-eeprom-lc898128                                                   u:object_r:lwis_device:s0
+/dev/lwis-eeprom-m24c64x-3j1                                                u:object_r:lwis_device:s0
 /dev/lwis-eeprom-m24c64x-imx386                                             u:object_r:lwis_device:s0
 /dev/lwis-eeprom-m24c64x-imx663                                             u:object_r:lwis_device:s0
 /dev/lwis-eeprom-sem1215sa                                                  u:object_r:lwis_device:s0

@@ -1,5 +1,0 @@
-# b/205073166
-dontaudit sscoredump vendor_persist_sys_default_prop:file { getattr };
-dontaudit sscoredump vendor_persist_sys_default_prop:file { map };
-dontaudit sscoredump vendor_persist_sys_default_prop:file { open };
-dontaudit sscoredump vendor_persist_sys_default_prop:file { read };
