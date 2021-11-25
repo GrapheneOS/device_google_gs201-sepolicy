@@ -1,4 +1,2 @@
 # b/205656950
 dontaudit vendor_init thermal_link_device:file { create };
-# b/207062206
-dontaudit vendor_init proc_sched:file { write };
