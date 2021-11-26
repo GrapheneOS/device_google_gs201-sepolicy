@@ -18,3 +18,10 @@ dontaudit hal_power_stats_default sysfs_aoc:dir { search };
 dontaudit hal_power_stats_default sysfs_aoc:file { getattr };
 dontaudit hal_power_stats_default sysfs_aoc:file { open };
 dontaudit hal_power_stats_default sysfs_aoc:file { read };
+# b/207720720
+dontaudit hal_power_stats_default sysfs_acpm_stats:file { getattr };
+dontaudit hal_power_stats_default sysfs_acpm_stats:file { open };
+dontaudit hal_power_stats_default sysfs_wifi:dir { search };
+dontaudit hal_power_stats_default sysfs_wifi:file { getattr };
+dontaudit hal_power_stats_default sysfs_wifi:file { open };
+dontaudit hal_power_stats_default sysfs_wifi:file { read };

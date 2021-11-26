@@ -40,6 +40,7 @@ type sysfs_touch, sysfs_type, fs_type;
 type sysfs_bcmdhd, sysfs_type, fs_type;
 type sysfs_wlc, sysfs_type, fs_type;
 type sysfs_chargelevel, sysfs_type, fs_type;
+type sysfs_mfc, sysfs_type, fs_type;
 
 # debugfs
 type debugfs_f2fs, debugfs_type, fs_type;

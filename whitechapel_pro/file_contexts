@@ -155,6 +155,7 @@
 /dev/block/platform/14700000\.ufs/by-name/gsa_[ab]                          u:object_r:custom_ab_block_device:s0
 /dev/block/platform/14700000\.ufs/by-name/ldfw_[ab]                         u:object_r:custom_ab_block_device:s0
 /dev/block/platform/14700000\.ufs/by-name/metadata                          u:object_r:metadata_block_device:s0
+/dev/block/platform/14700000\.ufs/by-name/mfg_data                          u:object_r:mfg_data_block_device:s0
 /dev/block/platform/14700000\.ufs/by-name/misc                              u:object_r:misc_block_device:s0
 /dev/block/platform/14700000\.ufs/by-name/modem_[ab]                        u:object_r:modem_block_device:s0
 /dev/block/platform/14700000\.ufs/by-name/modem_userdata                    u:object_r:modem_userdata_block_device:s0
