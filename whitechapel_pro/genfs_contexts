@@ -91,9 +91,17 @@ genfscon debugfs /google_charger                                        u:object
 genfscon debugfs /gvotables                                             u:object_r:vendor_votable_debugfs:s0
 genfscon debugfs /google_battery                                        u:object_r:vendor_battery_debugfs:s0
 
-# C10 battery
-genfscon sysfs /devices/platform/10da0000.hsi2c/i2c-6/6-0050/eeprom     u:object_r:sysfs_batteryinfo:s0
-genfscon sysfs /devices/platform/google,battery/power_supply/battery    u:object_r:sysfs_batteryinfo:s0
+# Battery
+genfscon sysfs /devices/platform/google,battery/power_supply/battery            u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/platform/google,cpm                                     u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/platform/google,charger                                 u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/platform/10d60000.hsi2c                                 u:object_r:sysfs_batteryinfo:s0
+
+# P22 battery
+genfscon sysfs /devices/platform/10da0000.hsi2c/i2c-6/6-0050/eeprom             u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/platform/10da0000.hsi2c/i2c-6/i2c-p9412                 u:object_r:sysfs_wlc:s0
+genfscon sysfs /devices/platform/10da0000.hsi2c/i2c-6/i2c-p9412/power_supply    u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/platform/10d60000.hsi2c/i2c-5/5-0069/power_supply       u:object_r:sysfs_batteryinfo:s0
 
 # Extcon
 genfscon sysfs /devices/platform/10d60000.hsi2c/i2c-5/i2c-max77759tcpc/extcon   u:object_r:sysfs_extcon:s0

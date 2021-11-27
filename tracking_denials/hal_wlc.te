@@ -1,5 +1,0 @@
-# b/207062231
-dontaudit hal_wlc sysfs:file { getattr };
-dontaudit hal_wlc sysfs:file { open };
-dontaudit hal_wlc sysfs:file { read };
-dontaudit hal_wlc sysfs:file { write };
