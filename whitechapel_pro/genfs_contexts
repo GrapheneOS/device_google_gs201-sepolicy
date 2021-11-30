@@ -12,7 +12,8 @@ genfscon sysfs /devices/system/chip-id/revision                                u
 genfscon sysfs /devices/system/chip-id/raw_str                                 u:object_r:sysfs_chip_id:s0
 
 # Touch
-genfscon sysfs /devices/virtual/sec/tsp                                        u:object_r:sysfs_touch:s0
+genfscon sysfs /devices/platform/10d10000.spi/spi_master/spi0/spi0.0/synaptics_tcm.0/sysfs   u:object_r:sysfs_touch:s0
+genfscon sysfs /devices/virtual/sec/tsp                                                      u:object_r:sysfs_touch:s0
 
 # tracefs
 genfscon tracefs /events/dmabuf_heap/dma_heap_stat                             u:object_r:debugfs_tracing:s0
