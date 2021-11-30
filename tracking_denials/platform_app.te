@@ -1,4 +1,2 @@
 # b/204718221
 dontaudit platform_app touch_service:service_manager { find };
-# b/207062781
-dontaudit platform_app sysfs_vendor_sched:dir { search };

@@ -1,2 +1,0 @@
-# b/207062875
-dontaudit bluetooth sysfs_vendor_sched:dir { search };
