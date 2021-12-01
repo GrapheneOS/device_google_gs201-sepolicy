@@ -2,9 +2,3 @@
 dontaudit priv_app vendor_default_prop:file { getattr };
 dontaudit priv_app vendor_default_prop:file { map };
 dontaudit priv_app vendor_default_prop:file { open };
-# b/208527969
-dontaudit priv_app vendor_file:file { execute };
-dontaudit priv_app vendor_file:file { getattr };
-dontaudit priv_app vendor_file:file { map };
-dontaudit priv_app vendor_file:file { open };
-dontaudit priv_app vendor_file:file { read };
