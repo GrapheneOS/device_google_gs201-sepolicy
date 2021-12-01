@@ -1,0 +1,3 @@
+# b/208527900
+dontaudit gmscore_app modem_img_file:filesystem { getattr };
+dontaudit gmscore_app property_type:file *;
