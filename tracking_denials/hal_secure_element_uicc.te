@@ -1,0 +1,2 @@
+# b/208715886
+dontaudit hal_secure_element_uicc rild:binder { call };
