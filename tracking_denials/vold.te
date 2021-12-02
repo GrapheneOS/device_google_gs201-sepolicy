@@ -1,0 +1,3 @@
+# b/208721768
+dontaudit vold dumpstate:fd { use };
+dontaudit vold dumpstate:fifo_file { write };

@@ -1,0 +1,5 @@
+# b/208721638
+dontaudit hal_health_default sysfs_thermal:dir { search };
+dontaudit hal_health_default sysfs_thermal:file { open };
+dontaudit hal_health_default sysfs_thermal:file { write };
+dontaudit hal_health_default thermal_link_device:dir { search };

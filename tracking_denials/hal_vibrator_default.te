@@ -9,3 +9,9 @@ dontaudit hal_vibrator_default proc_asound:file { read };
 dontaudit hal_vibrator_default sysfs:file { getattr };
 dontaudit hal_vibrator_default sysfs:file { open };
 dontaudit hal_vibrator_default sysfs:file { read write };
+# b/208721729
+#dontaudit hal_vibrator_default fastbootd_protocol_prop:file { getattr };
+#dontaudit hal_vibrator_default fastbootd_protocol_prop:file { map };
+#dontaudit hal_vibrator_default fastbootd_protocol_prop:file { open };
+dontaudit hal_vibrator_default ffs_config_prop:file { getattr };
+dontaudit hal_vibrator_default ffs_config_prop:file { open };
