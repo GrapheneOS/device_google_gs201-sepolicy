@@ -32,3 +32,12 @@ dontaudit logger_app sysfs_vendor_sched:dir { search };
 dontaudit logger_app vendor_gps_file:dir { remove_name };
 dontaudit logger_app vendor_gps_file:dir { write };
 dontaudit logger_app vendor_gps_file:file { unlink };
+# b/208721679
+dontaudit logger_app vendor_default_prop:file { getattr };
+dontaudit logger_app vendor_default_prop:file { map };
+dontaudit logger_app vendor_default_prop:file { open };
+dontaudit logger_app vendor_modem_prop:file { getattr };
+dontaudit logger_app vendor_modem_prop:file { map };
+dontaudit logger_app vendor_modem_prop:file { open };
+dontaudit logger_app vendor_modem_prop:file { read };
+dontaudit logger_app vendor_modem_prop:property_service { set };

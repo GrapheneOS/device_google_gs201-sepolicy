@@ -1,0 +1,7 @@
+# b/208721673
+dontaudit incidentd aac_drc_prop:file { getattr };
+dontaudit incidentd aac_drc_prop:file { map };
+dontaudit incidentd aac_drc_prop:file { open };
+dontaudit incidentd ab_update_gki_prop:file { getattr };
+dontaudit incidentd ab_update_gki_prop:file { map };
+dontaudit incidentd ab_update_gki_prop:file { open };
