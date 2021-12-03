@@ -142,3 +142,9 @@ genfscon sysfs /devices/virtual/wakeup/wakeup u:object_r:sysfs_wakeup:s0
 #SecureElement
 genfscon sysfs /devices/platform/181c0000.spi/spi_master/spi17/spi17.0/st33spi u:object_r:sysfs_st33spi:s0
 
+# Sensors HAL
+genfscon sysfs /devices/platform/1c2c0000.drmdsim/1c2c0000.drmdsim.0/backlight/panel0-backlight/als_table       u:object_r:sysfs_sensors:s0
+genfscon sysfs /devices/platform/1c2c0000.drmdsim/1c2c0000.drmdsim.0/backlight/panel0-backlight/brightness      u:object_r:sysfs_sensors:s0
+genfscon sysfs /devices/platform/1c2c0000.drmdsim/1c2c0000.drmdsim.0/backlight/panel0-backlight/local_hbm_mode  u:object_r:sysfs_sensors:s0
+genfscon sysfs /devices/platform/1c2c0000.drmdsim/1c2c0000.drmdsim.0/backlight/panel0-backlight/state           u:object_r:sysfs_sensors:s0
+
