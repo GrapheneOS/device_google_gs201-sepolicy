@@ -39,3 +39,5 @@ dontaudit hal_sensors_default sensor_reg_data_file:dir { search };
 dontaudit hal_sensors_default sensor_reg_data_file:file { getattr };
 dontaudit hal_sensors_default sensor_reg_data_file:file { open };
 dontaudit hal_sensors_default sensor_reg_data_file:file { read };
+# b/208909175
+dontaudit hal_sensors_default aoc_device:chr_file { getattr };
