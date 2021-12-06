@@ -1,11 +1,6 @@
 # b/208721809
 dontaudit dumpstate fuse:dir { search };
-dontaudit dumpstate hal_graphics_composer_default:binder { call };
 dontaudit dumpstate hal_power_stats_vendor_service:service_manager { find };
 dontaudit dumpstate hal_uwb_vendor_default:binder { call };
 dontaudit dumpstate modem_img_file:filesystem { getattr };
-dontaudit dumpstate vendor_dmabuf_debugfs:file { open };
-dontaudit dumpstate vendor_dmabuf_debugfs:file { read };
 dontaudit dumpstate vold:binder { call };
-# b/208909191
-dontaudit dumpstate vendor_dmabuf_debugfs:file { getattr };

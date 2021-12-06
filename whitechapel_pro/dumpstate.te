@@ -1,5 +1,13 @@
+dump_hal(hal_graphics_composer)
+
+userdebug_or_eng(`
+  allow dumpstate vendor_dmabuf_debugfs:file r_file_perms;
+')
+
 allow dumpstate sysfs_scsi_devices_0000:file r_file_perms;
 allow dumpstate persist_file:dir r_dir_perms;
 allow dumpstate modem_efs_file:dir r_dir_perms;
 allow dumpstate modem_userdata_file:dir r_dir_perms;
 allow dumpstate modem_img_file:dir r_dir_perms;
+
+dontaudit dumpstate vendor_dmabuf_debugfs:file r_file_perms;
