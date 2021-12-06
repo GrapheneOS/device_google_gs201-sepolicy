@@ -83,3 +83,6 @@ type modem_userdata_file, file_type;
 
 # SecureElement
 type sysfs_st33spi, sysfs_type, fs_type;
+
+# GPU
+type sysfs_gpu, sysfs_type, fs_type;

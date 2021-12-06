@@ -27,6 +27,9 @@ genfscon sysfs /devices/platform/acpm_stats                                    u
 # Broadcom
 genfscon sysfs /module/bcmdhd4389                                              u:object_r:sysfs_bcmdhd:s0
 
+# GPU
+genfscon sysfs /devices/platform/28000000.mali/hint_min_freq                   u:object_r:sysfs_gpu:s0
+
 # Fabric
 genfscon sysfs /devices/platform/17000010.devfreq_mif/devfreq/17000010.devfreq_mif/min_freq  u:object_r:sysfs_fabric:s0
 
