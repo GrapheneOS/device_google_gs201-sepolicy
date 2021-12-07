@@ -1,9 +1,0 @@
-# b/208721636
-dontaudit system_app sysfs_vendor_sched:dir { search };
-dontaudit system_app vendor_default_prop:file { getattr };
-dontaudit system_app vendor_default_prop:file { map };
-dontaudit system_app vendor_default_prop:file { open };
-dontaudit system_app vendor_slog_file:dir { search };
-dontaudit system_app vendor_slog_prop:file { getattr };
-dontaudit system_app vendor_slog_prop:file { map };
-dontaudit system_app vendor_slog_prop:file { open };

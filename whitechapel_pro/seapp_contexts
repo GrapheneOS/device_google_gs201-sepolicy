@@ -6,6 +6,14 @@ user=_app isPrivApp=true name=com.shannon.rcsservice domain=vendor_rcs_app level
 user=_app isPrivApp=true name=com.shannon.rcsservice:shannonrcsservice domain=vendor_rcs_service_app levelFrom=all
 user=_app isPrivApp=true name=com.samsung.slsi.telephony.oemril domain=oemrilservice_app levelFrom=all
 
+# Samsung S.LSI telephony
+user=system seinfo=platform name=com.samsung.slsi.telephony.silentlogging domain=vendor_telephony_silentlogging_app levelFrom=all
+user=system seinfo=platform name=com.samsung.slsi.telephony.silentlogging:remote domain=vendor_silentlogging_remote_app levelFrom=all
+user=system seinfo=platform name=com.samsung.slsi.telephony.testmode domain=vendor_telephony_test_app levelFrom=all
+user=system seinfo=platform name=com.samsung.slsi.telephony.uartswitch domain=vendor_telephony_uartswitch_app levelFrom=all
+user=system seinfo=platform name=com.samsung.slsi.sysdebugmode domain=vendor_telephony_debug_app levelFrom=all
+user=system seinfo=platform name=com.samsung.slsi.telephony.networktestmode domain=vendor_telephony_network_test_app levelFrom=all
+
 # Hardware Info Collection
 user=_app isPrivApp=true name=com.google.android.hardwareinfo domain=hardware_info_app type=app_data_file levelFrom=user
 
