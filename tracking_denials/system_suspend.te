@@ -1,6 +1,0 @@
-# b/209705335
-dontaudit system_suspend_server sysfs:dir { open };
-dontaudit system_suspend_server sysfs:dir { read };
-dontaudit system_suspend_server sysfs:file { getattr };
-dontaudit system_suspend_server sysfs:file { open };
-dontaudit system_suspend_server sysfs:file { read };
