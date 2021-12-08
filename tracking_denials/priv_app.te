@@ -7,3 +7,9 @@ dontaudit priv_app vendor_apex_file:dir { search };
 dontaudit priv_app vendor_apex_file:file { getattr };
 dontaudit priv_app vendor_apex_file:file { open };
 dontaudit priv_app vendor_apex_file:file { read };
+# b/209703854
+dontaudit priv_app vendor_file:file { execute };
+dontaudit priv_app vendor_file:file { getattr };
+dontaudit priv_app vendor_file:file { map };
+dontaudit priv_app vendor_file:file { open };
+dontaudit priv_app vendor_file:file { read };
