@@ -49,3 +49,7 @@ user=_app isPrivApp=true seinfo=EuiccSupportPixel name=com.google.euiccpixel dom
 
 # Sub System Ramdump
 user=system seinfo=platform name=com.google.SSRestartDetector domain=ssr_detector_app type=system_app_data_file levelFrom=user
+
+# Google Camera
+user=_app isPrivApp=true seinfo=google name=com.google.android.GoogleCamera domain=google_camera_app type=app_data_file levelFrom=all
+

@@ -1,0 +1,4 @@
+type google_camera_app, domain, coredomain;
+app_domain(google_camera_app)
+
+allow google_camera_app app_api_service:service_manager find;
