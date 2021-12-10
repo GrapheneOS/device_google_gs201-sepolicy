@@ -195,10 +195,11 @@
 /data/vendor/uwb(/.*)?                                                      u:object_r:uwb_data_vendor:s0
 
 # Persist
-/mnt/vendor/persist/modem(/.*)?                                             u:object_r:persist_modem_file:s0
-/mnt/vendor/persist/ss(/.*)?                                                u:object_r:persist_ss_file:s0
 /mnt/vendor/persist/battery(/.*)?                                           u:object_r:persist_battery_file:s0
+/mnt/vendor/persist/camera(/.*)?                                            u:object_r:persist_camera_file:s0
+/mnt/vendor/persist/modem(/.*)?                                             u:object_r:persist_modem_file:s0
 /mnt/vendor/persist/sensors/registry(/.*)?                                  u:object_r:persist_sensor_reg_file:s0
+/mnt/vendor/persist/ss(/.*)?                                                u:object_r:persist_ss_file:s0
 /mnt/vendor/persist/uwb(/.*)?                                               u:object_r:persist_uwb_file:s0
 
 # Extra mount images
