@@ -35,3 +35,6 @@ dontaudit hal_graphics_composer_default dumpstate:fifo_file { write };
 dontaudit hal_graphics_composer_default sysfs_sensors:file { getattr };
 dontaudit hal_graphics_composer_default sysfs_sensors:file { open };
 dontaudit hal_graphics_composer_default sysfs_sensors:file { write };
+# b/209890345
+dontaudit hal_graphics_composer_default sysfs_display:file { getattr };
+dontaudit hal_graphics_composer_default sysfs_display:file { open };
