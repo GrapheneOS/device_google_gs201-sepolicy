@@ -50,3 +50,5 @@ dontaudit hal_camera_default property_socket:sock_file { write };
 dontaudit hal_camera_default system_server:binder { call };
 # b/207300298
 dontaudit hal_camera_default vendor_camera_data_file:file { getattr };
+# b/210067468
+dontaudit hal_camera_default persist_camera_file:dir { search };

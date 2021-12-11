@@ -1,0 +1,2 @@
+# b/210067282
+dontaudit hal_sensors_default persist_camera_file:dir { search };
