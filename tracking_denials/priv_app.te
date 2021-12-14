@@ -2,3 +2,8 @@
 dontaudit priv_app vendor_default_prop:file { getattr };
 dontaudit priv_app vendor_default_prop:file { map };
 dontaudit priv_app vendor_default_prop:file { open };
+# b/210363938
+dontaudit priv_app vendor_apex_file:dir { search };
+dontaudit priv_app vendor_apex_file:file { getattr };
+dontaudit priv_app vendor_apex_file:file { open };
+dontaudit priv_app vendor_apex_file:file { read };
