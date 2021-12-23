@@ -102,6 +102,8 @@
 /dev/lwis-eeprom-m24c64x-3j1                                                u:object_r:lwis_device:s0
 /dev/lwis-eeprom-m24c64x-imx386                                             u:object_r:lwis_device:s0
 /dev/lwis-eeprom-m24c64x-imx663                                             u:object_r:lwis_device:s0
+/dev/lwis-eeprom-m24c64x-imx712                                             u:object_r:lwis_device:s0
+/dev/lwis-eeprom-m24c64x-imx712-uw                                          u:object_r:lwis_device:s0
 /dev/lwis-eeprom-sem1215sa                                                  u:object_r:lwis_device:s0
 /dev/lwis-flash-lm3644                                                      u:object_r:lwis_device:s0
 /dev/lwis-g3aa                                                              u:object_r:lwis_device:s0
@@ -122,6 +124,8 @@
 /dev/lwis-sensor-imx386                                                     u:object_r:lwis_device:s0
 /dev/lwis-sensor-imx586                                                     u:object_r:lwis_device:s0
 /dev/lwis-sensor-imx663                                                     u:object_r:lwis_device:s0
+/dev/lwis-sensor-imx712                                                     u:object_r:lwis_device:s0
+/dev/lwis-sensor-imx712-uw                                                  u:object_r:lwis_device:s0
 /dev/lwis-sensor-imx787                                                     u:object_r:lwis_device:s0
 /dev/lwis-slc                                                               u:object_r:lwis_device:s0
 /dev/lwis-top                                                               u:object_r:lwis_device:s0
