@@ -1,5 +1,0 @@
-# b/205780067
-dontaudit vendor_ims_app radio_service:service_manager { find };
-# b/205904439
-dontaudit vendor_ims_app rild:binder { call };
-dontaudit vendor_ims_app rild:binder { transfer };
