@@ -122,6 +122,7 @@
 /dev/lwis-sensor-imx386                                                     u:object_r:lwis_device:s0
 /dev/lwis-sensor-imx586                                                     u:object_r:lwis_device:s0
 /dev/lwis-sensor-imx663                                                     u:object_r:lwis_device:s0
+/dev/lwis-sensor-imx787                                                     u:object_r:lwis_device:s0
 /dev/lwis-slc                                                               u:object_r:lwis_device:s0
 /dev/lwis-top                                                               u:object_r:lwis_device:s0
 /dev/lwis-votf                                                              u:object_r:lwis_device:s0
