@@ -4,6 +4,3 @@ dontaudit rild vendor_persist_config_default_prop:file { getattr };
 dontaudit rild vendor_persist_config_default_prop:file { map };
 dontaudit rild vendor_persist_config_default_prop:file { open };
 dontaudit rild vendor_persist_config_default_prop:file { read };
-# b/205904441
-dontaudit rild vendor_ims_app:binder { call };
-dontaudit rild vendor_rcs_app:binder { call };
