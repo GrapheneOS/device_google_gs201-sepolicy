@@ -14,7 +14,6 @@
 /vendor/bin/init\.insmod\.sh                                                u:object_r:init-insmod-sh_exec:s0
 /vendor/bin/trusty_apploader                                                u:object_r:trusty_apploader_exec:s0
 /vendor/bin/trusty_metricsd                                                 u:object_r:trusty_metricsd_exec:s0
-/vendor/bin/convert_to_f2fs\.sh                                             u:object_r:convert-to-f2fs-sh_exec:s0
 /vendor/bin/usf_stats                                                       u:object_r:vendor_usf_stats:s0
 /vendor/bin/usf_reg_edit                                                    u:object_r:vendor_usf_reg_edit:s0
 /vendor/bin/dumpsys                                                         u:object_r:vendor_dumpsys:s0
