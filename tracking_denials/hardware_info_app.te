@@ -3,8 +3,4 @@ dontaudit hardware_info_app sysfs:file { getattr };
 dontaudit hardware_info_app sysfs:file { open };
 dontaudit hardware_info_app sysfs:file { read };
 # b/208909060
-dontaudit hardware_info_app sysfs_batteryinfo:dir { search };
-dontaudit hardware_info_app sysfs_batteryinfo:file { getattr };
-dontaudit hardware_info_app sysfs_batteryinfo:file { open };
-dontaudit hardware_info_app sysfs_batteryinfo:file { read };
 dontaudit hardware_info_app vendor_regmap_debugfs:dir { search };

@@ -1,4 +1,5 @@
 set_prop(rild, vendor_rild_prop)
+get_prop(rild, vendor_persist_config_default_prop)
 get_prop(rild, vendor_carrier_prop)
 
 get_prop(rild, sota_prop)
