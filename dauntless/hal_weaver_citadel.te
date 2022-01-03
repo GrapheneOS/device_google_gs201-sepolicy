@@ -5,5 +5,7 @@ init_daemon_domain(hal_weaver_citadel)
 hal_server_domain(hal_weaver_citadel, hal_weaver)
 hal_server_domain(hal_weaver_citadel, hal_oemlock)
 hal_server_domain(hal_weaver_citadel, hal_authsecret)
+vndbinder_use(hal_weaver_citadel)
+binder_call(hal_weaver_citadel, citadeld)
 
 allow hal_weaver_citadel citadeld_service:service_manager find;
