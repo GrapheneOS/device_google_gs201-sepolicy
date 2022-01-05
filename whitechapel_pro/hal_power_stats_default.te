@@ -2,4 +2,4 @@ allow hal_power_stats_default sysfs_scsi_devices_0000:dir r_dir_perms;
 allow hal_power_stats_default sysfs_scsi_devices_0000:file r_file_perms;
 
 # allowed to access dislay stats sysfs node
-allow hal_power_stats_default sysfs_sensors:file r_file_perms;
+allow hal_power_stats_default sysfs_display:file r_file_perms;

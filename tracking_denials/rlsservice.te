@@ -23,5 +23,5 @@ dontaudit rlsservice device:dir { watch };
 dontaudit rlsservice sysfs:file { open };
 dontaudit rlsservice sysfs:file { read };
 # b/209705394
-dontaudit rlsservice sysfs_sensors:file { open };
-dontaudit rlsservice sysfs_sensors:file { read };
+dontaudit rlsservice sysfs_display:file { open };
+dontaudit rlsservice sysfs_display:file { read };
