@@ -1,9 +1,0 @@
-# b/205657092
-dontaudit hal_weaver_citadel vndbinder_device:chr_file { ioctl };
-dontaudit hal_weaver_citadel vndbinder_device:chr_file { map };
-dontaudit hal_weaver_citadel vndbinder_device:chr_file { open };
-dontaudit hal_weaver_citadel vndbinder_device:chr_file { read };
-dontaudit hal_weaver_citadel vndbinder_device:chr_file { write };
-# b/205904286
-dontaudit hal_weaver_citadel citadeld:binder { call };
-dontaudit hal_weaver_citadel vndservicemanager:binder { call };

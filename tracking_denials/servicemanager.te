@@ -1,2 +1,0 @@
-# b/205904207
-dontaudit servicemanager hal_fingerprint_default:binder { call };

@@ -1,14 +1,2 @@
-# b/205657177
-dontaudit citadeld citadel_device:chr_file { getattr };
-dontaudit citadeld citadel_device:chr_file { ioctl };
-dontaudit citadeld citadel_device:chr_file { open };
-dontaudit citadeld citadel_device:chr_file { read write };
-dontaudit citadeld vndbinder_device:chr_file { ioctl };
-dontaudit citadeld vndbinder_device:chr_file { map };
-dontaudit citadeld vndbinder_device:chr_file { open };
-dontaudit citadeld vndbinder_device:chr_file { read };
-dontaudit citadeld vndbinder_device:chr_file { write };
 # b/205904322
 dontaudit citadeld system_server:binder { call };
-dontaudit citadeld vndservicemanager:binder { call };
-dontaudit citadeld vndservicemanager:binder { transfer };
