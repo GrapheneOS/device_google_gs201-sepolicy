@@ -42,7 +42,6 @@ dontaudit hal_dumpstate_default sysfs_thermal:file { read };
 dontaudit hal_dumpstate_default sysfs_wifi:dir { search };
 dontaudit hal_dumpstate_default sysfs_wifi:file { open };
 dontaudit hal_dumpstate_default sysfs_wifi:file { read };
-dontaudit hal_dumpstate_default vendor_displaycolor_service:service_manager { find };
 dontaudit hal_dumpstate_default vendor_dmabuf_debugfs:file { open };
 dontaudit hal_dumpstate_default vendor_dmabuf_debugfs:file { read };
 dontaudit hal_dumpstate_default vendor_dumpsys:file { execute_no_trans };
