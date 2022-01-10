@@ -25,3 +25,7 @@ dontaudit rlsservice sysfs:file { read };
 # b/209705394
 dontaudit rlsservice sysfs_display:file { open };
 dontaudit rlsservice sysfs_display:file { read };
+# b/213817228
+dontaudit rlsservice mnt_vendor_file:dir { search };
+dontaudit rlsservice persist_camera_file:dir { search };
+dontaudit rlsservice persist_file:dir { search };
