@@ -153,3 +153,11 @@ genfscon sysfs /devices/platform/acpm_mfd_bus@18100000/i2c-7/i2c-s2mpg12mfd/s2mp
 
 #SecureElement
 genfscon sysfs /devices/platform/181c0000.spi/spi_master/spi17/spi17.0/st33spi u:object_r:sysfs_st33spi:s0
+
+# Thermal
+genfscon sysfs /devices/platform/100a0000.LITTLE                          u:object_r:sysfs_thermal:s0
+genfscon sysfs /devices/platform/100a0000.MID                             u:object_r:sysfs_thermal:s0
+genfscon sysfs /devices/platform/100a0000.BIG                             u:object_r:sysfs_thermal:s0
+genfscon sysfs /devices/platform/100a0000.ISP                             u:object_r:sysfs_thermal:s0
+genfscon sysfs /devices/platform/100b0000.G3D                             u:object_r:sysfs_thermal:s0
+genfscon sysfs /devices/platform/100b0000.TPU                             u:object_r:sysfs_thermal:s0
