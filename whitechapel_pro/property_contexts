@@ -67,6 +67,9 @@ persist.vendor.se.                         u:object_r:vendor_secure_element_prop
 vendor.wlan.driver.version                 u:object_r:vendor_wifi_version:s0
 vendor.wlan.firmware.version               u:object_r:vendor_wifi_version:s0
 
+# for display
+ro.vendor.hwc.drm.device                   u:object_r:vendor_display_prop:s0
+
 # Camera
 vendor.camera.                             u:object_r:vendor_camera_prop:s0
 

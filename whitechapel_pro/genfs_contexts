@@ -60,13 +60,25 @@ genfscon sysfs /devices/platform/14700000.ufs/pixel/boot_lun_enabled           u
 
 # Display
 genfscon sysfs /devices/platform/1c2c0000.drmdsim/1c2c0000.drmdsim.0/gamma     u:object_r:sysfs_display:s0
-genfscon sysfs /devices/platform/1c2c0000.drmdsim/1c2c0000.drmdsim.0/backlight/panel0-backlight/als_table       u:object_r:sysfs_display:s0
-genfscon sysfs /devices/platform/1c2c0000.drmdsim/1c2c0000.drmdsim.0/backlight/panel0-backlight/brightness      u:object_r:sysfs_display:s0
-genfscon sysfs /devices/platform/1c2c0000.drmdsim/1c2c0000.drmdsim.0/backlight/panel0-backlight/local_hbm_mode  u:object_r:sysfs_display:s0
-genfscon sysfs /devices/platform/1c2c0000.drmdsim/1c2c0000.drmdsim.0/backlight/panel0-backlight/state           u:object_r:sysfs_display:s0
 genfscon sysfs /devices/platform/1c2c0000.drmdsim/hs_clock                     u:object_r:sysfs_display:s0
 genfscon sysfs /devices/platform/1c240000.drmdecon/early_wakeup                u:object_r:sysfs_display:s0
 genfscon sysfs /devices/platform/1c242000.drmdecon/early_wakeup                u:object_r:sysfs_display:s0
+
+genfscon sysfs /devices/platform/1c2c0000.drmdsim/1c2c0000.drmdsim.0/backlight                 u:object_r:sysfs_leds:s0
+genfscon sysfs /devices/platform/1c2c0000.drmdsim/1c2c0000.drmdsim.0/panel_name                u:object_r:sysfs_display:s0
+genfscon sysfs /devices/platform/1c2c0000.drmdsim/1c2c0000.drmdsim.0/serial_number             u:object_r:sysfs_display:s0
+
+genfscon sysfs /devices/platform/1c2d0000.drmdsim/1c2d0000.drmdsim.0/backlight                 u:object_r:sysfs_leds:s0
+genfscon sysfs /devices/platform/1c2d0000.drmdsim/1c2d0000.drmdsim.0/panel_name                u:object_r:sysfs_display:s0
+genfscon sysfs /devices/platform/1c2d0000.drmdsim/1c2d0000.drmdsim.0/serial_number             u:object_r:sysfs_display:s0
+
+genfscon sysfs /devices/platform/1c240000.drmdecon/dqe0/atc                                     u:object_r:sysfs_display:s0
+genfscon sysfs /devices/platform/1c241000.drmdecon/dqe1/atc                                     u:object_r:sysfs_display:s0
+
+genfscon sysfs /module/drm/parameters/vblankoffdelay                                           u:object_r:sysfs_display:s0
+
+genfscon sysfs /devices/platform/exynos-drm/tui_status                                         u:object_r:sysfs_display:s0
+
 
 # mediacodec_samsung
 genfscon sysfs /devices/platform/mfc/video4linux/video                         u:object_r:sysfs_mfc:s0
