@@ -29,3 +29,7 @@ dontaudit rlsservice sysfs_display:file { read };
 dontaudit rlsservice mnt_vendor_file:dir { search };
 dontaudit rlsservice persist_camera_file:dir { search };
 dontaudit rlsservice persist_file:dir { search };
+# b/214472869
+dontaudit rlsservice sysfs_leds:dir { search };
+dontaudit rlsservice sysfs_leds:file { open };
+dontaudit rlsservice sysfs_leds:file { read };
