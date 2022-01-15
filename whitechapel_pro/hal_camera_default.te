@@ -7,3 +7,7 @@ allow hal_camera_default fwk_stats_service:service_manager find;
 # Allow camera HAL to query preferred camera frequencies from the radio HAL
 # extensions to avoid interference with cellular antennas.
 allow hal_camera_default hal_radioext_hwservice:hwservice_manager find;
+
+# For camera hal to talk with rlsservice
+allow hal_camera_default rls_service:service_manager find;
+binder_call(hal_camera_default, rlsservice)
