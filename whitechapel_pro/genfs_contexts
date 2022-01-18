@@ -59,10 +59,12 @@ genfscon sysfs /devices/platform/17000080.devfreq_bo/devfreq/17000080.devfreq_bo
 genfscon sysfs /devices/platform/14700000.ufs/pixel/boot_lun_enabled           u:object_r:sysfs_ota:s0
 
 # Display
-genfscon sysfs /devices/platform/1c2c0000.drmdsim/1c2c0000.drmdsim.0/gamma     u:object_r:sysfs_display:s0
-genfscon sysfs /devices/platform/1c2c0000.drmdsim/hs_clock                     u:object_r:sysfs_display:s0
-genfscon sysfs /devices/platform/1c240000.drmdecon/early_wakeup                u:object_r:sysfs_display:s0
-genfscon sysfs /devices/platform/1c242000.drmdecon/early_wakeup                u:object_r:sysfs_display:s0
+genfscon sysfs /devices/platform/1c2c0000.drmdsim/1c2c0000.drmdsim.0/gamma         u:object_r:sysfs_display:s0
+genfscon sysfs /devices/platform/1c2c0000.drmdsim/1c2c0000.drmdsim.0/min_vrefresh  u:object_r:sysfs_display:s0
+genfscon sysfs /devices/platform/1c2c0000.drmdsim/1c2c0000.drmdsim.0/idle_delay_ms u:object_r:sysfs_display:s0
+genfscon sysfs /devices/platform/1c2c0000.drmdsim/hs_clock                         u:object_r:sysfs_display:s0
+genfscon sysfs /devices/platform/1c240000.drmdecon/early_wakeup                    u:object_r:sysfs_display:s0
+genfscon sysfs /devices/platform/1c242000.drmdecon/early_wakeup                    u:object_r:sysfs_display:s0
 
 genfscon sysfs /devices/platform/1c2c0000.drmdsim/1c2c0000.drmdsim.0/backlight                 u:object_r:sysfs_leds:s0
 genfscon sysfs /devices/platform/1c2c0000.drmdsim/1c2c0000.drmdsim.0/panel_name                u:object_r:sysfs_display:s0

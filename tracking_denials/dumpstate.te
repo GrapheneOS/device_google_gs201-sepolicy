@@ -1,6 +1,0 @@
-# b/208721809
-dontaudit dumpstate fuse:dir { search };
-dontaudit dumpstate hal_power_stats_vendor_service:service_manager { find };
-dontaudit dumpstate hal_uwb_vendor_default:binder { call };
-dontaudit dumpstate modem_img_file:filesystem { getattr };
-dontaudit dumpstate vold:binder { call };

@@ -47,3 +47,6 @@ allow hal_graphics_composer_default hal_dumpstate_default:fd use;
 # socket / vnd service
 allow hal_graphics_composer_default self:netlink_kobject_uevent_socket create_socket_perms_no_ioctl;
 vndbinder_use(hal_graphics_composer_default)
+
+# allow HWC to get device_config_surface_flinger_native_boot_prop for adpf flags
+get_prop(hal_graphics_composer_default, device_config_surface_flinger_native_boot_prop)
