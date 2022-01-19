@@ -1,6 +1,5 @@
 # b/208721677
 # b/208909124
-dontaudit hal_dumpstate_default aoc_device:chr_file { getattr open read write };
 dontaudit hal_dumpstate_default boottime_public_prop:file { open };
 dontaudit hal_dumpstate_default boottime_public_prop:file { read };
 dontaudit hal_dumpstate_default citadeld:binder call;
@@ -12,8 +11,6 @@ dontaudit hal_dumpstate_default debugfs_f2fs:file { open };
 dontaudit hal_dumpstate_default debugfs_f2fs:file { read };
 dontaudit hal_dumpstate_default debugfs:file { open };
 dontaudit hal_dumpstate_default debugfs:file { read };
-dontaudit hal_dumpstate_default device:dir read;
-dontaudit hal_dumpstate_default device:dir watch;
 dontaudit hal_dumpstate_default logbuffer_device:chr_file { getattr };
 dontaudit hal_dumpstate_default logbuffer_device:chr_file { open };
 dontaudit hal_dumpstate_default logbuffer_device:chr_file { read };
