@@ -2,9 +2,6 @@
 # b/208909124
 dontaudit hal_dumpstate_default boottime_public_prop:file { open };
 dontaudit hal_dumpstate_default boottime_public_prop:file { read };
-dontaudit hal_dumpstate_default citadeld:binder call;
-dontaudit hal_dumpstate_default citadeld_service:service_manager { find };
-dontaudit hal_dumpstate_default citadel_updater:file execute_no_trans;
 dontaudit hal_dumpstate_default debugfs:dir { open read };
 dontaudit hal_dumpstate_default debugfs_f2fs:dir { search };
 dontaudit hal_dumpstate_default debugfs_f2fs:file { open };

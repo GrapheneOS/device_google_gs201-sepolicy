@@ -1,3 +1,7 @@
+allow hal_dumpstate_default citadeld_service:service_manager find;
+allow hal_dumpstate_default citadel_updater:file execute_no_trans;
+binder_call(hal_dumpstate_default, citadeld);
+
 allow hal_dumpstate_default device:dir r_dir_perms;
 allow hal_dumpstate_default aoc_device:chr_file rw_file_perms;
 
