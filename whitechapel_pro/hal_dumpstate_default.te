@@ -1,3 +1,6 @@
+allow hal_dumpstate_default sysfs_exynos_bts:dir r_dir_perms;
+allow hal_dumpstate_default sysfs_exynos_bts_stats:file r_file_perms;
+
 allow hal_dumpstate_default sysfs_aoc:dir r_dir_perms;
 allow hal_dumpstate_default sysfs_aoc_dumpstate:file r_file_perms;
 
