@@ -2,36 +2,13 @@
 # b/208909124
 dontaudit hal_dumpstate_default boottime_public_prop:file { open };
 dontaudit hal_dumpstate_default boottime_public_prop:file { read };
-dontaudit hal_dumpstate_default debugfs:dir { open read };
-dontaudit hal_dumpstate_default debugfs_f2fs:dir { search };
-dontaudit hal_dumpstate_default debugfs_f2fs:file { open };
-dontaudit hal_dumpstate_default debugfs_f2fs:file { read };
-dontaudit hal_dumpstate_default debugfs:file { open };
-dontaudit hal_dumpstate_default debugfs:file { read };
 dontaudit hal_dumpstate_default property_type:file *;
 dontaudit hal_dumpstate_default shell_data_file:file { getattr };
 dontaudit hal_dumpstate_default sysfs:file { open };
 dontaudit hal_dumpstate_default sysfs:file { read };
-dontaudit hal_dumpstate_default vendor_battery_debugfs:dir { open read };
-dontaudit hal_dumpstate_default vendor_battery_debugfs:dir search;
-dontaudit hal_dumpstate_default vendor_battery_debugfs:file { getattr open read };
 dontaudit hal_dumpstate_default vendor_camera_data_file:dir search;
-dontaudit hal_dumpstate_default vendor_charger_debugfs:dir { open };
-dontaudit hal_dumpstate_default vendor_charger_debugfs:dir { read };
-dontaudit hal_dumpstate_default vendor_charger_debugfs:dir { search };
-dontaudit hal_dumpstate_default vendor_charger_debugfs:file { getattr };
-dontaudit hal_dumpstate_default vendor_charger_debugfs:file open;
-dontaudit hal_dumpstate_default vendor_charger_debugfs:file { read };
-dontaudit hal_dumpstate_default vendor_dmabuf_debugfs:file { open };
-dontaudit hal_dumpstate_default vendor_dmabuf_debugfs:file { read };
 dontaudit hal_dumpstate_default vendor_dumpsys:file { execute_no_trans };
 dontaudit hal_dumpstate_default vendor_log_file:dir search;
-dontaudit hal_dumpstate_default vendor_maxfg_debugfs:dir search;
-dontaudit hal_dumpstate_default vendor_maxfg_debugfs:file { open read };
-dontaudit hal_dumpstate_default vendor_pm_genpd_debugfs:file { open };
-dontaudit hal_dumpstate_default vendor_pm_genpd_debugfs:file { read };
 dontaudit hal_dumpstate_default vendor_shell_exec:file { execute_no_trans };
 dontaudit hal_dumpstate_default vendor_toolbox_exec:file { execute_no_trans };
-dontaudit hal_dumpstate_default vendor_votable_debugfs:dir { open read };
-dontaudit hal_dumpstate_default vendor_votable_debugfs:dir search;
-dontaudit hal_dumpstate_default vendor_votable_debugfs:file { getattr open read };
+

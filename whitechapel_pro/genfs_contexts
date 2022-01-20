@@ -114,6 +114,7 @@ genfscon debugfs /usb                                                   u:object
 genfscon debugfs /google_charger                                        u:object_r:vendor_charger_debugfs:s0
 genfscon debugfs /gvotables                                             u:object_r:vendor_votable_debugfs:s0
 genfscon debugfs /google_battery                                        u:object_r:vendor_battery_debugfs:s0
+genfscon debugfs /dri/0/crtc-                                           u:object_r:vendor_dri_debugfs:s0
 
 # Battery
 genfscon sysfs /devices/platform/google,battery/power_supply/battery            u:object_r:sysfs_batteryinfo:s0
