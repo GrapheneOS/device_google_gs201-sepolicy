@@ -25,7 +25,3 @@ dontaudit hal_power_stats_default sysfs_wifi:dir { search };
 dontaudit hal_power_stats_default sysfs_wifi:file { getattr };
 dontaudit hal_power_stats_default sysfs_wifi:file { open };
 dontaudit hal_power_stats_default sysfs_wifi:file { read };
-# b/214473005
-dontaudit hal_power_stats_default sysfs_leds:dir { search };
-dontaudit hal_power_stats_default sysfs_leds:file { open };
-dontaudit hal_power_stats_default sysfs_leds:file { read };
