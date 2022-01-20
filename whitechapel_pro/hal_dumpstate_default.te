@@ -1,3 +1,5 @@
+allow hal_dumpstate_default sysfs_cpu:file r_file_perms;
+
 allow hal_dumpstate_default vendor_usf_reg_edit:file execute_no_trans;
 allow hal_dumpstate_default vendor_usf_stats:file execute_no_trans;
 
