@@ -14,12 +14,6 @@ dontaudit hal_dumpstate_default sscoredump_vendor_data_crashinfo_file:dir { open
 dontaudit hal_dumpstate_default sscoredump_vendor_data_crashinfo_file:dir search;
 dontaudit hal_dumpstate_default sysfs_aoc:dir { search };
 dontaudit hal_dumpstate_default sysfs_aoc_dumpstate:file { open read };
-dontaudit hal_dumpstate_default sysfs_batteryinfo:dir { open };
-dontaudit hal_dumpstate_default sysfs_batteryinfo:dir { read };
-dontaudit hal_dumpstate_default sysfs_batteryinfo:dir { search };
-dontaudit hal_dumpstate_default sysfs_batteryinfo:file getattr;
-dontaudit hal_dumpstate_default sysfs_batteryinfo:file { open };
-dontaudit hal_dumpstate_default sysfs_batteryinfo:file { read };
 dontaudit hal_dumpstate_default sysfs_bcl:dir { open };
 dontaudit hal_dumpstate_default sysfs_bcl:dir { read };
 dontaudit hal_dumpstate_default sysfs_bcl:dir { search };
