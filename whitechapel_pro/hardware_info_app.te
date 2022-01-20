@@ -13,3 +13,7 @@ allow hardware_info_app sysfs_pixelstats:file r_file_perms;
 # Batteryinfo
 allow hardware_info_app sysfs_batteryinfo:dir search;
 allow hardware_info_app sysfs_batteryinfo:file r_file_perms;
+
+# Display
+allow hardware_info_app sysfs_display:dir search;
+allow hardware_info_app sysfs_display:file r_file_perms;
