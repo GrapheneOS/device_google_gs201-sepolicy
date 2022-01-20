@@ -30,8 +30,6 @@ dontaudit hal_dumpstate_default vendor_maxfg_debugfs:dir search;
 dontaudit hal_dumpstate_default vendor_maxfg_debugfs:file { open read };
 dontaudit hal_dumpstate_default vendor_pm_genpd_debugfs:file { open };
 dontaudit hal_dumpstate_default vendor_pm_genpd_debugfs:file { read };
-dontaudit hal_dumpstate_default vendor_rfsd_log_file:dir { open read search };
-dontaudit hal_dumpstate_default vendor_rfsd_log_file:file { getattr open read };
 dontaudit hal_dumpstate_default vendor_shell_exec:file { execute_no_trans };
 dontaudit hal_dumpstate_default vendor_slog_file:file { getattr read };
 dontaudit hal_dumpstate_default vendor_slog_file:file open;
