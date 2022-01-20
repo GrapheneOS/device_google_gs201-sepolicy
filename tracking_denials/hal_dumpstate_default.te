@@ -32,8 +32,6 @@ dontaudit hal_dumpstate_default vendor_pm_genpd_debugfs:file { open };
 dontaudit hal_dumpstate_default vendor_pm_genpd_debugfs:file { read };
 dontaudit hal_dumpstate_default vendor_shell_exec:file { execute_no_trans };
 dontaudit hal_dumpstate_default vendor_toolbox_exec:file { execute_no_trans };
-dontaudit hal_dumpstate_default vendor_usf_reg_edit:file execute_no_trans;
-dontaudit hal_dumpstate_default vendor_usf_stats:file execute_no_trans;
 dontaudit hal_dumpstate_default vendor_votable_debugfs:dir { open read };
 dontaudit hal_dumpstate_default vendor_votable_debugfs:dir search;
 dontaudit hal_dumpstate_default vendor_votable_debugfs:file { getattr open read };
