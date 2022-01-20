@@ -4,7 +4,6 @@ dontaudit hal_dumpstate_default boottime_public_prop:file { open };
 dontaudit hal_dumpstate_default boottime_public_prop:file { read };
 dontaudit hal_dumpstate_default property_type:file *;
 dontaudit hal_dumpstate_default shell_data_file:file { getattr };
-dontaudit hal_dumpstate_default vendor_camera_data_file:dir search;
 dontaudit hal_dumpstate_default vendor_dumpsys:file { execute_no_trans };
 dontaudit hal_dumpstate_default vendor_log_file:dir search;
 dontaudit hal_dumpstate_default vendor_shell_exec:file { execute_no_trans };
