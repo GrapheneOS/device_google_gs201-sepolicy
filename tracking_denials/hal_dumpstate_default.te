@@ -10,8 +10,6 @@ dontaudit hal_dumpstate_default debugfs:file { open };
 dontaudit hal_dumpstate_default debugfs:file { read };
 dontaudit hal_dumpstate_default property_type:file *;
 dontaudit hal_dumpstate_default shell_data_file:file { getattr };
-dontaudit hal_dumpstate_default sysfs_aoc:dir { search };
-dontaudit hal_dumpstate_default sysfs_aoc_dumpstate:file { open read };
 dontaudit hal_dumpstate_default sysfs_chip_id:file { open };
 dontaudit hal_dumpstate_default sysfs_chip_id:file { read };
 dontaudit hal_dumpstate_default sysfs_exynos_bts:dir { search };
