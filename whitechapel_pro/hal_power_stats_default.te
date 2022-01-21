@@ -5,3 +5,6 @@ allow hal_power_stats_default sysfs_scsi_devices_0000:file r_file_perms;
 allow hal_power_stats_default sysfs_display:file r_file_perms;
 
 r_dir_file(hal_power_stats_default, sysfs_leds)
+
+# getStateResidency AIDL callback for Bluetooth HAL
+binder_call(hal_power_stats_default, hal_bluetooth_btlinux)

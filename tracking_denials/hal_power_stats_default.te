@@ -1,5 +1,3 @@
-# b/205904367
-dontaudit hal_power_stats_default hal_bluetooth_btlinux:binder { call };
 # b/207062210
 dontaudit hal_power_stats_default sysfs:file { getattr };
 dontaudit hal_power_stats_default sysfs:file { open };
