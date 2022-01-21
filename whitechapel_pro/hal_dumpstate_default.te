@@ -1,9 +1,50 @@
+allow hal_dumpstate_default vendor_camera_data_file:dir r_dir_perms;
+allow hal_dumpstate_default vendor_camera_data_file:file r_file_perms;
+
+allow hal_dumpstate_default sysfs_cpu:file r_file_perms;
+
+allow hal_dumpstate_default vendor_usf_reg_edit:file execute_no_trans;
+allow hal_dumpstate_default vendor_usf_stats:file execute_no_trans;
+
+allow hal_dumpstate_default vendor_rfsd_log_file:dir r_dir_perms;
+allow hal_dumpstate_default vendor_rfsd_log_file:file r_file_perms;
+
+allow hal_dumpstate_default vendor_gps_file:dir r_dir_perms;
+allow hal_dumpstate_default vendor_gps_file:file r_file_perms;
+
+allow hal_dumpstate_default sysfs_chip_id:file r_file_perms;
+
+allow hal_dumpstate_default sysfs_wlc:dir r_dir_perms;
+allow hal_dumpstate_default sysfs_wlc:file r_file_perms;
+
+allow hal_dumpstate_default sysfs_exynos_bts:dir r_dir_perms;
+allow hal_dumpstate_default sysfs_exynos_bts_stats:file r_file_perms;
+
+allow hal_dumpstate_default sysfs_aoc:dir r_dir_perms;
+allow hal_dumpstate_default sysfs_aoc_dumpstate:file r_file_perms;
+
+allow hal_dumpstate_default sscoredump_vendor_data_crashinfo_file:dir r_dir_perms;
+allow hal_dumpstate_default sscoredump_vendor_data_crashinfo_file:file r_file_perms;
+
+allow hal_dumpstate_default sysfs_thermal:dir r_dir_perms;
+allow hal_dumpstate_default sysfs_thermal:file r_file_perms;
+
+allow hal_dumpstate_default sysfs_wifi:dir r_dir_perms;
+allow hal_dumpstate_default sysfs_wifi:file r_file_perms;
+
+allow hal_dumpstate_default sysfs_batteryinfo:dir r_dir_perms;
+allow hal_dumpstate_default sysfs_batteryinfo:file r_file_perms;
+
+allow hal_dumpstate_default sysfs_acpm_stats:dir r_dir_perms;
+allow hal_dumpstate_default sysfs_acpm_stats:file r_file_perms;
+
 allow hal_dumpstate_default radio_vendor_data_file:dir create_dir_perms;
 allow hal_dumpstate_default radio_vendor_data_file:file create_file_perms;
 
 allow hal_dumpstate_default modem_efs_file:dir search;
 allow hal_dumpstate_default modem_efs_file:file r_file_perms;
 allow hal_dumpstate_default modem_stat_data_file:file r_file_perms;
+allow hal_dumpstate_default vendor_slog_file:file r_file_perms;
 
 allow hal_dumpstate_default logbuffer_device:chr_file r_file_perms;
 
@@ -31,4 +72,39 @@ userdebug_or_eng(`
   allow hal_dumpstate_default mnt_vendor_file:dir search;
   allow hal_dumpstate_default ramdump_vendor_mnt_file:dir search;
   allow hal_dumpstate_default ramdump_vendor_mnt_file:file r_file_perms;
+  allow hal_dumpstate_default sysfs_bcl:dir r_dir_perms;
+  allow hal_dumpstate_default sysfs_bcl:file r_file_perms;
+  allow hal_dumpstate_default debugfs:dir r_dir_perms;
+  allow hal_dumpstate_default vendor_votable_debugfs:dir r_dir_perms;
+  allow hal_dumpstate_default vendor_votable_debugfs:file r_file_perms;
+  allow hal_dumpstate_default debugfs_f2fs:dir r_dir_perms;
+  allow hal_dumpstate_default debugfs_f2fs:file r_file_perms;
+  allow hal_dumpstate_default vendor_battery_debugfs:dir r_dir_perms;
+  allow hal_dumpstate_default vendor_battery_debugfs:file r_file_perms;
+  allow hal_dumpstate_default vendor_charger_debugfs:dir r_dir_perms;
+  allow hal_dumpstate_default vendor_charger_debugfs:file r_file_perms;
+  allow hal_dumpstate_default vendor_dmabuf_debugfs:file r_file_perms;
+  allow hal_dumpstate_default vendor_maxfg_debugfs:dir r_dir_perms;
+  allow hal_dumpstate_default vendor_maxfg_debugfs:file r_file_perms;
+  allow hal_dumpstate_default vendor_pm_genpd_debugfs:file r_file_perms;
+  allow hal_dumpstate_default vendor_dri_debugfs:dir r_dir_perms;
+  allow hal_dumpstate_default vendor_dri_debugfs:file r_file_perms;
 ')
+
+dontaudit hal_dumpstate_default vendor_dri_debugfs:dir r_dir_perms;
+dontaudit hal_dumpstate_default vendor_dri_debugfs:file r_file_perms;
+dontaudit hal_dumpstate_default debugfs:dir r_dir_perms;
+dontaudit hal_dumpstate_default vendor_votable_debugfs:dir r_dir_perms;
+dontaudit hal_dumpstate_default vendor_votable_debugfs:file r_file_perms;
+dontaudit hal_dumpstate_default debugfs_f2fs:dir r_dir_perms;
+dontaudit hal_dumpstate_default debugfs_f2fs:file r_file_perms;
+dontaudit hal_dumpstate_default vendor_battery_debugfs:dir r_dir_perms;
+dontaudit hal_dumpstate_default vendor_battery_debugfs:file r_file_perms;
+dontaudit hal_dumpstate_default vendor_charger_debugfs:dir r_dir_perms;
+dontaudit hal_dumpstate_default vendor_charger_debugfs:file r_file_perms;
+dontaudit hal_dumpstate_default vendor_dmabuf_debugfs:file r_file_perms;
+dontaudit hal_dumpstate_default vendor_maxfg_debugfs:dir r_dir_perms;
+dontaudit hal_dumpstate_default vendor_maxfg_debugfs:file r_file_perms;
+dontaudit hal_dumpstate_default vendor_pm_genpd_debugfs:file r_file_perms;
+dontaudit hal_dumpstate_default sysfs_bcl:dir r_dir_perms;
+dontaudit hal_dumpstate_default sysfs_bcl:file r_file_perms;
