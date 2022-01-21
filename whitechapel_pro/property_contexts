@@ -84,7 +84,8 @@ ro.vendor.sys.                             u:object_r:vendor_ro_sys_default_prop
 persist.vendor.sys.                        u:object_r:vendor_persist_sys_default_prop:s0
 
 # for gps
-vendor.gps                                 u:object_r:vendor_gps_prop:s0
+vendor.gps.                                u:object_r:vendor_gps_prop:s0
+persist.vendor.gps.                        u:object_r:vendor_gps_prop:s0
 
 # Fingerprint
 vendor.fingerprint.                        u:object_r:vendor_fingerprint_prop:s0
