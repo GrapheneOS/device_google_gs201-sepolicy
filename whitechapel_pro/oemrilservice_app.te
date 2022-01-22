@@ -6,3 +6,4 @@ allow oemrilservice_app hal_exynos_rild_hwservice:hwservice_manager find;
 allow oemrilservice_app radio_service:service_manager find;
 
 binder_call(oemrilservice_app, rild)
+set_prop(oemrilservice_app, vendor_rild_prop)
