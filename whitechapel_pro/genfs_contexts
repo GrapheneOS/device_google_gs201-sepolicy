@@ -24,6 +24,9 @@ genfscon sysfs /devices/platform/17000080.devfreq_bo/devfreq/17000080.devfreq_bo
 genfscon sysfs /devices/platform/28000000.mali/time_in_state                                           u:object_r:sysfs_cpu:s0
 genfscon sysfs /devices/platform/28000000.mali/uid_time_in_state                                       u:object_r:sysfs_cpu:s0
 
+genfscon sysfs /devices/soc0/machine                                           u:object_r:sysfs_soc:s0
+genfscon sysfs /devices/soc0/revision                                          u:object_r:sysfs_soc:s0
+
 # Touch
 genfscon sysfs /devices/platform/10d10000.spi/spi_master/spi0/spi0.0/synaptics_tcm.0/sysfs   u:object_r:sysfs_touch:s0
 genfscon sysfs /devices/virtual/sec/tsp                                                      u:object_r:sysfs_touch:s0
