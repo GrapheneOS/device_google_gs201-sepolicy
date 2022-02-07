@@ -59,7 +59,7 @@
 
 # Graphics
 /vendor/lib(64)?/hw/gralloc\.gs201\.so                                      u:object_r:same_process_hal_file:s0
-/vendor/lib(64)?/hw/vulkan\.gs201\.so                                       u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/hw/vulkan\.mali\.so                                        u:object_r:same_process_hal_file:s0
 
 # Vendor kernel modules
 /vendor_dlkm/lib/modules/.*\.ko                                             u:object_r:vendor_kernel_modules:s0
