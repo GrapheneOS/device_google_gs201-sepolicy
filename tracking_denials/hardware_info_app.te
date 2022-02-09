@@ -1,4 +1,0 @@
-# b/208721710
-dontaudit hardware_info_app sysfs:file { getattr };
-dontaudit hardware_info_app sysfs:file { open };
-dontaudit hardware_info_app sysfs:file { read };
