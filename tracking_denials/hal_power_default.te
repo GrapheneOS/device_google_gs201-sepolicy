@@ -1,9 +1,2 @@
 # b/208909174
 dontaudit hal_power_default hal_power_default:capability { dac_read_search };
-
-# b/214121738
-dontaudit hal_power_default sysfs:file { open };
-dontaudit hal_power_default sysfs:file { write };
-dontaudit hal_power_default sysfs_fabric:file { open };
-dontaudit hal_power_default sysfs_fabric:file { write };
-dontaudit hal_power_default vendor_camera_prop:property_service { set };
