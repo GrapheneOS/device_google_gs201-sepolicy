@@ -14,7 +14,6 @@
 /vendor/bin/init\.insmod\.sh                                                u:object_r:init-insmod-sh_exec:s0
 /vendor/bin/trusty_apploader                                                u:object_r:trusty_apploader_exec:s0
 /vendor/bin/trusty_metricsd                                                 u:object_r:trusty_metricsd_exec:s0
-/vendor/bin/convert_to_f2fs\.sh                                             u:object_r:convert-to-f2fs-sh_exec:s0
 /vendor/bin/usf_stats                                                       u:object_r:vendor_usf_stats:s0
 /vendor/bin/usf_reg_edit                                                    u:object_r:vendor_usf_reg_edit:s0
 /vendor/bin/dumpsys                                                         u:object_r:vendor_dumpsys:s0
@@ -39,9 +38,11 @@
 /vendor/bin/hw/rild_exynos                                                  u:object_r:rild_exec:s0
 /vendor/bin/hw/vendor\.samsung_slsi\.hardware\.tetheroffload@1\.0-service   u:object_r:hal_tetheroffload_default_exec:s0
 /vendor/bin/hw/hardware\.qorvo\.uwb-service                                 u:object_r:hal_uwb_vendor_default_exec:s0
+/vendor/bin/rlsservice                                                      u:object_r:rlsservice_exec:s0
 
 # Vendor Firmwares
 /vendor/firmware(/.*)?                                                      u:object_r:vendor_fw_file:s0
+/vendor/firmware/mali_csffw\.bin                                            u:object_r:same_process_hal_file:s0
 
 # Vendor libraries
 /vendor/lib(64)?/libdrm\.so                                                 u:object_r:same_process_hal_file:s0
@@ -56,6 +57,10 @@
 /vendor/lib(64)?/vendor-pixelatoms-cpp\.so                                  u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libprotobuf-cpp-lite-3\.9\.1\.so                           u:object_r:same_process_hal_file:s0
 
+# Graphics
+/vendor/lib(64)?/hw/gralloc\.gs201\.so                                      u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/hw/vulkan\.mali\.so                                        u:object_r:same_process_hal_file:s0
+
 # Vendor kernel modules
 /vendor_dlkm/lib/modules/.*\.ko                                             u:object_r:vendor_kernel_modules:s0
 
@@ -68,12 +73,11 @@
 /dev/dma_heap/famodel-secure                                                u:object_r:faceauth_heap_device:s0
 /dev/dma_heap/faprev-secure                                                 u:object_r:faceauth_heap_device:s0
 /dev/dma_heap/farawimg-secure                                               u:object_r:faceauth_heap_device:s0
-/dev/dma_heap/vframe-secure                                                 u:object_r:vframe_heap_device:s0
+/dev/dma_heap/vframe-secure                                                 u:object_r:dmabuf_system_secure_heap_device:s0
 /dev/dma_heap/vscaler-secure                                                u:object_r:vscaler_heap_device:s0
 /dev/dma_heap/vstream-secure                                                u:object_r:dmabuf_system_secure_heap_device:s0
 /dev/bigocean                                                               u:object_r:video_device:s0
 /dev/goodix_fp                                                              u:object_r:fingerprint_device:s0
-/dev/touch_offload                                                          u:object_r:touch_offload_device:s0
 /dev/stmvl53l1_ranging                                                      u:object_r:rls_device:s0
 /dev/watchdog0                                                              u:object_r:watchdog_device:s0
 /dev/mali0                                                                  u:object_r:gpu_device:s0
@@ -201,9 +205,13 @@
 /mnt/vendor/persist/sensors/registry(/.*)?                                  u:object_r:persist_sensor_reg_file:s0
 /mnt/vendor/persist/ss(/.*)?                                                u:object_r:persist_ss_file:s0
 /mnt/vendor/persist/uwb(/.*)?                                               u:object_r:persist_uwb_file:s0
+/mnt/vendor/persist/display(/.*)?                                           u:object_r:persist_display_file:s0
 
 # Extra mount images
 /mnt/vendor/modem_img(/.*)?                                                 u:object_r:modem_img_file:s0
 /mnt/vendor/efs(/.*)?                                                       u:object_r:modem_efs_file:s0
 /mnt/vendor/efs_backup(/.*)?                                                u:object_r:modem_efs_file:s0
 /mnt/vendor/modem_userdata(/.*)?                                            u:object_r:modem_userdata_file:s0
+
+# USB
+/vendor/bin/hw/set_usb_irq\.sh  u:object_r:set-usb-irq-sh_exec:s0

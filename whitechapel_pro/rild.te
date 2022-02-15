@@ -1,4 +1,5 @@
 set_prop(rild, vendor_rild_prop)
+get_prop(rild, vendor_persist_config_default_prop)
 get_prop(rild, vendor_carrier_prop)
 
 get_prop(rild, sota_prop)
@@ -18,8 +19,11 @@ binder_call(rild, bipchmgr)
 binder_call(rild, gpsd)
 binder_call(rild, hal_audio_default)
 binder_call(rild, modem_svc_sit)
+binder_call(rild, vendor_ims_app)
+binder_call(rild, vendor_rcs_app)
 binder_call(rild, oemrilservice_app)
 binder_call(rild, hal_secure_element_uicc)
+binder_call(rild, grilservice_app)
 
 # for hal service
 add_hwservice(rild, hal_exynos_rild_hwservice)

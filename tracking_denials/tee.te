@@ -1,3 +1,5 @@
-# b/205904330
-dontaudit tee tee:capability { setgid };
-dontaudit tee tee:capability { setuid };
+# TODO(b/205904330): avoid using setuid, setgid permission
+allow tee tee:capability { setuid setgid };
+# b/215649571
+dontaudit tee gsi_metadata_file:dir { search };
+dontaudit tee metadata_file:dir { search };
