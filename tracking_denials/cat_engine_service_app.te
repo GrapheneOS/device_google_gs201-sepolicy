@@ -1,0 +1,5 @@
+# b/219632839
+dontaudit cat_engine_service_app activity_service:service_manager { find };
+dontaudit cat_engine_service_app content_capture_service:service_manager { find };
+dontaudit cat_engine_service_app game_service:service_manager { find };
+dontaudit cat_engine_service_app netstats_service:service_manager { find };
