@@ -1,6 +1,0 @@
-# b/207062775
-dontaudit hal_bluetooth_btlinux device:chr_file { ioctl };
-dontaudit hal_bluetooth_btlinux device:chr_file { open };
-dontaudit hal_bluetooth_btlinux device:chr_file { read write };
-# b/208721525
-dontaudit hal_bluetooth_btlinux device:chr_file { getattr };
