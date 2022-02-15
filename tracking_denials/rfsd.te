@@ -1,3 +1,0 @@
-# b/205904361
-dontaudit rfsd rfsd:capability { chown };
-dontaudit rfsd rfsd:capability { setuid };
