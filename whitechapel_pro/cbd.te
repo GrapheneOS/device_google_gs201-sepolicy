@@ -6,6 +6,9 @@ set_prop(cbd, vendor_modem_prop)
 set_prop(cbd, vendor_cbd_prop)
 set_prop(cbd, vendor_rild_prop)
 
+# Allow cbd to set gid/uid from too to radio
+allow cbd self:capability { setgid setuid };
+
 allow cbd mnt_vendor_file:dir r_dir_perms;
 
 allow cbd kmsg_device:chr_file rw_file_perms;
@@ -27,6 +30,7 @@ allow cbd proc_cmdline:file r_file_perms;
 
 allow cbd persist_modem_file:dir create_dir_perms;
 allow cbd persist_modem_file:file create_file_perms;
+allow cbd persist_file:dir search;
 
 allow cbd radio_vendor_data_file:dir create_dir_perms;
 allow cbd radio_vendor_data_file:file create_file_perms;
