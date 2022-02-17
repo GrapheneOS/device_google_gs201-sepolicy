@@ -1,5 +1,2 @@
 # b/208909174
 dontaudit hal_power_default hal_power_default:capability { dac_read_search };
-# b/218934377
-dontaudit hal_power_default sysfs:file { open };
-dontaudit hal_power_default sysfs:file { write };
