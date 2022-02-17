@@ -47,8 +47,9 @@ genfscon sysfs /module/bcmdhd4389                                              u
 genfscon sysfs /devices/platform/28000000.mali/hint_min_freq                   u:object_r:sysfs_gpu:s0
 
 # Fabric
-genfscon sysfs /devices/platform/17000010.devfreq_mif/devfreq/17000010.devfreq_mif/min_freq  u:object_r:sysfs_fabric:s0
-genfscon sysfs /devices/platform/17000020.devfreq_int/devfreq/17000020.devfreq_int/min_freq  u:object_r:sysfs_fabric:s0
+genfscon sysfs /devices/platform/17000010.devfreq_mif/devfreq/17000010.devfreq_mif/min_freq                u:object_r:sysfs_fabric:s0
+genfscon sysfs /devices/platform/17000020.devfreq_int/devfreq/17000020.devfreq_int/min_freq                u:object_r:sysfs_fabric:s0
+genfscon sysfs /devices/platform/17000010.devfreq_mif/devfreq/17000010.devfreq_mif/interactive/target_load u:object_r:sysfs_fabric:s0
 
 # sscoredump (per device)
 genfscon sysfs /devices/platform/aoc/sscoredump/sscd_aoc/report_count                                   u:object_r:sysfs_sscoredump_subsystem_report_count:s0
