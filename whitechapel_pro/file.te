@@ -91,3 +91,14 @@ type sysfs_st33spi, sysfs_type, fs_type;
 
 # GPU
 type sysfs_gpu, sysfs_type, fs_type;
+
+# Vendor sched files
+userdebug_or_eng(`
+    typeattribute sysfs_vendor_sched mlstrustedobject;
+')
+
+# SJTAG
+type sysfs_sjtag, fs_type, sysfs_type;
+userdebug_or_eng(`
+    typeattribute sysfs_sjtag mlstrustedobject;
+')
