@@ -1,4 +1,5 @@
 set_prop(rild, vendor_rild_prop)
+set_prop(rild, vendor_modem_prop)
 get_prop(rild, vendor_persist_config_default_prop)
 get_prop(rild, vendor_carrier_prop)
 
