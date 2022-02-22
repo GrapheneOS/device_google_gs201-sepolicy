@@ -29,6 +29,7 @@ persist.vendor.sys.silentlog               u:object_r:vendor_slog_prop:s0
 persist.vendor.modem.                      u:object_r:vendor_modem_prop:s0
 vendor.modem.                              u:object_r:vendor_modem_prop:s0
 vendor.sys.modem.                          u:object_r:vendor_modem_prop:s0
+vendor.sys.modem_reset                     u:object_r:vendor_modem_prop:s0
 ro.vendor.sys.modem.                       u:object_r:vendor_modem_prop:s0
 vendor.sys.exynos.modempath                u:object_r:vendor_modem_prop:s0
 persist.vendor.sys.modem.                  u:object_r:vendor_modem_prop:s0
@@ -77,7 +78,9 @@ vendor.camera.debug.                       u:object_r:vendor_camera_debug_prop:s
 vendor.camera.fatp.                        u:object_r:vendor_camera_fatp_prop:s0
 
 # for logger app
+vendor.pixellogger.                        u:object_r:vendor_logger_prop:s0
 persist.vendor.pixellogger.                u:object_r:vendor_logger_prop:s0
+persist.vendor.verbose_logging_enabled     u:object_r:vendor_logger_prop:s0
 
 # vendor default
 ro.vendor.sys.                             u:object_r:vendor_ro_sys_default_prop:s0
