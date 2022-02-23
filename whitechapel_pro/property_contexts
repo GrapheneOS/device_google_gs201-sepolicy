@@ -79,6 +79,7 @@ vendor.camera.fatp.                        u:object_r:vendor_camera_fatp_prop:s0
 
 # for logger app
 persist.vendor.pixellogger.                u:object_r:vendor_logger_prop:s0
+vendor.pixellogger.                        u:object_r:vendor_logger_prop:s0
 
 # vendor default
 ro.vendor.sys.                             u:object_r:vendor_ro_sys_default_prop:s0
