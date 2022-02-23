@@ -1,6 +1,0 @@
-# b/214473093
-dontaudit hal_sensors_default sensor_reg_data_file:file { getattr };
-dontaudit hal_sensors_default sensor_reg_data_file:file { open };
-dontaudit hal_sensors_default sensor_reg_data_file:file { read };
-# b/218930975
-dontaudit hal_sensors_default hal_graphics_composer_default:binder { call };
