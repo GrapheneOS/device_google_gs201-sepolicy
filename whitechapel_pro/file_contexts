@@ -43,6 +43,7 @@
 # Vendor Firmwares
 /vendor/firmware(/.*)?                                                      u:object_r:vendor_fw_file:s0
 /vendor/firmware/mali_csffw\.bin                                            u:object_r:same_process_hal_file:s0
+/vendor/firmware/gxp_fw_core[0-3]                                           u:object_r:same_process_hal_file:s0
 
 # Vendor libraries
 /vendor/lib(64)?/libdrm\.so                                                 u:object_r:same_process_hal_file:s0
@@ -56,6 +57,7 @@
 /vendor/lib(64)?/android\.frameworks\.stats-V1-ndk\.so                      u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/vendor-pixelatoms-cpp\.so                                  u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libprotobuf-cpp-lite-3\.9\.1\.so                           u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libgxp\.so                                                 u:object_r:same_process_hal_file:s0
 
 # Graphics
 /vendor/lib(64)?/hw/gralloc\.gs201\.so                                      u:object_r:same_process_hal_file:s0
@@ -133,6 +135,7 @@
 /dev/dri/card0                                                              u:object_r:graphics_device:s0
 /dev/fimg2d                                                                 u:object_r:graphics_device:s0
 /dev/g2d                                                                    u:object_r:graphics_device:s0
+/dev/gxp                                                                    u:object_r:gxp_device:s0
 /dev/dit2                                                                   u:object_r:vendor_toe_device:s0
 /dev/trusty-ipc-dev0                                                        u:object_r:tee_device:s0
 /dev/sg1                                                                    u:object_r:sg_device:s0
