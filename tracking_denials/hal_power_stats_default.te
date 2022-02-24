@@ -1,4 +1,0 @@
-# b/219369324
-dontaudit hal_power_stats_default sysfs:file { getattr };
-dontaudit hal_power_stats_default sysfs:file { open };
-dontaudit hal_power_stats_default sysfs:file { read };
