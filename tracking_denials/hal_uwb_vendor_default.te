@@ -1,8 +1,3 @@
-# b/204718220
-dontaudit hal_uwb_vendor_default default_android_service:service_manager { add };
-# b/206045367
-dontaudit hal_uwb_vendor_default zygote:binder { call };
-dontaudit hal_uwb_vendor_default zygote:binder { transfer };
 # b/208721505
 dontaudit hal_uwb_vendor_default dumpstate:fd { use };
 dontaudit hal_uwb_vendor_default dumpstate:fifo_file { write };
