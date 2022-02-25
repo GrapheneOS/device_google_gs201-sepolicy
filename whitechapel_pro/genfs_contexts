@@ -59,10 +59,11 @@ genfscon sysfs /devices/platform/mfc-core/sscoredump/sscd_mfc-core/report_count 
 genfscon sysfs /devices/platform/wlan/sscoredump/sscd_wlan/report_count                                 u:object_r:sysfs_sscoredump_subsystem_report_count:s0
 
 # Power Stats
-genfscon sysfs /devices/platform/cpif/modem/power_stats                       u:object_r:sysfs_power_stats:s0
-genfscon sysfs /devices/platform/11920000.pcie/power_stats                    u:object_r:sysfs_power_stats:s0
-genfscon sysfs /devices/platform/14520000.pcie/power_stats                    u:object_r:sysfs_power_stats:s0
-genfscon sysfs /devices/platform/10970000.hsi2c/i2c-4/i2c-st21nfc/power_stats u:object_r:sysfs_power_stats:s0
+genfscon sysfs /devices/platform/cpif/modem/power_stats                                u:object_r:sysfs_power_stats:s0
+genfscon sysfs /devices/platform/11920000.pcie/power_stats                             u:object_r:sysfs_power_stats:s0
+genfscon sysfs /devices/platform/14520000.pcie/power_stats                             u:object_r:sysfs_power_stats:s0
+genfscon sysfs /devices/platform/10970000.hsi2c/i2c-4/i2c-st21nfc/power_stats          u:object_r:sysfs_power_stats:s0
+genfscon sysfs /devices/platform/10db0000.spi/spi_master/spi16/spi16.0/uwb/power_stats u:object_r:sysfs_power_stats:s0
 
 # Power ODPM
 genfscon sysfs /devices/platform/acpm_mfd_bus@18100000/i2c-7/i2c-s2mpg12mfd/s2mpg12-meter/s2mpg12-odpm/iio:device0/name          u:object_r:sysfs_odpm:s0
