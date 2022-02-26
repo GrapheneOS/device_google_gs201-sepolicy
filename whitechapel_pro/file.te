@@ -102,3 +102,6 @@ type sysfs_sjtag, fs_type, sysfs_type;
 userdebug_or_eng(`
     typeattribute sysfs_sjtag mlstrustedobject;
 ')
+
+# USB-C throttling stats
+type sysfs_usbc_throttling_stats, sysfs_type, fs_type;
