@@ -1,1 +1,7 @@
 binder_call(system_server, hal_camera_default);
+
+# Allow system server to find vendor uwb service. In the legacy
+# UWB stack, system_server talks directly to the vendor stack.
+# TODO(b/186585880): This will be obsoleted when the new UCI stack for
+# UWB lands.
+allow system_server uwb_vendor_service:service_manager find;
