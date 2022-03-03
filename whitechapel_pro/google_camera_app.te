@@ -7,3 +7,9 @@ allow google_camera_app cameraserver_service:service_manager find;
 allow google_camera_app mediaextractor_service:service_manager find;
 allow google_camera_app mediametrics_service:service_manager find;
 allow google_camera_app mediaserver_service:service_manager find;
+
+# Allows camera app to access the GXP device.
+allow google_camera_app gxp_device:chr_file rw_file_perms;
+
+# Allows camera app to search for GXP firmware file.
+allow google_camera_app vendor_fw_file:dir search;
