@@ -25,6 +25,7 @@ binder_call(rild, vendor_rcs_app)
 binder_call(rild, oemrilservice_app)
 binder_call(rild, hal_secure_element_uicc)
 binder_call(rild, grilservice_app)
+binder_call(rild, vendor_engineermode_app)
 
 # for hal service
 add_hwservice(rild, hal_exynos_rild_hwservice)
