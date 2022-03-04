@@ -1,2 +1,0 @@
-# b/221384770
-dontaudit hal_dumpstate_default vendor_camera_debug_prop:file { read };

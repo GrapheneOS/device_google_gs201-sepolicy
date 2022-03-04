@@ -79,6 +79,7 @@ allow hal_dumpstate_default vendor_shell_exec:file execute_no_trans;
 allow hal_dumpstate_default proc_vendor_sched:dir r_dir_perms;
 allow hal_dumpstate_default proc_vendor_sched:file r_file_perms;
 
+get_prop(hal_dumpstate_default, vendor_camera_debug_prop);
 get_prop(hal_dumpstate_default, boottime_public_prop)
 get_prop(hal_dumpstate_default, vendor_camera_prop)
 get_prop(hal_dumpstate_default, vendor_gps_prop)
