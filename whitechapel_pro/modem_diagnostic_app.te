@@ -32,4 +32,6 @@ userdebug_or_eng(`
 
   allow modem_diagnostic_app sysfs_batteryinfo:file r_file_perms;
   allow modem_diagnostic_app sysfs_batteryinfo:dir search;
+
+  dontaudit modem_diagnostic_app default_prop:file r_file_perms;
 ')
