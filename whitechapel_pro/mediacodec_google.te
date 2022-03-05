@@ -14,6 +14,7 @@ hal_client_domain(mediacodec_google, hal_codec2)
 hal_client_domain(mediacodec_google, hal_graphics_allocator)
 
 allow mediacodec_google dmabuf_system_heap_device:chr_file r_file_perms;
+allow mediacodec_google dmabuf_system_secure_heap_device:chr_file r_file_perms;
 allow mediacodec_google video_device:chr_file rw_file_perms;
 
 crash_dump_fallback(mediacodec_google)
