@@ -15,3 +15,7 @@ allow init modem_efs_file:dir mounton;
 allow init modem_userdata_file:dir mounton;
 allow init ram_device:blk_file w_file_perms;
 allow init sysfs_scsi_devices_0000:file w_file_perms;
+
+# Workaround for b/193113005 that modem_img unlabeled after disable-verity
+dontaudit init overlayfs_file:file rename;
+dontaudit init overlayfs_file:chr_file unlink;
