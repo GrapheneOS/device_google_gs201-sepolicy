@@ -27,3 +27,6 @@ userdebug_or_eng(`
   allow hardware_info_app vendor_maxfg_debugfs:dir search;
   allow hardware_info_app vendor_maxfg_debugfs:file r_file_perms;
 ')
+
+# Batery history
+allow hardware_info_app battery_history_device:chr_file r_file_perms;
