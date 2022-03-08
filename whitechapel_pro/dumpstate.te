@@ -4,6 +4,7 @@ dump_hal(hal_uwb_vendor)
 
 userdebug_or_eng(`
   allow dumpstate vendor_dmabuf_debugfs:file r_file_perms;
+  allow dumpstate media_rw_data_file:file append;
 ')
 
 allow dumpstate sysfs_scsi_devices_0000:file r_file_perms;
