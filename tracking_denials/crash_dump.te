@@ -1,7 +1,0 @@
-# b/207300335
-dontaudit crash_dump hwservicemanager_prop:file { getattr };
-dontaudit crash_dump hwservicemanager_prop:file { map };
-dontaudit crash_dump hwservicemanager_prop:file { open };
-dontaudit crash_dump qemu_sf_lcd_density_prop:file { getattr };
-dontaudit crash_dump qemu_sf_lcd_density_prop:file { map };
-dontaudit crash_dump qemu_sf_lcd_density_prop:file { open };
