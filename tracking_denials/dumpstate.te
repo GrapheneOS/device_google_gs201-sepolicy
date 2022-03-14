@@ -2,5 +2,3 @@
 dontaudit dumpstate app_zygote:process { signal };
 dontaudit dumpstate hal_power_stats_vendor_service:service_manager { find };
 dontaudit dumpstate sysfs:file { read };
-# b/223332748
-dontaudit dumpstate system_dlkm_file:dir { getattr };
