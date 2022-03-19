@@ -94,3 +94,6 @@ type sysfs_gpu, sysfs_type, fs_type;
 
 # USB-C throttling stats
 type sysfs_usbc_throttling_stats, sysfs_type, fs_type;
+
+# Touch
+type proc_touch, proc_type, fs_type;
