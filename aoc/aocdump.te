@@ -6,6 +6,8 @@ userdebug_or_eng(`
     # Permit communication with AoC
     allow aocdump aoc_device:chr_file rw_file_perms;
 
+    allow aocdump radio_vendor_data_file:dir rw_dir_perms;
+    allow aocdump radio_vendor_data_file:file create_file_perms;
     allow aocdump wifi_logging_data_file:dir create_dir_perms;
     allow aocdump wifi_logging_data_file:file create_file_perms;
     set_prop(aocdump, vendor_audio_prop);
