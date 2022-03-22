@@ -2,3 +2,6 @@
 dontaudit vendor_init thermal_link_device:file { create };
 # b/221384939
 dontaudit vendor_init vendor_battery_defender_prop:property_service { set };
+# b/225279974
+dontaudit vendor_init modem_img_file:filesystem { getattr };
+
