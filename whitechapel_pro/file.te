@@ -97,3 +97,14 @@ type sysfs_usbc_throttling_stats, sysfs_type, fs_type;
 
 # Touch
 type proc_touch, proc_type, fs_type;
+
+# Vendor sched files
+userdebug_or_eng(`
+    typeattribute sysfs_vendor_sched mlstrustedobject;
+')
+
+# SJTAG
+type sysfs_sjtag, fs_type, sysfs_type;
+userdebug_or_eng(`
+    typeattribute sysfs_sjtag mlstrustedobject;
+')
