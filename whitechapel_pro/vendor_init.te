@@ -26,3 +26,5 @@ set_prop(vendor_init, vendor_fingerprint_prop)
 
 # Touch
 allow vendor_init proc_touch:file w_file_perms;
+
+allow vendor_init modem_img_file:filesystem { getattr };
