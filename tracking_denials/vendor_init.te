@@ -2,4 +2,6 @@
 dontaudit vendor_init thermal_link_device:file { create };
 # b/221384939
 dontaudit vendor_init vendor_battery_defender_prop:property_service { set };
+# b/226271913
+dontaudit vendor_init vendor_maxfg_debugfs:file setattr;
 
