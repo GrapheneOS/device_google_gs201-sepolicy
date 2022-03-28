@@ -222,3 +222,7 @@
 
 # USB
 /vendor/bin/hw/set_usb_irq\.sh  u:object_r:set-usb-irq-sh_exec:s0
+
+# Raw HID device
+/dev/hidraw[0-9]*                        u:object_r:hidraw_device:s0
+
