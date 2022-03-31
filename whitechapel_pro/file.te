@@ -96,7 +96,7 @@ type sysfs_gpu, sysfs_type, fs_type;
 
 # Vendor sched files
 userdebug_or_eng(`
-    typeattribute sysfs_vendor_sched mlstrustedobject;
+    typeattribute proc_vendor_sched mlstrustedobject;
 ')
 
 # SJTAG
