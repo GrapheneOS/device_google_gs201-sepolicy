@@ -1,0 +1,2 @@
+# b/227695036
+dontaudit hal_sensors_default sensor_reg_data_file:dir { write };
