@@ -8,7 +8,6 @@ r_dir_file(hal_power_stats_default, sysfs_cpu)
 r_dir_file(hal_power_stats_default, sysfs_edgetpu)
 r_dir_file(hal_power_stats_default, sysfs_iio_devices)
 r_dir_file(hal_power_stats_default, sysfs_leds)
-r_dir_file(hal_power_stats_default, sysfs_odpm)
 r_dir_file(hal_power_stats_default, sysfs_scsi_devices_0000)
 r_dir_file(hal_power_stats_default, sysfs_wifi)
 
