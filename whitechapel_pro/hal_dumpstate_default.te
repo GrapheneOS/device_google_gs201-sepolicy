@@ -43,6 +43,7 @@ allow hal_dumpstate_default radio_vendor_data_file:file create_file_perms;
 
 allow hal_dumpstate_default modem_efs_file:dir search;
 allow hal_dumpstate_default modem_efs_file:file r_file_perms;
+allow hal_dumpstate_default modem_stat_data_file:dir r_dir_perms;
 allow hal_dumpstate_default modem_stat_data_file:file r_file_perms;
 allow hal_dumpstate_default vendor_slog_file:file r_file_perms;
 
@@ -64,8 +65,14 @@ allow hal_dumpstate_default sysfs_scsi_devices_0000:file r_file_perms;
 allow hal_dumpstate_default sysfs_touch:dir r_dir_perms;
 allow hal_dumpstate_default sysfs_touch:file rw_file_perms;
 
+allow hal_dumpstate_default proc_touch:dir r_dir_perms;
+allow hal_dumpstate_default proc_touch:file rw_file_perms;
+
 allow hal_dumpstate_default vendor_displaycolor_service:service_manager find;
 binder_call(hal_dumpstate_default, hal_graphics_composer_default);
+allow hal_dumpstate_default sysfs_display:dir r_dir_perms;
+allow hal_dumpstate_default sysfs_display:file r_file_perms;
+
 vndbinder_use(hal_dumpstate_default)
 
 allow hal_dumpstate_default shell_data_file:file getattr;
@@ -109,8 +116,11 @@ userdebug_or_eng(`
   allow hal_dumpstate_default vendor_pm_genpd_debugfs:file r_file_perms;
   allow hal_dumpstate_default vendor_dri_debugfs:dir r_dir_perms;
   allow hal_dumpstate_default vendor_dri_debugfs:file r_file_perms;
+  allow hal_dumpstate_default vendor_page_pinner_debugfs:dir search;
+  allow hal_dumpstate_default vendor_page_pinner_debugfs:file r_file_perms;
 ')
 
+dontaudit hal_dumpstate_default mnt_vendor_file:dir search;
 dontaudit hal_dumpstate_default vendor_dri_debugfs:dir r_dir_perms;
 dontaudit hal_dumpstate_default vendor_dri_debugfs:file r_file_perms;
 dontaudit hal_dumpstate_default debugfs:dir r_dir_perms;
@@ -128,3 +138,5 @@ dontaudit hal_dumpstate_default vendor_maxfg_debugfs:file r_file_perms;
 dontaudit hal_dumpstate_default vendor_pm_genpd_debugfs:file r_file_perms;
 dontaudit hal_dumpstate_default sysfs_bcl:dir r_dir_perms;
 dontaudit hal_dumpstate_default sysfs_bcl:file r_file_perms;
+dontaudit hal_dumpstate_default vendor_page_pinner_debugfs:dir search;
+dontaudit hal_dumpstate_default vendor_page_pinner_debugfs:file r_file_perms;

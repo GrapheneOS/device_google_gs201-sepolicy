@@ -12,6 +12,12 @@ allow hal_sensors_default chre_socket:sock_file write;
 # Allow create thread to watch AOC's device.
 allow hal_sensors_default device:dir r_dir_perms;
 
+# Allow access for dynamic sensor properties.
+get_prop(hal_sensors_default, vendor_dynamic_sensor_prop)
+
+# Allow access to raw HID devices for dynamic sensors.
+allow hal_sensors_default hidraw_device:chr_file rw_file_perms;
+
 # Allow SensorSuez to connect AIDL stats.
 allow hal_sensors_default fwk_stats_service:service_manager find;
 
@@ -51,3 +57,6 @@ allow hal_sensors_default sysfs_leds:file r_file_perms;
 
 # Allow sensor HAL to access the graphics composer.
 binder_call(hal_sensors_default, hal_graphics_composer_default);
+
+# Allow display_info_service access to the backlight driver.
+allow hal_sensors_default sysfs_write_leds:file rw_file_perms;
