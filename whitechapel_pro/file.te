@@ -42,7 +42,6 @@ type sysfs_wlc, sysfs_type, fs_type;
 type sysfs_chargelevel, sysfs_type, fs_type;
 type sysfs_mfc, sysfs_type, fs_type;
 type sysfs_cpu, sysfs_type, fs_type;
-type sysfs_odpm, sysfs_type, fs_type;
 type sysfs_soc, sysfs_type, fs_type;
 type sysfs_camera, sysfs_type, fs_type;
 type sysfs_write_leds, sysfs_type, fs_type;
