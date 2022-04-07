@@ -48,6 +48,12 @@ allow hal_sensors_default sysfs_chosen:file r_file_perms;
 # Allow access to sensor service for sensor_listener.
 binder_call(hal_sensors_default, system_server);
 
+# Allow sensor HAL to reset AOC.
+allow hal_sensors_default sysfs_aoc_reset:file rw_file_perms;
+
+# Allow sensor HAL to read AoC dumpstate.
+allow hal_sensors_default sysfs_aoc_dumpstate:file r_file_perms;
+
 # Allow sensor HAL to access the display service HAL
 allow hal_sensors_default hal_pixel_display_service:service_manager find;
 
