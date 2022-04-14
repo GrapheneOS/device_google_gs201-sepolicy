@@ -286,6 +286,7 @@ genfscon sysfs /devices/platform/100a0000.BIG                             u:obje
 genfscon sysfs /devices/platform/100a0000.ISP                             u:object_r:sysfs_thermal:s0
 genfscon sysfs /devices/platform/100b0000.G3D                             u:object_r:sysfs_thermal:s0
 genfscon sysfs /devices/platform/100b0000.TPU                             u:object_r:sysfs_thermal:s0
+genfscon sysfs /devices/platform/100b0000.AUR                             u:object_r:sysfs_thermal:s0
 
 genfscon sysfs /module/gs_thermal/parameters/tmu_reg_dump_state            u:object_r:sysfs_thermal:s0
 genfscon sysfs /module/gs_thermal/parameters/tmu_reg_dump_current_temp     u:object_r:sysfs_thermal:s0
