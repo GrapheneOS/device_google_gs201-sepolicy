@@ -64,7 +64,10 @@ genfscon sysfs /devices/platform/wlan/sscoredump/sscd_wlan/report_count         
 genfscon sysfs /devices/platform/cpif/modem/power_stats                                u:object_r:sysfs_power_stats:s0
 genfscon sysfs /devices/platform/11920000.pcie/power_stats                             u:object_r:sysfs_power_stats:s0
 genfscon sysfs /devices/platform/14520000.pcie/power_stats                             u:object_r:sysfs_power_stats:s0
+genfscon sysfs /devices/platform/10970000.hsi2c/i2c-5/i2c-st21nfc/power_stats          u:object_r:sysfs_power_stats:s0
 genfscon sysfs /devices/platform/10970000.hsi2c/i2c-6/i2c-st21nfc/power_stats          u:object_r:sysfs_power_stats:s0
+genfscon sysfs /devices/platform/10970000.hsi2c/i2c-7/i2c-st21nfc/power_stats          u:object_r:sysfs_power_stats:s0
+genfscon sysfs /devices/platform/10970000.hsi2c/i2c-8/i2c-st21nfc/power_stats          u:object_r:sysfs_power_stats:s0
 genfscon sysfs /devices/platform/10db0000.spi/spi_master/spi16/spi16.0/uwb/power_stats u:object_r:sysfs_power_stats:s0
 
 # Power ODPM
@@ -170,6 +173,9 @@ genfscon sysfs /devices/platform/google,charger                                 
 genfscon sysfs /devices/platform/10d60000.hsi2c                                 u:object_r:sysfs_batteryinfo:s0
 
 # P22 battery
+genfscon sysfs /devices/platform/10da0000.hsi2c/i2c-4/5-0050/eeprom             u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/platform/10da0000.hsi2c/i2c-4/i2c-p9412                 u:object_r:sysfs_wlc:s0
+genfscon sysfs /devices/platform/10da0000.hsi2c/i2c-4/i2c-p9412/power_supply    u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/10da0000.hsi2c/i2c-5/5-0050/eeprom             u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/10da0000.hsi2c/i2c-5/i2c-p9412                 u:object_r:sysfs_wlc:s0
 genfscon sysfs /devices/platform/10da0000.hsi2c/i2c-5/i2c-p9412/power_supply    u:object_r:sysfs_batteryinfo:s0
@@ -200,6 +206,7 @@ genfscon sysfs /devices/platform/10970000.hsi2c/i2c-7/i2c-cs40l26a      u:object
 genfscon sysfs /devices/platform/10970000.hsi2c/i2c-8/i2c-cs40l26a      u:object_r:sysfs_vibrator:s0
 
 # system suspend wakeup files
+genfscon sysfs /devices/platform/10970000.hsi2c/i2c-5/i2c-st21nfc/wakeup                                                    u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/10970000.hsi2c/i2c-6/i2c-st21nfc/wakeup                                                    u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/10970000.hsi2c/i2c-7/i2c-st21nfc/wakeup                                                    u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/10970000.hsi2c/i2c-8/i2c-st21nfc/wakeup                                                    u:object_r:sysfs_wakeup:s0
@@ -286,6 +293,7 @@ genfscon sysfs /devices/platform/100a0000.BIG                             u:obje
 genfscon sysfs /devices/platform/100a0000.ISP                             u:object_r:sysfs_thermal:s0
 genfscon sysfs /devices/platform/100b0000.G3D                             u:object_r:sysfs_thermal:s0
 genfscon sysfs /devices/platform/100b0000.TPU                             u:object_r:sysfs_thermal:s0
+genfscon sysfs /devices/platform/100b0000.AUR                             u:object_r:sysfs_thermal:s0
 
 genfscon sysfs /module/gs_thermal/parameters/tmu_reg_dump_state            u:object_r:sysfs_thermal:s0
 genfscon sysfs /module/gs_thermal/parameters/tmu_reg_dump_current_temp     u:object_r:sysfs_thermal:s0
