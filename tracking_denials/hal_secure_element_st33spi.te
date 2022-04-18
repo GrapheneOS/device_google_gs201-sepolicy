@@ -1,2 +1,0 @@
-# b/229167195
-dontaudit hal_secure_element_st33spi vendor_secure_element_prop:file { read };
