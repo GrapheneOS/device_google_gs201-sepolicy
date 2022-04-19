@@ -93,9 +93,6 @@ type modem_userdata_file, file_type;
 type sysfs_st33spi, sysfs_type, fs_type;
 typeattribute sysfs_st33spi mlstrustedobject;
 
-# GPU
-type sysfs_gpu, sysfs_type, fs_type;
-
 # Vendor sched files
 userdebug_or_eng(`
     typeattribute proc_vendor_sched mlstrustedobject;
