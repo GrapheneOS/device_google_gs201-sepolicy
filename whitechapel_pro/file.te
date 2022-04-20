@@ -93,9 +93,6 @@ type modem_userdata_file, file_type;
 type sysfs_st33spi, sysfs_type, fs_type;
 typeattribute sysfs_st33spi mlstrustedobject;
 
-# GPU
-type sysfs_gpu, sysfs_type, fs_type;
-
 # USB-C throttling stats
 type sysfs_usbc_throttling_stats, sysfs_type, fs_type;
 
