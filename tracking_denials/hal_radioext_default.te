@@ -1,2 +1,0 @@
-# b/227122249
-dontaudit hal_radioext_default hal_bluetooth_coexistence_hwservice:hwservice_manager { find };
