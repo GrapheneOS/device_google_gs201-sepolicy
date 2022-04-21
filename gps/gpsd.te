@@ -16,6 +16,10 @@ allow gpsd vendor_gps_file:dir create_dir_perms;
 allow gpsd vendor_gps_file:file create_file_perms;
 allow gpsd vendor_gps_file:fifo_file create_file_perms;
 
+# Allow gpsd to access rild
+binder_call(gpsd, rild);
+allow gpsd hal_exynos_rild_hwservice:hwservice_manager find;
+
 # Allow gpsd to access sensor service
 binder_call(gpsd, system_server);
 allow gpsd fwk_sensor_hwservice:hwservice_manager find;
