@@ -1,3 +1,0 @@
-# Allow gpsd to access rild
-binder_call(gpsd, rild);
-allow gpsd hal_exynos_rild_hwservice:hwservice_manager find;

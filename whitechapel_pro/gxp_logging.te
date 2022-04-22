@@ -1,0 +1,6 @@
+type gxp_logging, domain;
+type gxp_logging_exec, exec_type, vendor_file_type, file_type;
+init_daemon_domain(gxp_logging)
+
+# The logging service accesses /dev/gxp
+allow gxp_logging gxp_device:chr_file rw_file_perms;
