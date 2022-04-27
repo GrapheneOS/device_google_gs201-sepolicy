@@ -24,6 +24,9 @@ userdebug_or_eng(`
 # Exynos Firmware
 type vendor_fw_file, vendor_file_type, file_type;
 
+# Trusty
+type sysfs_trusty, sysfs_type, fs_type;
+
 # sysfs
 type sysfs_chosen, sysfs_type, fs_type;
 type sysfs_ota, sysfs_type, fs_type;
