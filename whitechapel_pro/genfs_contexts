@@ -113,6 +113,7 @@ genfscon sysfs /devices/platform/1c2c0000.drmdsim/1c2c0000.drmdsim.0/min_vrefres
 genfscon sysfs /devices/platform/1c2c0000.drmdsim/1c2c0000.drmdsim.0/idle_delay_ms                        u:object_r:sysfs_display:s0
 genfscon sysfs /devices/platform/1c2c0000.drmdsim/1c2c0000.drmdsim.0/panel_idle                           u:object_r:sysfs_display:s0
 genfscon sysfs /devices/platform/1c2c0000.drmdsim/1c2c0000.drmdsim.0/panel_need_handle_idle_exit          u:object_r:sysfs_display:s0
+genfscon sysfs /devices/platform/1c2c0000.drmdsim/1c2c0000.drmdsim.0/osc2_clk_khz                         u:object_r:sysfs_display:s0
 genfscon sysfs /devices/platform/1c2c0000.drmdsim/hs_clock                                                u:object_r:sysfs_display:s0
 genfscon sysfs /devices/platform/1c240000.drmdecon/early_wakeup                                           u:object_r:sysfs_display:s0
 genfscon sysfs /devices/platform/1c242000.drmdecon/early_wakeup                                           u:object_r:sysfs_display:s0
@@ -166,6 +167,8 @@ genfscon debugfs /pm_genpd/pm_genpd_summary                             u:object
 genfscon debugfs /regmap                                                u:object_r:vendor_regmap_debugfs:s0
 genfscon debugfs /usb                                                   u:object_r:vendor_usb_debugfs:s0
 genfscon debugfs /google_charger                                        u:object_r:vendor_charger_debugfs:s0
+genfscon debugfs /max77759_chg                                          u:object_r:vendor_charger_debugfs:s0
+genfscon debugfs /max77729_pmic                                         u:object_r:vendor_charger_debugfs:s0
 genfscon debugfs /gvotables                                             u:object_r:vendor_votable_debugfs:s0
 genfscon debugfs /google_battery                                        u:object_r:vendor_battery_debugfs:s0
 genfscon debugfs /dri/0/crtc-                                           u:object_r:vendor_dri_debugfs:s0
