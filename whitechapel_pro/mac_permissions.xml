@@ -36,4 +36,7 @@
     <signer signature="@CAMERAENG" >
       <seinfo value="CameraEng" />
     </signer>
+    <signer signature="@CAMERAFISHFOOD" >
+      <seinfo value="CameraFishfood" />
+    </signer>
 </policy>
