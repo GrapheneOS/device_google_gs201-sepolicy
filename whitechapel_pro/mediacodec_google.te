@@ -29,3 +29,8 @@ neverallow mediacodec_google { file_type fs_type }:file execute_no_trans;
 # https://android-developers.googleblog.com/2016/05/hardening-media-stack.html
 neverallow mediacodec_google domain:{ udp_socket rawip_socket } *;
 neverallow mediacodec_google { domain userdebug_or_eng(`-su') }:tcp_socket *;
+
+userdebug_or_eng(`
+ allow mediacodec_google vendor_media_data_file:dir rw_dir_perms;
+ allow mediacodec_google vendor_media_data_file:file create_file_perms;
+')
