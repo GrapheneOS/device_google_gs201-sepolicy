@@ -29,6 +29,9 @@ allow hal_dumpstate_default sscoredump_vendor_data_crashinfo_file:file r_file_pe
 allow hal_dumpstate_default sysfs_thermal:dir r_dir_perms;
 allow hal_dumpstate_default sysfs_thermal:file r_file_perms;
 
+allow hal_dumpstate_default sysfs_bcl:dir r_dir_perms;
+allow hal_dumpstate_default sysfs_bcl:file r_file_perms;
+
 allow hal_dumpstate_default sysfs_wifi:dir r_dir_perms;
 allow hal_dumpstate_default sysfs_wifi:file r_file_perms;
 
@@ -99,8 +102,6 @@ userdebug_or_eng(`
   allow hal_dumpstate_default mnt_vendor_file:dir search;
   allow hal_dumpstate_default ramdump_vendor_mnt_file:dir search;
   allow hal_dumpstate_default ramdump_vendor_mnt_file:file r_file_perms;
-  allow hal_dumpstate_default sysfs_bcl:dir r_dir_perms;
-  allow hal_dumpstate_default sysfs_bcl:file r_file_perms;
   allow hal_dumpstate_default debugfs:dir r_dir_perms;
   allow hal_dumpstate_default vendor_votable_debugfs:dir r_dir_perms;
   allow hal_dumpstate_default vendor_votable_debugfs:file r_file_perms;
