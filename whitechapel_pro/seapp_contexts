@@ -63,6 +63,9 @@ user=_app seinfo=CameraEng name=com.google.android.GoogleCameraEng domain=debug_
 # Also allow GoogleCameraNext, the fishfood version, the same access as GoogleCamera
 user=_app seinfo=CameraFishfood name=com.google.android.apps.googlecamera.fishfood domain=google_camera_app type=app_data_file levelFrom=all
 
+# Also label GoogleCameraNext, built with debug keys as debug_camera_app.
+user=_app seinfo=CameraEng name=com.google.android.apps.googlecamera.fishfood domain=debug_camera_app type=app_data_file levelFrom=all
+
 # Domain for CatEngineService
 user=system seinfo=platform name=com.google.android.CatEngine domain=cat_engine_service_app type=system_app_data_file levelFrom=all
 
