@@ -31,3 +31,6 @@ allow vendor_init modem_img_file:filesystem { getattr };
 
 # Battery
 set_prop(vendor_init, vendor_battery_defender_prop)
+
+# Display
+set_prop(vendor_init, vendor_display_prop)
