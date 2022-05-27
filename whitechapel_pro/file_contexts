@@ -41,6 +41,7 @@
 /vendor/bin/hw/android\.hardware\.qorvo\.uwb\.service                       u:object_r:hal_uwb_vendor_default_exec:s0
 /vendor/bin/rlsservice                                                      u:object_r:rlsservice_exec:s0
 /vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.fpc u:object_r:fingerprint_factory_service_exec:s0
+/vendor/bin/hw/battery_mitigation                                           u:object_r:battery_mitigation_exec:s0
 
 # Vendor Firmwares
 /vendor/firmware(/.*)?                                                      u:object_r:vendor_fw_file:s0
@@ -207,6 +208,7 @@
 /data/vendor/uwb(/.*)?                                                      u:object_r:uwb_data_vendor:s0
 /dev/battery_history                                                        u:object_r:battery_history_device:s0
 /data/vendor/powerstats(/.*)?                                               u:object_r:powerstats_vendor_data_file:s0
+/data/vendor/mitigation(/.*)?                                               u:object_r:mitigation_vendor_data_file:s0
 
 # Persist
 /mnt/vendor/persist/battery(/.*)?                                           u:object_r:persist_battery_file:s0
