@@ -376,3 +376,6 @@ genfscon sysfs /devices/platform/2bf40000.etm    u:object_r:sysfs_devices_cs_etm
 # Trusty
 genfscon sysfs /module/trusty_virtio/parameters/use_high_wq               u:object_r:sysfs_trusty:s0
 genfscon sysfs /module/trusty_core/parameters/use_high_wq                 u:object_r:sysfs_trusty:s0
+
+# EM Profile
+genfscon sysfs /kernel/pixel_em/active_profile                            u:object_r:sysfs_em_profile:s0
