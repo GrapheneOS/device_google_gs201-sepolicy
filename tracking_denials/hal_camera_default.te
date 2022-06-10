@@ -1,5 +1,0 @@
-# b/205780065
-dontaudit hal_camera_default system_data_file:dir { search };
-# b/218585004
-dontaudit hal_camera_default traced:unix_stream_socket { connectto };
-dontaudit hal_camera_default traced_producer_socket:sock_file { write };
