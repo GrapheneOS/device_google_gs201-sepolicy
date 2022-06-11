@@ -35,6 +35,9 @@ genfscon proc  /focaltech_touch                                                u
 # tracefs
 genfscon tracefs /events/dmabuf_heap/dma_heap_stat                             u:object_r:debugfs_tracing:s0
 
+# Networking
+genfscon sysfs /devices/platform/10db0000.spi/spi_master/spi16/spi16.0/ieee802154/phy0/net  u:object_r:sysfs_net:s0
+
 # WiFi
 genfscon sysfs /wifi                                                           u:object_r:sysfs_wifi:s0
 
