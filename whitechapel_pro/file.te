@@ -67,6 +67,7 @@ type vendor_battery_debugfs, fs_type, debugfs_type;
 type vendor_dmabuf_debugfs, fs_type, debugfs_type;
 type vendor_dri_debugfs, fs_type, debugfs_type;
 type vendor_page_pinner_debugfs, fs_type, debugfs_type;
+type vendor_cma_debugfs, fs_type, debugfs_type;
 
 # vendor extra images
 type modem_img_file, contextmount_type, file_type, vendor_file_type;
