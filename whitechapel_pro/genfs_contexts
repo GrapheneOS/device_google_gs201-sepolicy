@@ -180,6 +180,7 @@ genfscon debugfs /gvotables                                             u:object
 genfscon debugfs /google_battery                                        u:object_r:vendor_battery_debugfs:s0
 genfscon debugfs /dri/0/crtc-                                           u:object_r:vendor_dri_debugfs:s0
 genfscon debugfs /page_pinner                                           u:object_r:vendor_page_pinner_debugfs:s0
+genfscon debugfs /cma                                                   u:object_r:vendor_cma_debugfs:s0
 
 # Battery
 genfscon sysfs /devices/platform/google,battery/power_supply/battery            u:object_r:sysfs_batteryinfo:s0
