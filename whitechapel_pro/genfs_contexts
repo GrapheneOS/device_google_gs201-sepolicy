@@ -60,11 +60,12 @@ genfscon sysfs /devices/platform/17000020.devfreq_int/devfreq/17000020.devfreq_i
 genfscon sysfs /devices/platform/17000010.devfreq_mif/devfreq/17000010.devfreq_mif/interactive/target_load u:object_r:sysfs_fabric:s0
 
 # sscoredump (per device)
-genfscon sysfs /devices/platform/aoc/sscoredump/sscd_aoc/report_count                                   u:object_r:sysfs_sscoredump_subsystem_report_count:s0
-genfscon sysfs /devices/platform/bigocean/sscoredump/sscd_bigocean/report_count                         u:object_r:sysfs_sscoredump_subsystem_report_count:s0
-genfscon sysfs /devices/platform/debugcore/sscoredump/sscd_debugcore/report_count                       u:object_r:sysfs_sscoredump_subsystem_report_count:s0
-genfscon sysfs /devices/platform/mfc-core/sscoredump/sscd_mfc-core/report_count                         u:object_r:sysfs_sscoredump_subsystem_report_count:s0
-genfscon sysfs /devices/platform/wlan/sscoredump/sscd_wlan/report_count                                 u:object_r:sysfs_sscoredump_subsystem_report_count:s0
+genfscon sysfs /devices/platform/aoc/sscoredump/sscd_aoc/report_count                  u:object_r:sysfs_sscoredump_subsystem_report_count:s0
+genfscon sysfs /devices/platform/bigocean/sscoredump/sscd_bigocean/report_count        u:object_r:sysfs_sscoredump_subsystem_report_count:s0
+genfscon sysfs /devices/platform/debugcore/sscoredump/sscd_debugcore/report_count      u:object_r:sysfs_sscoredump_subsystem_report_count:s0
+genfscon sysfs /devices/platform/mfc-core/sscoredump/sscd_mfc-core/report_count        u:object_r:sysfs_sscoredump_subsystem_report_count:s0
+genfscon sysfs /devices/platform/wlan/sscoredump/sscd_wlan/report_count                u:object_r:sysfs_sscoredump_subsystem_report_count:s0
+genfscon sysfs /devices/platform/mali/sscoredump/sscd_mali/report_count                u:object_r:sysfs_sscoredump_subsystem_report_count:s0
 
 # Power Stats
 genfscon sysfs /devices/platform/cpif/modem/power_stats                                u:object_r:sysfs_power_stats:s0
@@ -185,6 +186,7 @@ genfscon sysfs /devices/platform/google,battery/power_supply/battery            
 genfscon sysfs /devices/platform/google,cpm                                     u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/google,charger                                 u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/10d60000.hsi2c                                 u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/pseudo_0/adapter0/host1/target1:0:0/1:0:0:0/block/sde   u:object_r:sysfs_devices_block:s0
 
 # P22 battery
 genfscon sysfs /devices/platform/10da0000.hsi2c/i2c-2/2-0050/eeprom             u:object_r:sysfs_batteryinfo:s0
