@@ -54,6 +54,7 @@ type sysfs_odpm, sysfs_type, fs_type;
 type sysfs_soc, sysfs_type, fs_type;
 type sysfs_camera, sysfs_type, fs_type;
 type sysfs_write_leds, sysfs_type, fs_type;
+type sysfs_pca, sysfs_type, fs_type;
 
 # debugfs
 type debugfs_f2fs, debugfs_type, fs_type;
