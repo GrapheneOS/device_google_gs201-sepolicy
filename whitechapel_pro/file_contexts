@@ -149,6 +149,7 @@
 /dev/st33spi                                                                u:object_r:st33spi_device:s0
 /dev/ttyGS[0-3]                                                             u:object_r:serial_device:s0
 /dev/oem_ipc[0-7]                                                           u:object_r:radio_device:s0
+/dev/oem_test                                                               u:object_r:radio_test_device:s0
 /dev/umts_boot0                                                             u:object_r:radio_device:s0
 /dev/umts_ipc0                                                              u:object_r:radio_device:s0
 /dev/umts_ipc1                                                              u:object_r:radio_device:s0
