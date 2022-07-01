@@ -1,2 +1,4 @@
 # b/229209076
 dontaudit hal_drm_widevine vndbinder_device:chr_file { read };
+# b/237492145
+dontaudit hal_drm_widevine default_prop:file { read };
