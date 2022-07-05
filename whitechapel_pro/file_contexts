@@ -197,6 +197,7 @@
 /data/vendor/radio(/.*)?                                                    u:object_r:radio_vendor_data_file:s0
 /data/vendor/modem_stat(/.*)?                                               u:object_r:modem_stat_data_file:s0
 /data/vendor/log(/.*)?                                                      u:object_r:vendor_log_file:s0
+/data/vendor/log/hwc(/.*)?                                                  u:object_r:vendor_hwc_log_file:s0
 /data/vendor/log/rfsd(/.*)?                                                 u:object_r:vendor_rfsd_log_file:s0
 /data/vendor/rild(/.*)?                                                     u:object_r:rild_vendor_data_file:s0
 /data/vendor/ss(/.*)?                                                       u:object_r:tee_data_file:s0
