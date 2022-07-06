@@ -1,2 +1,3 @@
 shell sysfs_wlc dir b/234547497
 hal_input_processor_default vendor_display_prop file b/236200710
+hal_radioext_default radio_vendor_data_file file b/237093466
