@@ -11,7 +11,3 @@ allow tee sg_device:chr_file rw_file_perms;
 
 # Allow storageproxyd access to gsi_public_metadata_file
 read_fstab(tee)
-
-# storageproxyd starts before /data is mounted. It handles /data not being there
-# gracefully. However, attempts to access /data trigger a denial.
-dontaudit tee unlabeled:dir { search };
