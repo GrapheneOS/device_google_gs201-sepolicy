@@ -90,6 +90,7 @@
 /dev/watchdog0                                                              u:object_r:watchdog_device:s0
 /dev/mali0                                                                  u:object_r:gpu_device:s0
 /dev/logbuffer_usbpd                                                        u:object_r:logbuffer_device:s0
+/dev/logbuffer_pogo_transport                                               u:object_r:logbuffer_device:s0
 /dev/logbuffer_ssoc                                                         u:object_r:logbuffer_device:s0
 /dev/logbuffer_wireless                                                     u:object_r:logbuffer_device:s0
 /dev/logbuffer_ttf                                                          u:object_r:logbuffer_device:s0
