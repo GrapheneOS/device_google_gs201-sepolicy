@@ -7,3 +7,4 @@ kernel vendor_usb_debugfs dir b/227121550
 dumpstate hal_input_processor_default process b/238260726
 hal_googlebattery dumpstate fd b/238260742
 shell sysfs_wlc dir b/238260741
+kernel vendor_charger_debugfs dir b/238571150
