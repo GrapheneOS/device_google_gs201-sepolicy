@@ -8,3 +8,4 @@ dumpstate hal_input_processor_default process b/238260726
 hal_googlebattery dumpstate fd b/238260742
 shell sysfs_wlc dir b/238260741
 kernel vendor_charger_debugfs dir b/238571150
+cat_engine_service_app system_app_data_file dir b/238705599
