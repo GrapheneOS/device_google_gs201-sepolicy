@@ -3,7 +3,6 @@ allow vendor_init bootdevice_sysdev:file create_file_perms;
 set_prop(vendor_init, vendor_ssrdump_prop)
 set_prop(vendor_init, vendor_carrier_prop)
 set_prop(vendor_init, vendor_cbd_prop)
-set_prop(vendor_init, vendor_ready_prop)
 get_prop(vendor_init, vendor_battery_profile_prop)
 set_prop(vendor_init, vendor_device_prop)
 set_prop(vendor_init, vendor_modem_prop)
