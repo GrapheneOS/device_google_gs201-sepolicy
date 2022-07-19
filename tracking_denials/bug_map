@@ -6,6 +6,7 @@ hal_googlebattery dumpstate fd b/238260742
 hal_power_default hal_power_default capability b/237492146
 hal_radioext_default radio_vendor_data_file file b/237093466
 incidentd debugfs_wakeup_sources file b/237492091
+init-insmod-sh vendor_ready_prop property_service b/239364360
 kernel vendor_charger_debugfs dir b/238571150
 kernel vendor_usb_debugfs dir b/227121550
 shell sysfs_wlc dir b/238260741
