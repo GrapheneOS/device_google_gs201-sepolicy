@@ -4,7 +4,5 @@ dontaudit kernel vendor_charger_debugfs:dir { search };
 dontaudit kernel vendor_battery_debugfs:dir { search };
 # b/220801802
 allow kernel same_process_hal_file:file r_file_perms;
-# b/227286343
-dontaudit kernel vendor_regmap_debugfs:dir { search };
 # b/227121550
 dontaudit kernel vendor_votable_debugfs:dir search;
