@@ -1,6 +1,7 @@
 cat_engine_service_app system_app_data_file dir b/238705599
 dumpstate app_zygote process b/237491813
 dumpstate hal_input_processor_default process b/238260726
+dumpstate incident process b/239632439
 dumpstate system_data_file dir b/239484651
 hal_drm_widevine default_prop file b/237492145
 hal_googlebattery dumpstate fd b/238260742
