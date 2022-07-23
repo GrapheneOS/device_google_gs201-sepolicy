@@ -1,2 +1,0 @@
-# TODO(b/205904330): avoid using setuid, setgid permission
-allow tee tee:capability { setuid setgid };
