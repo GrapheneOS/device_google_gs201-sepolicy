@@ -43,6 +43,7 @@
 /vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.fpc u:object_r:fingerprint_factory_service_exec:s0
 /vendor/bin/hw/battery_mitigation                                           u:object_r:battery_mitigation_exec:s0
 /vendor/bin/hw/android\.hardware\.memtrack-service\.pixel                   u:object_r:hal_memtrack_default_exec:s0
+/system_ext/bin/convert_to_ext4\.sh                                         u:object_r:convert-to-ext4-sh_exec:s0
 
 # Vendor Firmwares
 /vendor/firmware(/.*)?                                                      u:object_r:vendor_fw_file:s0
