@@ -11,23 +11,7 @@ userdebug_or_eng(`
   allow convert-to-ext4-sh efs_block_device:blk_file rw_file_perms;
   allow convert-to-ext4-sh kernel:process setsched;
   allow convert-to-ext4-sh kmsg_device:chr_file rw_file_perms;
-  allow convert-to-ext4-sh persist_audio_file:dir { rw_file_perms search };
-  allow convert-to-ext4-sh persist_audio_file:file rw_file_perms;
-  allow convert-to-ext4-sh persist_block_device:blk_file rw_file_perms;
-  allow convert-to-ext4-sh persist_camera_file:dir { rw_file_perms search };
-  allow convert-to-ext4-sh persist_camera_file:file rw_file_perms;
-  allow convert-to-ext4-sh persist_display_file:dir { rw_file_perms search };
-  allow convert-to-ext4-sh persist_display_file:file rw_file_perms;
-  allow convert-to-ext4-sh persist_file:dir { getattr open read search };
-  allow convert-to-ext4-sh persist_file:file rw_file_perms;
-  allow convert-to-ext4-sh persist_haptics_file:dir { rw_file_perms search };
-  allow convert-to-ext4-sh persist_haptics_file:file rw_file_perms;
-  allow convert-to-ext4-sh persist_sensor_reg_file:dir { rw_file_perms search };
-  allow convert-to-ext4-sh persist_sensor_reg_file:file rw_file_perms;
-  allow convert-to-ext4-sh persist_ss_file:dir { rw_file_perms search };
-  allow convert-to-ext4-sh persist_ss_file:file rw_file_perms;
-  allow convert-to-ext4-sh persist_uwb_file:dir { rw_file_perms search };
-  allow convert-to-ext4-sh persist_uwb_file:file rw_file_perms;
+  allow convert-to-ext4-sh persist_block_device:blk_file { getattr ioctl open read write };
   allow convert-to-ext4-sh shell_exec:file rx_file_perms;
   allow convert-to-ext4-sh sysfs_fs_ext4_features:dir { read search };
   allow convert-to-ext4-sh sysfs_fs_ext4_features:file read;
@@ -35,6 +19,8 @@ userdebug_or_eng(`
   allow convert-to-ext4-sh tmpfs:dir { remove_name rmdir rw_file_perms setattr };
   allow convert-to-ext4-sh tmpfs:file { create rw_file_perms unlink };
   allow convert-to-ext4-sh toolbox_exec:file rx_file_perms;
+  allow convert-to-ext4-sh vendor_persist_type:dir { rw_file_perms search };
+  allow convert-to-ext4-sh vendor_persist_type:file rw_file_perms;
 
   allowxperm convert-to-ext4-sh { efs_block_device persist_block_device}:blk_file ioctl {
     BLKDISCARD BLKPBSZGET BLKDISCARDZEROES BLKROGET LOOP_CLR_FD
