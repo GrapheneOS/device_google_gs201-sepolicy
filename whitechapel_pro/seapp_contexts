@@ -17,9 +17,6 @@ user=system seinfo=platform name=com.samsung.slsi.telephony.networktestmode doma
 # Samsung S.LSI engineer mode
 user=_app seinfo=platform name=com.samsung.slsi.engineermode domain=vendor_engineermode_app levelFrom=all
 
-# Hardware Info Collection
-user=_app isPrivApp=true name=com.google.android.hardwareinfo domain=hardware_info_app type=app_data_file levelFrom=user
-
 # coredump/ramdump
 user=_app seinfo=platform name=com.android.ramdump domain=ramdump_app type=app_data_file levelFrom=all
 
