@@ -109,6 +109,7 @@ genfscon sysfs /devices/platform/acpm_mfd_bus@18110000/i2c-5/i2c-s2mpg13mfd/s2mp
 genfscon sysfs /devices/platform/acpm_mfd_bus@18110000/i2c-6/i2c-s2mpg13mfd/s2mpg13-meter/s2mpg13-odpm/iio:device   u:object_r:sysfs_odpm:s0
 genfscon sysfs /devices/platform/acpm_mfd_bus@18110000/i2c-7/i2c-s2mpg13mfd/s2mpg13-meter/s2mpg13-odpm/iio:device   u:object_r:sysfs_odpm:s0
 genfscon sysfs /devices/platform/acpm_mfd_bus@18110000/i2c-8/i2c-s2mpg13mfd/s2mpg13-meter/s2mpg13-odpm/iio:device   u:object_r:sysfs_odpm:s0
+genfscon sysfs /devices/platform/acpm_mfd_bus@18110000/i2c-9/i2c-s2mpg13mfd/s2mpg13-meter/s2mpg13-odpm/iio:device   u:object_r:sysfs_odpm:s0
 genfscon sysfs /devices/platform/acpm_mfd_bus@18110000/i2c-0/i2c-s2mpg13mfd/s2mpg13-meter/s2mpg13-odpm/wakeup       u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/acpm_mfd_bus@18110000/i2c-1/i2c-s2mpg13mfd/s2mpg13-meter/s2mpg13-odpm/wakeup       u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/acpm_mfd_bus@18110000/i2c-2/i2c-s2mpg13mfd/s2mpg13-meter/s2mpg13-odpm/wakeup       u:object_r:sysfs_wakeup:s0
@@ -118,6 +119,7 @@ genfscon sysfs /devices/platform/acpm_mfd_bus@18110000/i2c-5/i2c-s2mpg13mfd/s2mp
 genfscon sysfs /devices/platform/acpm_mfd_bus@18110000/i2c-6/i2c-s2mpg13mfd/s2mpg13-meter/s2mpg13-odpm/wakeup       u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/acpm_mfd_bus@18110000/i2c-7/i2c-s2mpg13mfd/s2mpg13-meter/s2mpg13-odpm/wakeup       u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/acpm_mfd_bus@18110000/i2c-8/i2c-s2mpg13mfd/s2mpg13-meter/s2mpg13-odpm/wakeup       u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/acpm_mfd_bus@18110000/i2c-9/i2c-s2mpg13mfd/s2mpg13-meter/s2mpg13-odpm/wakeup       u:object_r:sysfs_wakeup:s0
 
 # Devfreq current frequency
 genfscon sysfs /devices/platform/17000010.devfreq_mif/devfreq/17000010.devfreq_mif/cur_freq             u:object_r:sysfs_devfreq_cur:s0
