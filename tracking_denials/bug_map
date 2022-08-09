@@ -4,6 +4,7 @@ dumpstate hal_input_processor_default process b/238260726
 dumpstate incident process b/239632439
 dumpstate incident process b/241050831
 dumpstate system_data_file dir b/239484651
+hal_contexthub_default fwk_stats_service service_manager b/241714943
 hal_drm_widevine default_prop file b/237492145
 hal_power_default hal_power_default capability b/237492146
 hal_radioext_default radio_vendor_data_file file b/237093466
@@ -27,6 +28,7 @@ shell metadata_file dir b/239484612
 shell mirror_data_file dir b/239484612
 shell postinstall_mnt_dir dir b/239484612
 shell rootfs file b/239484612
+shell sscoredump_vendor_data_crashinfo_file dir b/241714944
 shell sysfs_wlc dir b/238260741
 shell system_dlkm_file dir b/239484612
 su modem_img_file filesystem b/240653918
