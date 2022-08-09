@@ -53,6 +53,7 @@ genfscon sysfs /devices/platform/28000000.mali/power_policy                    u
 genfscon sysfs /devices/platform/28000000.mali/dma_buf_gpu_mem                 u:object_r:sysfs_gpu:s0
 genfscon sysfs /devices/platform/28000000.mali/total_gpu_mem                   u:object_r:sysfs_gpu:s0
 genfscon sysfs /devices/platform/28000000.mali/kprcs                           u:object_r:sysfs_gpu:s0
+genfscon sysfs /devices/platform/28000000.mali/dvfs_period                     u:object_r:sysfs_gpu:s0
 
 # Fabric
 genfscon sysfs /devices/platform/17000010.devfreq_mif/devfreq/17000010.devfreq_mif/min_freq                u:object_r:sysfs_fabric:s0
