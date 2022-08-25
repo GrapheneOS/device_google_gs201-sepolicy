@@ -208,6 +208,7 @@
 /data/vendor/media(/.*)?                                                    u:object_r:vendor_media_data_file:s0
 /data/vendor/misc(/.*)?                                                     u:object_r:vendor_misc_data_file:s0
 /data/per_boot(/.*)?                                                        u:object_r:per_boot_file:s0
+/data/vendor/sensors/debug(/.*)?                                            u:object_r:sensor_debug_data_file:s0
 /data/vendor/sensors/registry(/.*)?                                         u:object_r:sensor_reg_data_file:s0
 /data/vendor/uwb(/.*)?                                                      u:object_r:uwb_data_vendor:s0
 /dev/battery_history                                                        u:object_r:battery_history_device:s0
