@@ -4,14 +4,6 @@ persist.vendor.sys.diag.                   u:object_r:vendor_diag_prop:s0
 vendor.sys.dmd.                            u:object_r:vendor_diag_prop:s0
 vendor.sys.diag.                           u:object_r:vendor_diag_prop:s0
 
-# Kernel modules related
-vendor.common.modules.ready                u:object_r:vendor_device_prop:s0
-vendor.device.modules.ready                u:object_r:vendor_device_prop:s0
-
-# Indicating signal that all modules and devices are ready
-vendor.all.modules.ready                   u:object_r:vendor_ready_prop:s0
-vendor.all.devices.ready                   u:object_r:vendor_ready_prop:s0
-
 # Tcpdump_logger
 persist.vendor.tcpdump.log.alwayson        u:object_r:vendor_tcpdump_log_prop:s0
 vendor.tcpdump.                            u:object_r:vendor_tcpdump_log_prop:s0
