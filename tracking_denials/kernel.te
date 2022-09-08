@@ -1,5 +1,3 @@
-# b/238398889
-dontaudit kernel vendor_charger_debugfs:dir { search };
 # b/213817227
 dontaudit kernel vendor_battery_debugfs:dir { search };
 # b/220801802
