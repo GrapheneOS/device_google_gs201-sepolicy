@@ -414,3 +414,7 @@ genfscon sysfs /module/trusty_core/parameters/use_high_wq                 u:obje
 
 # EM Profile
 genfscon sysfs /kernel/pixel_em/active_profile                            u:object_r:sysfs_em_profile:s0
+
+# Privacy LED
+genfscon sysfs /devices/platform/pwmleds/leds/green/brightness            u:object_r:sysfs_leds:s0
+genfscon sysfs /devices/platform/pwmleds/leds/green/max_brightness        u:object_r:sysfs_leds:s0
