@@ -1,5 +1,3 @@
-# b/213817227
-dontaudit kernel vendor_battery_debugfs:dir { search };
 # b/246218258
 allow kernel same_process_hal_file:file r_file_perms;
 # b/227121550
