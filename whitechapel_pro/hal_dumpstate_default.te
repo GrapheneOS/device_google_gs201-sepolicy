@@ -106,7 +106,6 @@ userdebug_or_eng(`
 ')
 
 get_prop(hal_dumpstate_default, vendor_camera_debug_prop);
-get_prop(hal_dumpstate_default, boottime_public_prop)
 get_prop(hal_dumpstate_default, vendor_camera_prop)
 get_prop(hal_dumpstate_default, vendor_gps_prop)
 set_prop(hal_dumpstate_default, vendor_modem_prop)
@@ -121,8 +120,6 @@ userdebug_or_eng(`
   allow hal_dumpstate_default debugfs:dir r_dir_perms;
   allow hal_dumpstate_default vendor_votable_debugfs:dir r_dir_perms;
   allow hal_dumpstate_default vendor_votable_debugfs:file r_file_perms;
-  allow hal_dumpstate_default debugfs_f2fs:dir r_dir_perms;
-  allow hal_dumpstate_default debugfs_f2fs:file r_file_perms;
   allow hal_dumpstate_default vendor_battery_debugfs:dir r_dir_perms;
   allow hal_dumpstate_default vendor_battery_debugfs:file r_file_perms;
   allow hal_dumpstate_default vendor_charger_debugfs:dir r_dir_perms;
@@ -149,8 +146,6 @@ dontaudit hal_dumpstate_default vendor_dri_debugfs:file r_file_perms;
 dontaudit hal_dumpstate_default debugfs:dir r_dir_perms;
 dontaudit hal_dumpstate_default vendor_votable_debugfs:dir r_dir_perms;
 dontaudit hal_dumpstate_default vendor_votable_debugfs:file r_file_perms;
-dontaudit hal_dumpstate_default debugfs_f2fs:dir r_dir_perms;
-dontaudit hal_dumpstate_default debugfs_f2fs:file r_file_perms;
 dontaudit hal_dumpstate_default vendor_battery_debugfs:dir r_dir_perms;
 dontaudit hal_dumpstate_default vendor_battery_debugfs:file r_file_perms;
 dontaudit hal_dumpstate_default vendor_charger_debugfs:dir r_dir_perms;
