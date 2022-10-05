@@ -112,8 +112,6 @@ set_prop(hal_dumpstate_default, vendor_logger_prop)
 
 userdebug_or_eng(`
   allow hal_dumpstate_default mnt_vendor_file:dir search;
-  allow hal_dumpstate_default ramdump_vendor_mnt_file:dir search;
-  allow hal_dumpstate_default ramdump_vendor_mnt_file:file r_file_perms;
   allow hal_dumpstate_default debugfs:dir r_dir_perms;
   allow hal_dumpstate_default vendor_votable_debugfs:dir r_dir_perms;
   allow hal_dumpstate_default vendor_votable_debugfs:file r_file_perms;
