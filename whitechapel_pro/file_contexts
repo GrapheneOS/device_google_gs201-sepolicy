@@ -71,7 +71,6 @@
 /vendor/lib(64)?/libgpudataproducer\.so                                     u:object_r:same_process_hal_file:s0
 
 # Devices
-/dev/trusty-log0                                                            u:object_r:logbuffer_device:s0
 /dev/dma_heap/sensor_direct_heap                                            u:object_r:sensor_direct_heap_device:s0
 /dev/ttySAC0                                                                u:object_r:tty_device:s0
 /dev/dma_heap/faceauth_tpu-secure                                           u:object_r:faceauth_heap_device:s0
