@@ -4,12 +4,6 @@ genfscon sysfs /devices/platform/exynos-bts/bts_stats                          u
 
 genfscon sysfs /firmware/devicetree/base/chosen                                u:object_r:sysfs_chosen:s0
 genfscon sysfs /devices/virtual/pmic/mitigation                                u:object_r:sysfs_bcl:s0
-genfscon sysfs /devices/system/chip-id/ap_hw_tune_str                          u:object_r:sysfs_chip_id:s0
-genfscon sysfs /devices/system/chip-id/evt_ver                                 u:object_r:sysfs_chip_id:s0
-genfscon sysfs /devices/system/chip-id/lot_id                                  u:object_r:sysfs_chip_id:s0
-genfscon sysfs /devices/system/chip-id/product_id                              u:object_r:sysfs_chip_id:s0
-genfscon sysfs /devices/system/chip-id/revision                                u:object_r:sysfs_chip_id:s0
-genfscon sysfs /devices/system/chip-id/raw_str                                 u:object_r:sysfs_chip_id:s0
 
 # CPU
 genfscon sysfs /devices/platform/17000010.devfreq_mif/devfreq/17000010.devfreq_mif/time_in_state       u:object_r:sysfs_cpu:s0
