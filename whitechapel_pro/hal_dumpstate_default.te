@@ -11,9 +11,6 @@ userdebug_or_eng(`
   allow hal_dumpstate_default sensor_debug_data_file:file r_file_perms;
 ')
 
-allow hal_dumpstate_default vendor_rfsd_log_file:dir r_dir_perms;
-allow hal_dumpstate_default vendor_rfsd_log_file:file r_file_perms;
-
 allow hal_dumpstate_default vendor_hwc_log_file:dir r_dir_perms;
 allow hal_dumpstate_default vendor_hwc_log_file:file r_file_perms;
 
@@ -29,8 +26,6 @@ allow hal_dumpstate_default sysfs_exynos_bts_stats:file r_file_perms;
 allow hal_dumpstate_default sysfs_aoc:dir r_dir_perms;
 allow hal_dumpstate_default sysfs_aoc_dumpstate:file r_file_perms;
 
-allow hal_dumpstate_default sscoredump_vendor_data_crashinfo_file:dir r_dir_perms;
-allow hal_dumpstate_default sscoredump_vendor_data_crashinfo_file:file r_file_perms;
 allow hal_dumpstate_default sscoredump_vendor_data_coredump_file:dir r_dir_perms;
 allow hal_dumpstate_default sscoredump_vendor_data_coredump_file:file r_file_perms;
 
@@ -57,8 +52,6 @@ allow hal_dumpstate_default radio_vendor_data_file:file create_file_perms;
 
 allow hal_dumpstate_default modem_efs_file:dir search;
 allow hal_dumpstate_default modem_efs_file:file r_file_perms;
-allow hal_dumpstate_default modem_stat_data_file:dir r_dir_perms;
-allow hal_dumpstate_default modem_stat_data_file:file r_file_perms;
 allow hal_dumpstate_default vendor_slog_file:file r_file_perms;
 
 allow hal_dumpstate_default logbuffer_device:chr_file r_file_perms;
