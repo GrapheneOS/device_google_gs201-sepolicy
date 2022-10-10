@@ -36,3 +36,6 @@ vendor_internal_prop(vendor_dynamic_sensor_prop)
 
 # Telephony debug app
 vendor_internal_prop(vendor_telephony_app_prop)
+
+# Battery Mitigation
+vendor_internal_prop(vendor_mitigation_ready_prop)
