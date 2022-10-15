@@ -61,7 +61,7 @@
 /vendor/lib(64)?/pixel-power-ext-V1-ndk\.so                                 u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/android\.frameworks\.stats-V1-ndk\.so                      u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/vendor-pixelatoms-cpp\.so                                  u:object_r:same_process_hal_file:s0
-/vendor/lib(64)?/libprotobuf-cpp-lite-3\.9\.1\.so                           u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libprotobuf-cpp-lite-(\d+\.){2,3}so                        u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libgxp\.so                                                 u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/gxp_metrics_logger\.so                                     u:object_r:same_process_hal_file:s0
 
