@@ -14,8 +14,6 @@
 /vendor/bin/init\.display\.sh                                               u:object_r:init-display-sh_exec:s0
 /vendor/bin/trusty_apploader                                                u:object_r:trusty_apploader_exec:s0
 /vendor/bin/trusty_metricsd                                                 u:object_r:trusty_metricsd_exec:s0
-/vendor/bin/usf_stats                                                       u:object_r:vendor_usf_stats:s0
-/vendor/bin/usf_reg_edit                                                    u:object_r:vendor_usf_reg_edit:s0
 /vendor/bin/dumpsys                                                         u:object_r:vendor_dumpsys:s0
 /vendor/bin/init\.uwb\.calib\.sh                                            u:object_r:vendor_uwb_init_exec:s0
 /vendor/bin/hw/android\.hardware\.gatekeeper@1\.0-service\.trusty           u:object_r:hal_gatekeeper_default_exec:s0
