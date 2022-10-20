@@ -411,3 +411,22 @@ genfscon sysfs /kernel/pixel_em/active_profile                            u:obje
 # Privacy LED
 genfscon sysfs /devices/platform/pwmleds/leds/green/brightness            u:object_r:sysfs_leds:s0
 genfscon sysfs /devices/platform/pwmleds/leds/green/max_brightness        u:object_r:sysfs_leds:s0
+
+# AOC
+genfscon sysfs /devices/platform/19000000.aoc/aoc_clock_and_kernel_boottime u:object_r:sysfs_aoc_boottime:s0
+genfscon sysfs /devices/platform/19000000.aoc/firmware                      u:object_r:sysfs_aoc_firmware:s0
+genfscon sysfs /devices/platform/19000000.aoc                               u:object_r:sysfs_aoc:s0
+genfscon sysfs /devices/platform/19000000.aoc/reset                         u:object_r:sysfs_aoc_reset:s0
+genfscon sysfs /devices/platform/19000000.aoc/services                      u:object_r:sysfs_aoc_dumpstate:s0
+genfscon sysfs /devices/platform/19000000.aoc/restart_count                 u:object_r:sysfs_aoc_dumpstate:s0
+genfscon sysfs /devices/platform/19000000.aoc/coredump_count                u:object_r:sysfs_aoc_dumpstate:s0
+genfscon sysfs /devices/platform/19000000.aoc/control/ring_buffer_wakeup    u:object_r:sysfs_aoc_dumpstate:s0
+genfscon sysfs /devices/platform/19000000.aoc/control/host_ipc_wakeup       u:object_r:sysfs_aoc_dumpstate:s0
+genfscon sysfs /devices/platform/19000000.aoc/control/usf_wakeup            u:object_r:sysfs_aoc_dumpstate:s0
+genfscon sysfs /devices/platform/19000000.aoc/control/audio_wakeup          u:object_r:sysfs_aoc_dumpstate:s0
+genfscon sysfs /devices/platform/19000000.aoc/control/logging_wakeup        u:object_r:sysfs_aoc_dumpstate:s0
+genfscon sysfs /devices/platform/19000000.aoc/control/hotword_wakeup        u:object_r:sysfs_aoc_dumpstate:s0
+genfscon sysfs /devices/platform/19000000.aoc/control/memory_exception      u:object_r:sysfs_aoc_dumpstate:s0
+genfscon sysfs /devices/platform/19000000.aoc/control/memory_votes_a32      u:object_r:sysfs_aoc_dumpstate:s0
+genfscon sysfs /devices/platform/19000000.aoc/control/memory_votes_ff1      u:object_r:sysfs_aoc_dumpstate:s0
+
