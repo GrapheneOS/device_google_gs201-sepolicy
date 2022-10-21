@@ -393,6 +393,8 @@ genfscon sysfs /module/gs_thermal/parameters/tmu_sub_reg_dump_fall_thres   u:obj
 
 #vendor-metrics
 genfscon sysfs /kernel/metrics/temp_residency/temp_residency_all/stats    u:object_r:sysfs_vendor_metrics:s0
+genfscon sysfs /kernel/metrics/resume_latency/resume_latency_metrics      u:object_r:sysfs_vendor_metrics:s0
+genfscon sysfs /kernel/metrics/irq/long_irq_metrics                       u:object_r:sysfs_vendor_metrics:s0
 
 # Camera
 genfscon sysfs /devices/platform/17000030.devfreq_intcam/devfreq/17000030.devfreq_intcam/min_freq    u:object_r:sysfs_camera:s0
