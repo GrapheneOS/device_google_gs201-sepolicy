@@ -39,4 +39,4 @@ vendor_internal_prop(vendor_telephony_app_prop)
 
 # Battery Mitigation
 vendor_internal_prop(vendor_mitigation_ready_prop)
-vendor_internal_prop(vendor_startup_bugreport_requested_prop)
+vendor_public_prop(vendor_startup_bugreport_requested_prop)
