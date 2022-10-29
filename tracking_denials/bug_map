@@ -20,6 +20,5 @@ shell mirror_data_file dir b/239484612
 shell postinstall_mnt_dir dir b/239484612
 shell rootfs file b/239484612
 shell sscoredump_vendor_data_crashinfo_file dir b/241714944
-shell sysfs_wlc dir b/238260741
 shell system_dlkm_file dir b/239484612
 su modem_img_file filesystem b/240653918
