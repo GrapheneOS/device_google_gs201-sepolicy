@@ -1,6 +1,0 @@
-type better_bug_app, domain;
-
-userdebug_or_eng(`
-  app_domain(better_bug_app)
-  get_prop(better_bug_app, vendor_startup_bugreport_requested_prop)
-')
