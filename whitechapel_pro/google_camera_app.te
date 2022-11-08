@@ -17,3 +17,7 @@ allow google_camera_app vendor_fw_file:dir search;
 
 # Allows camera app to access the PowerHAL.
 hal_client_domain(google_camera_app, hal_power)
+
+# Allows GCA to find and access the EdgeTPU.
+allow google_camera_app edgetpu_app_service:service_manager find;
+allow google_camera_app edgetpu_device:chr_file { getattr read write ioctl map };
