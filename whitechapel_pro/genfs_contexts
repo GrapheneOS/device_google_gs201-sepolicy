@@ -33,7 +33,6 @@ genfscon sysfs /devices/platform/10db0000.spi/spi_master/spi16/spi16.0/ieee80215
 
 # WiFi
 genfscon sysfs /wifi                                                           u:object_r:sysfs_wifi:s0
-genfscon sysfs /wlan_ptracker                                                  u:object_r:sysfs_ptracker:s0
 
 # ACPM
 genfscon sysfs /devices/platform/acpm_stats                                    u:object_r:sysfs_acpm_stats:s0
