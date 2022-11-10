@@ -96,6 +96,9 @@ type vendor_usf_stats, vendor_file_type, file_type;
 type vendor_usf_reg_edit, vendor_file_type, file_type;
 type vendor_dumpsys, vendor_file_type, file_type;
 
+#vendor-metrics
+type sysfs_vendor_metrics, fs_type, sysfs_type;
+
 # Modem
 type modem_efs_file, file_type;
 type modem_userdata_file, file_type;
