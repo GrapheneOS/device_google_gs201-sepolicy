@@ -87,8 +87,6 @@ type chre_socket, file_type;
 type proc_f2fs, proc_type, fs_type;
 
 # Vendor tools
-type vendor_usf_stats, vendor_file_type, file_type;
-type vendor_usf_reg_edit, vendor_file_type, file_type;
 type vendor_dumpsys, vendor_file_type, file_type;
 
 # Modem
