@@ -30,3 +30,7 @@ allow pixelstats_vendor sysfs_thermal:lnk_file r_file_perms;
 # BCL
 allow pixelstats_vendor sysfs_bcl:dir search;
 allow pixelstats_vendor sysfs_bcl:file r_file_perms;
+
+#perf-metrics
+r_dir_file(pixelstats_vendor, sysfs_vendor_metrics)
+allow pixelstats_vendor sysfs_vendor_metrics:lnk_file r_file_perms;
