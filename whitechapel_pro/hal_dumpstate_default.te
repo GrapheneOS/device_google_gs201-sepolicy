@@ -107,6 +107,8 @@ userdebug_or_eng(`
   allow hal_dumpstate_default vendor_dri_debugfs:file r_file_perms;
   allow hal_dumpstate_default vendor_page_pinner_debugfs:dir search;
   allow hal_dumpstate_default vendor_page_pinner_debugfs:file r_file_perms;
+  allow hal_dumpstate_default debugfs_tracing_instances:dir search;
+  allow hal_dumpstate_default debugfs_tracing_instances:file r_file_perms;
   allow hal_dumpstate_default vendor_cma_debugfs:dir r_dir_perms;
   allow hal_dumpstate_default vendor_cma_debugfs:file r_file_perms;
   allow hal_dumpstate_default tcpdump_vendor_data_file:dir create_dir_perms;
@@ -133,6 +135,8 @@ dontaudit hal_dumpstate_default sysfs_bcl:dir r_dir_perms;
 dontaudit hal_dumpstate_default sysfs_bcl:file r_file_perms;
 dontaudit hal_dumpstate_default vendor_page_pinner_debugfs:dir search;
 dontaudit hal_dumpstate_default vendor_page_pinner_debugfs:file r_file_perms;
+dontaudit hal_dumpstate_default debugfs_tracing_instances:dir search;
+dontaudit hal_dumpstate_default debugfs_tracing_instances:file r_file_perms;
 dontaudit hal_dumpstate_default vendor_cma_debugfs:dir r_dir_perms;
 dontaudit hal_dumpstate_default vendor_cma_debugfs:file r_file_perms;
 dontaudit hal_dumpstate_default tcpdump_vendor_data_file:dir create_dir_perms;
