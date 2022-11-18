@@ -24,7 +24,6 @@ genfscon sysfs /devices/soc0/machine                                           u
 genfscon sysfs /devices/soc0/revision                                          u:object_r:sysfs_soc:s0
 
 # Touch
-genfscon sysfs /devices/platform/10d10000.spi/spi_master/spi0/spi0.0/synaptics_tcm.0/sysfs   u:object_r:sysfs_touch:s0
 genfscon proc  /focaltech_touch                                                u:object_r:proc_touch:s0
 
 # tracefs
