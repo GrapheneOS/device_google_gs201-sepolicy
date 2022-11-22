@@ -23,9 +23,6 @@ genfscon sysfs /devices/platform/28000000.mali/uid_time_in_state                
 genfscon sysfs /devices/soc0/machine                                           u:object_r:sysfs_soc:s0
 genfscon sysfs /devices/soc0/revision                                          u:object_r:sysfs_soc:s0
 
-# Touch
-genfscon proc  /focaltech_touch                                                u:object_r:proc_touch:s0
-
 # tracefs
 genfscon tracefs /events/dmabuf_heap/dma_heap_stat                             u:object_r:debugfs_tracing:s0
 
