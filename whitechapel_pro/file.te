@@ -109,6 +109,9 @@ type sysfs_usbc_throttling_stats, sysfs_type, fs_type;
 
 # Touch
 type proc_touch, proc_type, fs_type;
+userdebug_or_eng(`
+    typeattribute proc_touch mlstrustedobject;
+')
 
 # Vendor sched files
 userdebug_or_eng(`
