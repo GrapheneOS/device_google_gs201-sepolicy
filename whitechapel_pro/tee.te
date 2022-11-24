@@ -11,3 +11,5 @@ allow tee sg_device:chr_file rw_file_perms;
 
 # Allow storageproxyd access to gsi_public_metadata_file
 read_fstab(tee)
+
+set_prop(tee, vendor_trusty_storage_prop)
