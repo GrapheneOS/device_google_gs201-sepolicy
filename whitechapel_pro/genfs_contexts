@@ -127,6 +127,10 @@ genfscon sysfs /devices/platform/17000080.devfreq_bo/devfreq/17000080.devfreq_bo
 # OTA
 genfscon sysfs /devices/platform/14700000.ufs/pixel/boot_lun_enabled           u:object_r:sysfs_ota:s0
 
+# Input
+genfscon sysfs /devices/platform/11210000.usb/11210000.dwc3/xhci-hcd-exynos.4.auto/usb2/2-1        u:object_r:sysfs_uhid:s0
+genfscon sysfs /devices/platform/11210000.usb/11210000.dwc3/xhci-hcd-exynos.5.auto/usb2/2-1        u:object_r:sysfs_uhid:s0
+
 # Display
 genfscon sysfs /devices/platform/1c2c0000.drmdsim/1c2c0000.drmdsim.0/gamma                                u:object_r:sysfs_display:s0
 genfscon sysfs /devices/platform/1c2c0000.drmdsim/1c2c0000.drmdsim.0/min_vrefresh                         u:object_r:sysfs_display:s0
@@ -376,10 +380,6 @@ genfscon sysfs /devices/platform/100b0000.TPU                             u:obje
 genfscon sysfs /devices/platform/100b0000.AUR                             u:object_r:sysfs_thermal:s0
 
 genfscon sysfs /thermal_zone14/mode                                        u:object_r:sysfs_thermal:s0
-
-#perf-metrics
-genfscon sysfs /kernel/metrics/resume_latency/resume_latency_metrics      u:object_r:sysfs_vendor_metrics:s0
-genfscon sysfs /kernel/metrics/irq/long_irq_metrics                       u:object_r:sysfs_vendor_metrics:s0
 
 # Camera
 genfscon sysfs /devices/platform/17000030.devfreq_intcam/devfreq/17000030.devfreq_intcam/min_freq    u:object_r:sysfs_camera:s0
