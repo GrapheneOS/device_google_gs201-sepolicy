@@ -1,4 +1,5 @@
 # Samsung S.LSI IMS
+user=_app isPrivApp=true name=.ShannonImsService domain=vendor_ims_app levelFrom=all
 user=_app isPrivApp=true name=com.shannon.imsservice domain=vendor_ims_app levelFrom=all
 user=_app isPrivApp=true name=com.shannon.imsservice:remote domain=vendor_ims_remote_app levelFrom=all
 user=_app isPrivApp=true name=com.shannon.qualifiednetworksservice domain=vendor_qualifiednetworks_app levelFrom=all
