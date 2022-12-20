@@ -13,6 +13,9 @@ allow pixelstats_vendor sysfs_wlc:file rw_file_perms;
 get_prop(pixelstats_vendor, hwservicemanager_prop);
 hwbinder_use(pixelstats_vendor);
 allow pixelstats_vendor fwk_sensor_hwservice:hwservice_manager find;
+# android.frameworks.sensorservice through libsensorndkbridge
+allow pixelstats_vendor fwk_sensor_service:service_manager find;
+
 
 # Batery history
 allow pixelstats_vendor battery_history_device:chr_file r_file_perms;
