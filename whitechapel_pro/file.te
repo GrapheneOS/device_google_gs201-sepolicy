@@ -44,7 +44,6 @@ type sysfs_wifi, sysfs_type, fs_type;
 type sysfs_exynos_bts, sysfs_type, fs_type;
 type sysfs_exynos_bts_stats, sysfs_type, fs_type;
 type sysfs_bcmdhd, sysfs_type, fs_type;
-type sysfs_wlc, sysfs_type, fs_type;
 type sysfs_chargelevel, sysfs_type, fs_type;
 type sysfs_mfc, sysfs_type, fs_type;
 type sysfs_cpu, sysfs_type, fs_type;
