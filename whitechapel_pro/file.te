@@ -112,8 +112,10 @@ type sysfs_usbc_throttling_stats, sysfs_type, fs_type;
 
 # Touch
 type proc_touch, proc_type, fs_type;
+type proc_touch_gti, proc_type, fs_type;
 userdebug_or_eng(`
     typeattribute proc_touch mlstrustedobject;
+    typeattribute proc_touch_gti mlstrustedobject;
 ')
 
 # Vendor sched files
