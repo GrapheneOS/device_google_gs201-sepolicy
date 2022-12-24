@@ -141,6 +141,9 @@ genfscon sysfs /devices/platform/1c2c0000.drmdsim/1c2c0000.drmdsim.0/osc2_clk_kh
 genfscon sysfs /devices/platform/1c2c0000.drmdsim/hs_clock                                                u:object_r:sysfs_display:s0
 genfscon sysfs /devices/platform/1c240000.drmdecon/early_wakeup                                           u:object_r:sysfs_display:s0
 genfscon sysfs /devices/platform/1c242000.drmdecon/early_wakeup                                           u:object_r:sysfs_display:s0
+genfscon sysfs /devices/platform/1c240000.drmdecon/counters                                               u:object_r:sysfs_display:s0
+genfscon sysfs /devices/platform/1c241000.drmdecon/counters                                               u:object_r:sysfs_display:s0
+genfscon sysfs /devices/platform/1c242000.drmdecon/counters                                               u:object_r:sysfs_display:s0
 
 genfscon sysfs /devices/platform/1c2c0000.drmdsim/1c2c0000.drmdsim.0/backlight                            u:object_r:sysfs_leds:s0
 genfscon sysfs /devices/platform/1c2c0000.drmdsim/1c2c0000.drmdsim.0/panel_extinfo                        u:object_r:sysfs_display:s0
