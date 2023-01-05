@@ -17,3 +17,7 @@ binder_call(platform_app, hal_wlc)
 
 # allow udfps of systemui access lhbm
 binder_call(platform_app, hal_graphics_composer_default)
+
+# WLC
+allow platform_app hal_wireless_charger_service:service_manager find;
+binder_call(platform_app, hal_wireless_charger)
