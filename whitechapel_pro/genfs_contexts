@@ -31,6 +31,7 @@ genfscon sysfs /devices/soc0/revision                                          u
 genfscon sysfs /devices/platform/10d10000.spi/spi_master/spi0/spi0.0/synaptics_tcm.0/sysfs   u:object_r:sysfs_touch:s0
 genfscon sysfs /devices/virtual/sec/tsp                                        u:object_r:sysfs_touch:s0
 genfscon proc  /focaltech_touch                                                u:object_r:proc_touch:s0
+genfscon proc  /goog_touch_interface                                           u:object_r:proc_touch_gti:s0
 
 # tracefs
 genfscon tracefs /events/dmabuf_heap/dma_heap_stat                             u:object_r:debugfs_tracing:s0
