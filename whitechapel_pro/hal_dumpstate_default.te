@@ -6,6 +6,11 @@ allow hal_dumpstate_default sysfs_cpu:file r_file_perms;
 allow hal_dumpstate_default vendor_usf_reg_edit:file execute_no_trans;
 allow hal_dumpstate_default vendor_usf_stats:file execute_no_trans;
 
+userdebug_or_eng(`
+  allow hal_dumpstate_default sensor_debug_data_file:dir r_dir_perms;
+  allow hal_dumpstate_default sensor_debug_data_file:file r_file_perms;
+')
+
 allow hal_dumpstate_default vendor_rfsd_log_file:dir r_dir_perms;
 allow hal_dumpstate_default vendor_rfsd_log_file:file r_file_perms;
 
@@ -39,6 +44,9 @@ allow hal_dumpstate_default mitigation_vendor_data_file:file r_file_perms;
 
 allow hal_dumpstate_default sysfs_wifi:dir r_dir_perms;
 allow hal_dumpstate_default sysfs_wifi:file r_file_perms;
+
+allow hal_dumpstate_default sysfs_ptracker:dir r_dir_perms;
+allow hal_dumpstate_default sysfs_ptracker:file r_file_perms;
 
 allow hal_dumpstate_default sysfs_batteryinfo:dir r_dir_perms;
 allow hal_dumpstate_default sysfs_batteryinfo:file r_file_perms;
@@ -76,6 +84,9 @@ allow hal_dumpstate_default sysfs_touch:file rw_file_perms;
 allow hal_dumpstate_default proc_touch:dir r_dir_perms;
 allow hal_dumpstate_default proc_touch:file rw_file_perms;
 
+allow hal_dumpstate_default proc_touch_gti:dir r_dir_perms;
+allow hal_dumpstate_default proc_touch_gti:file rw_file_perms;
+
 allow hal_dumpstate_default vendor_displaycolor_service:service_manager find;
 binder_call(hal_dumpstate_default, hal_graphics_composer_default);
 allow hal_dumpstate_default sysfs_display:dir r_dir_perms;
@@ -93,6 +104,15 @@ allow hal_dumpstate_default vendor_shell_exec:file execute_no_trans;
 
 allow hal_dumpstate_default proc_vendor_sched:dir r_dir_perms;
 allow hal_dumpstate_default proc_vendor_sched:file r_file_perms;
+
+allow hal_dumpstate_default battery_history_device:chr_file r_file_perms;
+
+userdebug_or_eng(`
+  allow hal_dumpstate_default sysfs_leds:dir search;
+  allow hal_dumpstate_default sysfs_leds:file rw_file_perms;
+  allow hal_dumpstate_default persist_file:dir search;
+  r_dir_file(hal_dumpstate_default, persist_leds_file);
+')
 
 get_prop(hal_dumpstate_default, vendor_camera_debug_prop);
 get_prop(hal_dumpstate_default, boottime_public_prop)
@@ -124,6 +144,10 @@ userdebug_or_eng(`
   allow hal_dumpstate_default vendor_dri_debugfs:file r_file_perms;
   allow hal_dumpstate_default vendor_page_pinner_debugfs:dir search;
   allow hal_dumpstate_default vendor_page_pinner_debugfs:file r_file_perms;
+  allow hal_dumpstate_default debugfs_tracing_instances:dir search;
+  allow hal_dumpstate_default debugfs_tracing_instances:file r_file_perms;
+  allow hal_dumpstate_default sysfs_vendor_metrics:dir search;
+  allow hal_dumpstate_default sysfs_vendor_metrics:file r_file_perms;
   allow hal_dumpstate_default vendor_cma_debugfs:dir r_dir_perms;
   allow hal_dumpstate_default vendor_cma_debugfs:file r_file_perms;
   allow hal_dumpstate_default tcpdump_vendor_data_file:dir create_dir_perms;
@@ -152,6 +176,10 @@ dontaudit hal_dumpstate_default sysfs_bcl:dir r_dir_perms;
 dontaudit hal_dumpstate_default sysfs_bcl:file r_file_perms;
 dontaudit hal_dumpstate_default vendor_page_pinner_debugfs:dir search;
 dontaudit hal_dumpstate_default vendor_page_pinner_debugfs:file r_file_perms;
+dontaudit hal_dumpstate_default debugfs_tracing_instances:dir search;
+dontaudit hal_dumpstate_default debugfs_tracing_instances:file r_file_perms;
+dontaudit hal_dumpstate_default sysfs_vendor_metrics:dir search;
+dontaudit hal_dumpstate_default sysfs_vendor_metrics:file r_file_perms;
 dontaudit hal_dumpstate_default vendor_cma_debugfs:dir r_dir_perms;
 dontaudit hal_dumpstate_default vendor_cma_debugfs:file r_file_perms;
 dontaudit hal_dumpstate_default tcpdump_vendor_data_file:dir create_dir_perms;

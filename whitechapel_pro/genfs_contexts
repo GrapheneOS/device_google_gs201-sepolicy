@@ -31,6 +31,7 @@ genfscon sysfs /devices/soc0/revision                                          u
 genfscon sysfs /devices/platform/10d10000.spi/spi_master/spi0/spi0.0/synaptics_tcm.0/sysfs   u:object_r:sysfs_touch:s0
 genfscon sysfs /devices/virtual/sec/tsp                                        u:object_r:sysfs_touch:s0
 genfscon proc  /focaltech_touch                                                u:object_r:proc_touch:s0
+genfscon proc  /goog_touch_interface                                           u:object_r:proc_touch_gti:s0
 
 # tracefs
 genfscon tracefs /events/dmabuf_heap/dma_heap_stat                             u:object_r:debugfs_tracing:s0
@@ -40,6 +41,7 @@ genfscon sysfs /devices/platform/10db0000.spi/spi_master/spi16/spi16.0/ieee80215
 
 # WiFi
 genfscon sysfs /wifi                                                           u:object_r:sysfs_wifi:s0
+genfscon sysfs /wlan_ptracker                                                  u:object_r:sysfs_ptracker:s0
 
 # ACPM
 genfscon sysfs /devices/platform/acpm_stats                                    u:object_r:sysfs_acpm_stats:s0
@@ -53,6 +55,7 @@ genfscon sysfs /devices/platform/28000000.mali/power_policy                    u
 genfscon sysfs /devices/platform/28000000.mali/dma_buf_gpu_mem                 u:object_r:sysfs_gpu:s0
 genfscon sysfs /devices/platform/28000000.mali/total_gpu_mem                   u:object_r:sysfs_gpu:s0
 genfscon sysfs /devices/platform/28000000.mali/kprcs                           u:object_r:sysfs_gpu:s0
+genfscon sysfs /devices/platform/28000000.mali/dvfs_period                     u:object_r:sysfs_gpu:s0
 
 # Fabric
 genfscon sysfs /devices/platform/17000010.devfreq_mif/devfreq/17000010.devfreq_mif/min_freq                u:object_r:sysfs_fabric:s0
@@ -109,6 +112,7 @@ genfscon sysfs /devices/platform/acpm_mfd_bus@18110000/i2c-5/i2c-s2mpg13mfd/s2mp
 genfscon sysfs /devices/platform/acpm_mfd_bus@18110000/i2c-6/i2c-s2mpg13mfd/s2mpg13-meter/s2mpg13-odpm/iio:device   u:object_r:sysfs_odpm:s0
 genfscon sysfs /devices/platform/acpm_mfd_bus@18110000/i2c-7/i2c-s2mpg13mfd/s2mpg13-meter/s2mpg13-odpm/iio:device   u:object_r:sysfs_odpm:s0
 genfscon sysfs /devices/platform/acpm_mfd_bus@18110000/i2c-8/i2c-s2mpg13mfd/s2mpg13-meter/s2mpg13-odpm/iio:device   u:object_r:sysfs_odpm:s0
+genfscon sysfs /devices/platform/acpm_mfd_bus@18110000/i2c-9/i2c-s2mpg13mfd/s2mpg13-meter/s2mpg13-odpm/iio:device   u:object_r:sysfs_odpm:s0
 genfscon sysfs /devices/platform/acpm_mfd_bus@18110000/i2c-0/i2c-s2mpg13mfd/s2mpg13-meter/s2mpg13-odpm/wakeup       u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/acpm_mfd_bus@18110000/i2c-1/i2c-s2mpg13mfd/s2mpg13-meter/s2mpg13-odpm/wakeup       u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/acpm_mfd_bus@18110000/i2c-2/i2c-s2mpg13mfd/s2mpg13-meter/s2mpg13-odpm/wakeup       u:object_r:sysfs_wakeup:s0
@@ -118,6 +122,7 @@ genfscon sysfs /devices/platform/acpm_mfd_bus@18110000/i2c-5/i2c-s2mpg13mfd/s2mp
 genfscon sysfs /devices/platform/acpm_mfd_bus@18110000/i2c-6/i2c-s2mpg13mfd/s2mpg13-meter/s2mpg13-odpm/wakeup       u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/acpm_mfd_bus@18110000/i2c-7/i2c-s2mpg13mfd/s2mpg13-meter/s2mpg13-odpm/wakeup       u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/acpm_mfd_bus@18110000/i2c-8/i2c-s2mpg13mfd/s2mpg13-meter/s2mpg13-odpm/wakeup       u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/acpm_mfd_bus@18110000/i2c-9/i2c-s2mpg13mfd/s2mpg13-meter/s2mpg13-odpm/wakeup       u:object_r:sysfs_wakeup:s0
 
 # Devfreq current frequency
 genfscon sysfs /devices/platform/17000010.devfreq_mif/devfreq/17000010.devfreq_mif/cur_freq             u:object_r:sysfs_devfreq_cur:s0
@@ -339,6 +344,9 @@ genfscon sysfs /devices/platform/11210000.usb/11210000.dwc3/xhci-hcd-exynos.4.au
 genfscon sysfs /devices/platform/11210000.usb/11210000.dwc3/xhci-hcd-exynos.5.auto/wakeup                                   u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/11210000.usb/11210000.dwc3/xhci-hcd-exynos.5.auto/usb2                                     u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/11210000.usb/11210000.dwc3/xhci-hcd-exynos.5.auto/usb3                                     u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/11210000.usb/11210000.dwc3/xhci-hcd-exynos.6.auto/wakeup                                   u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/11210000.usb/11210000.dwc3/xhci-hcd-exynos.6.auto/usb2                                     u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/11210000.usb/11210000.dwc3/xhci-hcd-exynos.6.auto/usb3                                     u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/11210000.usb/wakeup                                                                        u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/14520000.pcie/pci0001:00/0001:00:00.0/0001:01:00.0/wakeup                                  u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/14520000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/wakeup                                  u:object_r:sysfs_wakeup:s0
@@ -384,8 +392,14 @@ genfscon sysfs /module/gs_thermal/parameters/tmu_top_reg_dump_fall_thres   u:obj
 genfscon sysfs /module/gs_thermal/parameters/tmu_sub_reg_dump_rise_thres   u:object_r:sysfs_thermal:s0
 genfscon sysfs /module/gs_thermal/parameters/tmu_sub_reg_dump_fall_thres   u:object_r:sysfs_thermal:s0
 
+#vendor-metrics
+genfscon sysfs /kernel/metrics/temp_residency/temp_residency_all/stats    u:object_r:sysfs_vendor_metrics:s0
+genfscon sysfs /kernel/metrics/resume_latency/resume_latency_metrics      u:object_r:sysfs_vendor_metrics:s0
+genfscon sysfs /kernel/metrics/irq/long_irq_metrics                       u:object_r:sysfs_vendor_metrics:s0
+
 # Camera
 genfscon sysfs /devices/platform/17000030.devfreq_intcam/devfreq/17000030.devfreq_intcam/min_freq    u:object_r:sysfs_camera:s0
+genfscon sysfs /devices/platform/17000060.devfreq_tnr/devfreq/17000060.devfreq_tnr/max_freq          u:object_r:sysfs_camera:s0
 genfscon sysfs /devices/platform/17000060.devfreq_tnr/devfreq/17000060.devfreq_tnr/min_freq          u:object_r:sysfs_camera:s0
 
 # USB-C throttling stats
@@ -413,3 +427,7 @@ genfscon sysfs /module/trusty_core/parameters/use_high_wq                 u:obje
 
 # EM Profile
 genfscon sysfs /kernel/pixel_em/active_profile                            u:object_r:sysfs_em_profile:s0
+
+# Privacy LED
+genfscon sysfs /devices/platform/pwmleds/leds/green/brightness            u:object_r:sysfs_leds:s0
+genfscon sysfs /devices/platform/pwmleds/leds/green/max_brightness        u:object_r:sysfs_leds:s0
