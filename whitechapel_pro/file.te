@@ -108,3 +108,6 @@ userdebug_or_eng(`
 
 # USB-C throttling stats
 type sysfs_usbc_throttling_stats, sysfs_type, fs_type;
+
+# WLC
+type sysfs_wlc, sysfs_type, fs_type;

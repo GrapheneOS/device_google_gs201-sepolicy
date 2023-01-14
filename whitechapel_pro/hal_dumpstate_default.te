@@ -9,9 +9,6 @@ allow hal_dumpstate_default vendor_hwc_log_file:file r_file_perms;
 allow hal_dumpstate_default vendor_gps_file:dir r_dir_perms;
 allow hal_dumpstate_default vendor_gps_file:file r_file_perms;
 
-allow hal_dumpstate_default sysfs_wlc:dir r_dir_perms;
-allow hal_dumpstate_default sysfs_wlc:file r_file_perms;
-
 allow hal_dumpstate_default sysfs_exynos_bts:dir r_dir_perms;
 allow hal_dumpstate_default sysfs_exynos_bts_stats:file r_file_perms;
 
