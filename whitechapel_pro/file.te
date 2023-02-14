@@ -60,9 +60,7 @@ type vendor_usb_debugfs, fs_type, debugfs_type;
 type vendor_charger_debugfs, fs_type, debugfs_type;
 type vendor_votable_debugfs, fs_type, debugfs_type;
 type vendor_battery_debugfs, fs_type, debugfs_type;
-type vendor_dmabuf_debugfs, fs_type, debugfs_type;
 type vendor_dri_debugfs, fs_type, debugfs_type;
-type vendor_page_pinner_debugfs, fs_type, debugfs_type;
 type vendor_cma_debugfs, fs_type, debugfs_type;
 
 # vendor extra images
