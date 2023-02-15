@@ -190,7 +190,6 @@ genfscon sysfs /devices/platform/14700000.ufs/attributes/wb_avail_buf   u:object
 
 # debugfs
 genfscon debugfs /maxfg                                                 u:object_r:vendor_maxfg_debugfs:s0
-genfscon debugfs /dma_buf/bufinfo                                       u:object_r:vendor_dmabuf_debugfs:s0
 genfscon debugfs /pm_genpd/pm_genpd_summary                             u:object_r:vendor_pm_genpd_debugfs:s0
 genfscon debugfs /regmap                                                u:object_r:vendor_regmap_debugfs:s0
 genfscon debugfs /usb                                                   u:object_r:vendor_usb_debugfs:s0
@@ -200,7 +199,6 @@ genfscon debugfs /max77729_pmic                                         u:object
 genfscon debugfs /gvotables                                             u:object_r:vendor_votable_debugfs:s0
 genfscon debugfs /google_battery                                        u:object_r:vendor_battery_debugfs:s0
 genfscon debugfs /dri/0/crtc-                                           u:object_r:vendor_dri_debugfs:s0
-genfscon debugfs /page_pinner                                           u:object_r:vendor_page_pinner_debugfs:s0
 genfscon debugfs /cma                                                   u:object_r:vendor_cma_debugfs:s0
 
 # Battery
