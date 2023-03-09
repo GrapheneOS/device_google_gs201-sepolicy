@@ -198,7 +198,6 @@ genfscon debugfs /max77759_chg                                          u:object
 genfscon debugfs /max77729_pmic                                         u:object_r:vendor_charger_debugfs:s0
 genfscon debugfs /gvotables                                             u:object_r:vendor_votable_debugfs:s0
 genfscon debugfs /google_battery                                        u:object_r:vendor_battery_debugfs:s0
-genfscon debugfs /dri/0/crtc-                                           u:object_r:vendor_dri_debugfs:s0
 genfscon debugfs /cma                                                   u:object_r:vendor_cma_debugfs:s0
 
 # Battery
