@@ -3,9 +3,6 @@ allow hal_dumpstate_default vendor_camera_data_file:file r_file_perms;
 
 allow hal_dumpstate_default sysfs_cpu:file r_file_perms;
 
-allow hal_dumpstate_default vendor_hwc_log_file:dir r_dir_perms;
-allow hal_dumpstate_default vendor_hwc_log_file:file r_file_perms;
-
 allow hal_dumpstate_default vendor_gps_file:dir r_dir_perms;
 allow hal_dumpstate_default vendor_gps_file:file r_file_perms;
 
@@ -52,11 +49,6 @@ allow hal_dumpstate_default logbuffer_device:chr_file r_file_perms;
 allow hal_dumpstate_default proc_f2fs:dir r_dir_perms;
 allow hal_dumpstate_default proc_f2fs:file r_file_perms;
 
-allow hal_dumpstate_default vendor_displaycolor_service:service_manager find;
-binder_call(hal_dumpstate_default, hal_graphics_composer_default);
-allow hal_dumpstate_default sysfs_display:dir r_dir_perms;
-allow hal_dumpstate_default sysfs_display:file r_file_perms;
-
 vndbinder_use(hal_dumpstate_default)
 
 allow hal_dumpstate_default shell_data_file:file getattr;
@@ -92,8 +84,6 @@ userdebug_or_eng(`
   allow hal_dumpstate_default vendor_maxfg_debugfs:dir r_dir_perms;
   allow hal_dumpstate_default vendor_maxfg_debugfs:file r_file_perms;
   allow hal_dumpstate_default vendor_pm_genpd_debugfs:file r_file_perms;
-  allow hal_dumpstate_default vendor_dri_debugfs:dir r_dir_perms;
-  allow hal_dumpstate_default vendor_dri_debugfs:file r_file_perms;
   allow hal_dumpstate_default debugfs_tracing_instances:dir search;
   allow hal_dumpstate_default debugfs_tracing_instances:file r_file_perms;
   allow hal_dumpstate_default sysfs_vendor_metrics:dir search;
@@ -107,8 +97,6 @@ userdebug_or_eng(`
 ')
 
 dontaudit hal_dumpstate_default mnt_vendor_file:dir search;
-dontaudit hal_dumpstate_default vendor_dri_debugfs:dir r_dir_perms;
-dontaudit hal_dumpstate_default vendor_dri_debugfs:file r_file_perms;
 dontaudit hal_dumpstate_default debugfs:dir r_dir_perms;
 dontaudit hal_dumpstate_default vendor_votable_debugfs:dir r_dir_perms;
 dontaudit hal_dumpstate_default vendor_votable_debugfs:file r_file_perms;
