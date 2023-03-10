@@ -1,7 +1,6 @@
 # Data
 type rild_vendor_data_file, file_type, data_file_type;
 type vendor_log_file, file_type, data_file_type;
-type vendor_hwc_log_file, file_type, data_file_type;
 type vendor_rfsd_log_file, file_type, data_file_type;
 type modem_stat_data_file, file_type, data_file_type;
 type vendor_slog_file, file_type, data_file_type;
@@ -60,7 +59,6 @@ type vendor_usb_debugfs, fs_type, debugfs_type;
 type vendor_charger_debugfs, fs_type, debugfs_type;
 type vendor_votable_debugfs, fs_type, debugfs_type;
 type vendor_battery_debugfs, fs_type, debugfs_type;
-type vendor_dri_debugfs, fs_type, debugfs_type;
 type vendor_cma_debugfs, fs_type, debugfs_type;
 
 # vendor extra images
