@@ -40,10 +40,6 @@ allow hal_dumpstate_default sysfs_acpm_stats:file r_file_perms;
 allow hal_dumpstate_default radio_vendor_data_file:dir create_dir_perms;
 allow hal_dumpstate_default radio_vendor_data_file:file create_file_perms;
 
-allow hal_dumpstate_default modem_efs_file:dir search;
-allow hal_dumpstate_default modem_efs_file:file r_file_perms;
-allow hal_dumpstate_default vendor_slog_file:file r_file_perms;
-
 allow hal_dumpstate_default logbuffer_device:chr_file r_file_perms;
 
 allow hal_dumpstate_default proc_f2fs:dir r_dir_perms;
@@ -67,7 +63,6 @@ allow hal_dumpstate_default battery_history_device:chr_file r_file_perms;
 get_prop(hal_dumpstate_default, vendor_camera_debug_prop);
 get_prop(hal_dumpstate_default, vendor_camera_prop)
 get_prop(hal_dumpstate_default, vendor_gps_prop)
-set_prop(hal_dumpstate_default, vendor_modem_prop)
 get_prop(hal_dumpstate_default, vendor_rild_prop)
 get_prop(hal_dumpstate_default, vendor_tcpdump_log_prop)
 set_prop(hal_dumpstate_default, vendor_logger_prop)
