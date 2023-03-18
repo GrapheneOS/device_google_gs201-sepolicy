@@ -83,6 +83,7 @@ type vendor_dumpsys, vendor_file_type, file_type;
 # Modem
 type modem_efs_file, file_type;
 type modem_userdata_file, file_type;
+type sysfs_modem, sysfs_type, fs_type;
 
 # SecureElement
 type sysfs_st33spi, sysfs_type, fs_type;

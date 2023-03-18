@@ -60,6 +60,9 @@ genfscon sysfs /devices/platform/10970000.hsi2c/i2c-7/i2c-st21nfc/power_stats   
 genfscon sysfs /devices/platform/10970000.hsi2c/i2c-8/i2c-st21nfc/power_stats          u:object_r:sysfs_power_stats:s0
 genfscon sysfs /devices/platform/10db0000.spi/spi_master/spi16/spi16.0/uwb/power_stats u:object_r:sysfs_power_stats:s0
 
+# Modem
+genfscon sysfs /devices/platform/cp-tm1/cp_temp		u:object_r:sysfs_modem:s0
+
 # Power ODPM
 genfscon sysfs /devices/platform/acpm_mfd_bus@18100000/i2c-0/i2c-s2mpg12mfd/s2mpg12-meter/s2mpg12-odpm/iio:device   u:object_r:sysfs_odpm:s0
 genfscon sysfs /devices/platform/acpm_mfd_bus@18100000/i2c-1/i2c-s2mpg12mfd/s2mpg12-meter/s2mpg12-odpm/iio:device   u:object_r:sysfs_odpm:s0
