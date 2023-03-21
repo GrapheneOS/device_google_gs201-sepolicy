@@ -68,7 +68,6 @@ persist.vendor.display.                    u:object_r:vendor_display_prop:s0
 # Camera
 persist.vendor.camera.                     u:object_r:vendor_camera_prop:s0
 vendor.camera.                             u:object_r:vendor_camera_prop:s0
-vendor.camera.debug.                       u:object_r:vendor_camera_debug_prop:s0
 vendor.camera.fatp.                        u:object_r:vendor_camera_fatp_prop:s0
 
 # for logger app
