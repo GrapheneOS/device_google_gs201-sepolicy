@@ -7,7 +7,6 @@ type vendor_slog_file, file_type, data_file_type;
 type radio_vendor_data_file, file_type, data_file_type;
 type updated_wifi_firmware_data_file, file_type, data_file_type;
 type tcpdump_vendor_data_file, file_type, data_file_type;
-type vendor_camera_data_file, file_type, data_file_type;
 type vendor_media_data_file, file_type, data_file_type;
 type vendor_misc_data_file, file_type, data_file_type;
 type sensor_debug_data_file, file_type, data_file_type;
