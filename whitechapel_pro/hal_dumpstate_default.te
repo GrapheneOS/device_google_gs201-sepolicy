@@ -49,8 +49,6 @@ allow hal_dumpstate_default proc_vendor_sched:file r_file_perms;
 allow hal_dumpstate_default battery_history_device:chr_file r_file_perms;
 
 get_prop(hal_dumpstate_default, vendor_camera_prop)
-get_prop(hal_dumpstate_default, vendor_rild_prop)
-get_prop(hal_dumpstate_default, vendor_tcpdump_log_prop)
 set_prop(hal_dumpstate_default, vendor_logger_prop)
 
 userdebug_or_eng(`
