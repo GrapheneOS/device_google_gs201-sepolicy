@@ -33,3 +33,7 @@ binder_call(hal_fingerprint_default, hal_graphics_composer_default)
 
 # allow fingerprint to access thermal hal
 hal_client_domain(hal_fingerprint_default, hal_thermal);
+
+# allow fingerprint to read sysfs_leds
+allow hal_fingerprint_default sysfs_leds:file r_file_perms;
+allow hal_fingerprint_default sysfs_leds:dir r_dir_perms;
