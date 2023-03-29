@@ -24,3 +24,4 @@ shell rootfs file b/239484612
 shell sscoredump_vendor_data_crashinfo_file dir b/241714944
 shell system_dlkm_file dir b/239484612
 su modem_img_file filesystem b/240653918
+system_app proc_pagetypeinfo file b/275645892
