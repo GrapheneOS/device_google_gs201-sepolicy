@@ -45,6 +45,7 @@
 /system_ext/bin/convert_to_ext4\.sh                                         u:object_r:convert-to-ext4-sh_exec:s0
 /vendor/bin/hw/disable_contaminant_detection\.sh                            u:object_r:disable-contaminant-detection-sh_exec:s0
 /vendor/bin/dump/dump_gs201                                                 u:object_r:dump_gs201_exec:s0
+/vendor/bin/dump/dump_power_gs201\.sh                                       u:object_r:dump_power_gs201_exec:s0
 
 # Vendor Firmwares
 /vendor/firmware(/.*)?                                                      u:object_r:vendor_fw_file:s0
