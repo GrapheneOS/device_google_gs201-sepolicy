@@ -1,4 +1,5 @@
 cat_engine_service_app system_app_data_file dir b/238705599
+dex2oat privapp_data_file dir b/276386138
 dump_pixel_metrics sysfs file b/268147113
 dumpstate app_zygote process b/237491813
 dumpstate system_data_file dir b/239484651
@@ -26,3 +27,4 @@ shell system_dlkm_file dir b/239484612
 su modem_img_file filesystem b/240653918
 vndservicemanager hal_keymint_citadel binder b/270079857
 system_app proc_pagetypeinfo file b/275645892
+system_server privapp_data_file lnk_file b/276385494
