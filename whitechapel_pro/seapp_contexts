@@ -44,3 +44,5 @@ user=system seinfo=platform name=com.google.android.CatEngine domain=cat_engine_
 
 # CccDkTimeSyncService
 user=_app isPrivApp=true name=com.google.pixel.digitalkey.timesync domain=vendor_cccdktimesync_app type=app_data_file levelFrom=all
+
+user=_app seinfo=GoogleCamera name=com.google.android.GoogleCamera domain=google_camera_app type=app_data_file levelFrom=all
