@@ -28,6 +28,8 @@ vendor_internal_prop(vendor_fingerprint_prop)
 
 # UWB calibration
 system_vendor_config_prop(vendor_uwb_calibration_prop)
+# Country code must be vendor_public to be written by UwbVendorService and read by NFC HAL
+vendor_internal_prop(vendor_uwb_calibration_country_code)
 
 # Dynamic sensor
 vendor_internal_prop(vendor_dynamic_sensor_prop)
