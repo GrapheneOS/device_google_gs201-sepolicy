@@ -24,7 +24,6 @@
 /vendor/bin/hw/android\.hardware\.contexthub-service\.generic               u:object_r:hal_contexthub_default_exec:s0
 /vendor/bin/hw/android\.hardware\.boot@1\.2-service-gs201                   u:object_r:hal_bootctl_default_exec:s0
 /vendor/bin/hw/android\.hardware\.composer\.hwc3-service\.pixel             u:object_r:hal_graphics_composer_default_exec:s0
-/vendor/bin/hw/android\.hardware\.dumpstate-service\.gs201             u:object_r:hal_dumpstate_default_exec:s0
 /vendor/bin/hw/samsung\.hardware\.media\.c2@1\.0-service                    u:object_r:mediacodec_samsung_exec:s0
 /vendor/bin/hw/google\.hardware\.media\.c2@1\.0-service                     u:object_r:mediacodec_google_exec:s0
 /vendor/bin/hw/android\.hardware\.secure_element@1\.2-service-gto           u:object_r:hal_secure_element_st54spi_exec:s0
@@ -195,7 +194,6 @@
 
 # Data
 /data/vendor/slog(/.*)?                                                     u:object_r:vendor_slog_file:s0
-/data/vendor/radio(/.*)?                                                    u:object_r:radio_vendor_data_file:s0
 /data/vendor/modem_stat(/.*)?                                               u:object_r:modem_stat_data_file:s0
 /data/vendor/log(/.*)?                                                      u:object_r:vendor_log_file:s0
 /data/vendor/log/rfsd(/.*)?                                                 u:object_r:vendor_rfsd_log_file:s0
