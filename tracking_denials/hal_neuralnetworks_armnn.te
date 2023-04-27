@@ -1,2 +1,0 @@
-# b/205779871
-dontaudit hal_neuralnetworks_armnn system_data_file:dir { search };
