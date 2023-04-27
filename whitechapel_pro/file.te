@@ -5,6 +5,7 @@ type vendor_rfsd_log_file, file_type, data_file_type;
 type modem_stat_data_file, file_type, data_file_type;
 type vendor_slog_file, file_type, data_file_type;
 type updated_wifi_firmware_data_file, file_type, data_file_type;
+type tcpdump_vendor_data_file, file_type, data_file_type;
 type vendor_media_data_file, file_type, data_file_type;
 type vendor_misc_data_file, file_type, data_file_type;
 type sensor_debug_data_file, file_type, data_file_type;
@@ -16,6 +17,7 @@ type powerstats_vendor_data_file, file_type, data_file_type;
 type vendor_gps_file, file_type, data_file_type;
 userdebug_or_eng(`
   typeattribute vendor_gps_file mlstrustedobject;
+  typeattribute tcpdump_vendor_data_file mlstrustedobject;
   typeattribute vendor_slog_file mlstrustedobject;
 ')
 
