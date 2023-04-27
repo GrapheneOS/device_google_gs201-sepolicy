@@ -202,7 +202,6 @@
 /data/vendor/ss(/.*)?                                                       u:object_r:tee_data_file:s0
 /data/nfc(/.*)?                                                             u:object_r:nfc_data_file:s0
 /data/vendor/firmware/wifi(/.*)?                                            u:object_r:updated_wifi_firmware_data_file:s0
-/data/vendor/tcpdump_logger(/.*)?                                           u:object_r:tcpdump_vendor_data_file:s0
 /data/vendor/media(/.*)?                                                    u:object_r:vendor_media_data_file:s0
 /data/vendor/misc(/.*)?                                                     u:object_r:vendor_misc_data_file:s0
 /data/per_boot(/.*)?                                                        u:object_r:per_boot_file:s0
