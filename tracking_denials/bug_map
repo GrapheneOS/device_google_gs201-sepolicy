@@ -1,7 +1,5 @@
 cat_engine_service_app system_app_data_file dir b/238705599
 dex2oat privapp_data_file dir b/276386138
-hal_camera_default boot_status_prop file b/275001783
-hal_camera_default edgetpu_app_service service_manager b/275001783
 hal_contexthub_default fwk_stats_service service_manager b/241714943
 hal_power_default hal_power_default capability b/237492146
 hal_radioext_default radio_vendor_data_file file b/237093466
