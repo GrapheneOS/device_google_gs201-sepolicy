@@ -13,6 +13,8 @@ allow dump_power_gs201 sysfs_bcl:dir r_dir_perms;
 allow dump_power_gs201 sysfs_bcl:file r_file_perms;
 allow dump_power_gs201 sysfs_wlc:dir r_dir_perms;
 allow dump_power_gs201 sysfs_wlc:file r_file_perms;
+allow dump_power_gs201 battery_history_device:chr_file r_file_perms;
+allow dump_power_gs201 mitigation_vendor_data_file:file r_file_perms;
 
 userdebug_or_eng(`
   allow dump_power_gs201 debugfs:dir r_dir_perms;
