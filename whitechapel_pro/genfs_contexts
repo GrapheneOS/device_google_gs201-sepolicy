@@ -333,6 +333,8 @@ genfscon sysfs /devices/platform/14520000.pcie/pci0001:00/0001:00:00.0/0001:01:0
 genfscon sysfs /devices/platform/14520000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/wakeup                                  u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/19000000.aoc/com.google.usf/wakeup                                                         u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/19000000.aoc/com.google.usf.non_wake_up/wakeup                                             u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/19000000.aoc/com.google.chre/wakeup                                                        u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/19000000.aoc/com.google.chre.non_wake_up/wakeup                                            u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/19000000.aoc/wakeup                                                                        u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/19000000.aoc/usb_control/wakeup                                                            u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/acpm_mfd_bus@18100000/i2c-7/i2c-s2mpg12mfd/s2mpg12-power-keys/wakeup                       u:object_r:sysfs_wakeup:s0
