@@ -41,6 +41,7 @@ allow pixelstats_vendor sysfs_exynos_pcie_stats:file rw_file_perms;
 #perf-metrics
 r_dir_file(pixelstats_vendor, sysfs_vendor_metrics)
 allow pixelstats_vendor sysfs_vendor_metrics:lnk_file r_file_perms;
+allow pixelstats_vendor sysfs_vendor_metrics:file w_file_perms;
 
 # BCL
 allow pixelstats_vendor sysfs_bcl:dir search;
