@@ -222,6 +222,8 @@ genfscon sysfs /devices/platform/14700000.ufs/rev                       u:object
 
 # debugfs
 genfscon debugfs /maxfg                                                 u:object_r:vendor_maxfg_debugfs:s0
+genfscon debugfs /maxfg_base                                            u:object_r:vendor_maxfg_debugfs:s0
+genfscon debugfs /maxfg_secondary                                       u:object_r:vendor_maxfg_debugfs:s0
 genfscon debugfs /pm_genpd/pm_genpd_summary                             u:object_r:vendor_pm_genpd_debugfs:s0
 genfscon debugfs /regmap                                                u:object_r:vendor_regmap_debugfs:s0
 genfscon debugfs /usb                                                   u:object_r:vendor_usb_debugfs:s0
@@ -253,6 +255,7 @@ genfscon sysfs /devices/platform/10da0000.hsi2c/i2c-7/7-0050/eeprom             
 genfscon sysfs /devices/platform/10da0000.hsi2c/i2c-7/i2c-p9412/power_supply    u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/10da0000.hsi2c/i2c-8/8-0050/eeprom             u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/10da0000.hsi2c/i2c-8/i2c-p9412/power_supply    u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/platform/10da0000.hsi2c/i2c-9/9-0050/eeprom             u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/10d60000.hsi2c/i2c-2/2-0069/power_supply       u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/10d60000.hsi2c/i2c-3/3-0069/power_supply       u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/10d60000.hsi2c/i2c-4/4-0069/power_supply       u:object_r:sysfs_batteryinfo:s0
