@@ -1,5 +1,0 @@
-allow hal_bluetooth_btlinux aoc_device:chr_file { getattr open read write };
-allow hal_bluetooth_btlinux device:dir r_dir_perms;
-
-allow hal_bluetooth_btlinux vendor_bt_data_file:dir rw_dir_perms;
-allow hal_bluetooth_btlinux vendor_bt_data_file:file create_file_perms;
