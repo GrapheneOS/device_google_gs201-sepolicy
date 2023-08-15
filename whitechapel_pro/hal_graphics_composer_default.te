@@ -52,3 +52,7 @@ vndbinder_use(hal_graphics_composer_default)
 
 # allow HWC to get device_config_surface_flinger_native_boot_prop for adpf flags
 get_prop(hal_graphics_composer_default, device_config_surface_flinger_native_boot_prop)
+
+# allow HWC to write log file
+allow hal_graphics_composer_default vendor_hwc_log_file:dir rw_dir_perms;
+allow hal_graphics_composer_default vendor_hwc_log_file:file create_file_perms;

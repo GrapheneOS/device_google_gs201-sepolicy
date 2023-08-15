@@ -1,5 +1,0 @@
-# AOC device
-type aoc_device, dev_type;
-
-# AMCS device
-type amcs_device, dev_type;
