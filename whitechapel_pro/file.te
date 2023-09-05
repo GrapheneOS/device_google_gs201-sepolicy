@@ -10,7 +10,6 @@ type vendor_misc_data_file, file_type, data_file_type;
 type sensor_debug_data_file, file_type, data_file_type;
 type sensor_reg_data_file, file_type, data_file_type;
 type per_boot_file, file_type, data_file_type, core_data_file_type;
-type uwb_vendor_data_file, file_type, data_file_type, app_data_file_type;
 type uwb_data_vendor, file_type, data_file_type;
 type powerstats_vendor_data_file, file_type, data_file_type;
 type vendor_gps_file, file_type, data_file_type;
