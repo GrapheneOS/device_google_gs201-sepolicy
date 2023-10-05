@@ -1,37 +1,14 @@
-# Exynos
-genfscon sysfs /devices/platform/exynos-bts                                    u:object_r:sysfs_exynos_bts:s0
-genfscon sysfs /devices/platform/exynos-bts/bts_stats                          u:object_r:sysfs_exynos_bts_stats:s0
-
 genfscon sysfs /firmware/devicetree/base/chosen                                u:object_r:sysfs_chosen:s0
-genfscon sysfs /devices/virtual/pmic/mitigation                                u:object_r:sysfs_bcl:s0
-genfscon sysfs /devices/system/chip-id/ap_hw_tune_str                          u:object_r:sysfs_chip_id:s0
-genfscon sysfs /devices/system/chip-id/evt_ver                                 u:object_r:sysfs_chip_id:s0
-genfscon sysfs /devices/system/chip-id/lot_id                                  u:object_r:sysfs_chip_id:s0
-genfscon sysfs /devices/system/chip-id/product_id                              u:object_r:sysfs_chip_id:s0
-genfscon sysfs /devices/system/chip-id/revision                                u:object_r:sysfs_chip_id:s0
-genfscon sysfs /devices/system/chip-id/raw_str                                 u:object_r:sysfs_chip_id:s0
+
+# EdgeTPU
+genfscon sysfs /devices/platform/1ce00000.janeiro   u:object_r:sysfs_edgetpu:s0
 
 # CPU
-genfscon sysfs /devices/platform/17000010.devfreq_mif/devfreq/17000010.devfreq_mif/time_in_state       u:object_r:sysfs_cpu:s0
-genfscon sysfs /devices/platform/cpupm/cpupm/time_in_state                                             u:object_r:sysfs_cpu:s0
-genfscon sysfs /devices/platform/17000020.devfreq_int/devfreq/17000020.devfreq_int/time_in_state       u:object_r:sysfs_cpu:s0
-genfscon sysfs /devices/platform/17000030.devfreq_intcam/devfreq/17000030.devfreq_intcam/time_in_state u:object_r:sysfs_cpu:s0
-genfscon sysfs /devices/platform/17000040.devfreq_disp/devfreq/17000040.devfreq_disp/time_in_state     u:object_r:sysfs_cpu:s0
-genfscon sysfs /devices/platform/17000050.devfreq_cam/devfreq/17000050.devfreq_cam/time_in_state       u:object_r:sysfs_cpu:s0
-genfscon sysfs /devices/platform/17000060.devfreq_tnr/devfreq/17000060.devfreq_tnr/time_in_state       u:object_r:sysfs_cpu:s0
-genfscon sysfs /devices/platform/17000070.devfreq_mfc/devfreq/17000070.devfreq_mfc/time_in_state       u:object_r:sysfs_cpu:s0
-genfscon sysfs /devices/platform/17000080.devfreq_bo/devfreq/17000080.devfreq_bo/time_in_state         u:object_r:sysfs_cpu:s0
 genfscon sysfs /devices/platform/28000000.mali/time_in_state                                           u:object_r:sysfs_cpu:s0
 genfscon sysfs /devices/platform/28000000.mali/uid_time_in_state                                       u:object_r:sysfs_cpu:s0
 
 genfscon sysfs /devices/soc0/machine                                           u:object_r:sysfs_soc:s0
 genfscon sysfs /devices/soc0/revision                                          u:object_r:sysfs_soc:s0
-
-# Touch
-genfscon sysfs /devices/platform/10d10000.spi/spi_master/spi0/spi0.0/synaptics_tcm.0/sysfs   u:object_r:sysfs_touch:s0
-genfscon sysfs /devices/virtual/sec/tsp                                        u:object_r:sysfs_touch:s0
-genfscon proc  /focaltech_touch                                                u:object_r:proc_touch:s0
-genfscon proc  /goog_touch_interface                                           u:object_r:proc_touch_gti:s0
 
 # tracefs
 genfscon tracefs /events/dmabuf_heap/dma_heap_stat                             u:object_r:debugfs_tracing:s0
@@ -82,6 +59,9 @@ genfscon sysfs /devices/platform/10970000.hsi2c/i2c-6/i2c-st21nfc/power_stats   
 genfscon sysfs /devices/platform/10970000.hsi2c/i2c-7/i2c-st21nfc/power_stats          u:object_r:sysfs_power_stats:s0
 genfscon sysfs /devices/platform/10970000.hsi2c/i2c-8/i2c-st21nfc/power_stats          u:object_r:sysfs_power_stats:s0
 genfscon sysfs /devices/platform/10db0000.spi/spi_master/spi16/spi16.0/uwb/power_stats u:object_r:sysfs_power_stats:s0
+
+# Modem
+genfscon sysfs /devices/platform/cp-tm1/cp_temp		u:object_r:sysfs_modem:s0
 
 # Power ODPM
 genfscon sysfs /devices/platform/acpm_mfd_bus@18100000/i2c-0/i2c-s2mpg12mfd/s2mpg12-meter/s2mpg12-odpm/iio:device   u:object_r:sysfs_odpm:s0
@@ -137,6 +117,10 @@ genfscon sysfs /devices/platform/17000080.devfreq_bo/devfreq/17000080.devfreq_bo
 # OTA
 genfscon sysfs /devices/platform/14700000.ufs/pixel/boot_lun_enabled           u:object_r:sysfs_ota:s0
 
+# Input
+genfscon sysfs /devices/platform/11210000.usb/11210000.dwc3/xhci-hcd-exynos.4.auto/usb2/2-1        u:object_r:sysfs_uhid:s0
+genfscon sysfs /devices/platform/11210000.usb/11210000.dwc3/xhci-hcd-exynos.5.auto/usb2/2-1        u:object_r:sysfs_uhid:s0
+
 # Display
 genfscon sysfs /devices/platform/1c2c0000.drmdsim/1c2c0000.drmdsim.0/gamma                                u:object_r:sysfs_display:s0
 genfscon sysfs /devices/platform/1c2c0000.drmdsim/1c2c0000.drmdsim.0/min_vrefresh                         u:object_r:sysfs_display:s0
@@ -155,11 +139,13 @@ genfscon sysfs /devices/platform/1c2c0000.drmdsim/1c2c0000.drmdsim.0/backlight  
 genfscon sysfs /devices/platform/1c2c0000.drmdsim/1c2c0000.drmdsim.0/panel_extinfo                        u:object_r:sysfs_display:s0
 genfscon sysfs /devices/platform/1c2c0000.drmdsim/1c2c0000.drmdsim.0/panel_name                           u:object_r:sysfs_display:s0
 genfscon sysfs /devices/platform/1c2c0000.drmdsim/1c2c0000.drmdsim.0/serial_number                        u:object_r:sysfs_display:s0
+genfscon sysfs /devices/platform/1c2c0000.drmdsim/1c2c0000.drmdsim.0/refresh_rate                         u:object_r:sysfs_display:s0
 
 genfscon sysfs /devices/platform/1c2d0000.drmdsim/1c2d0000.drmdsim.0/backlight                            u:object_r:sysfs_leds:s0
 genfscon sysfs /devices/platform/1c2d0000.drmdsim/1c2d0000.drmdsim.0/panel_extinfo                        u:object_r:sysfs_display:s0
 genfscon sysfs /devices/platform/1c2d0000.drmdsim/1c2d0000.drmdsim.0/panel_name                           u:object_r:sysfs_display:s0
 genfscon sysfs /devices/platform/1c2d0000.drmdsim/1c2d0000.drmdsim.0/serial_number                        u:object_r:sysfs_display:s0
+genfscon sysfs /devices/platform/1c2d0000.drmdsim/1c2d0000.drmdsim.0/refresh_rate                         u:object_r:sysfs_display:s0
 
 genfscon sysfs /devices/platform/1c240000.drmdecon/dqe0/atc                                               u:object_r:sysfs_display:s0
 genfscon sysfs /devices/platform/1c241000.drmdecon/dqe1/atc                                               u:object_r:sysfs_display:s0
@@ -191,11 +177,14 @@ genfscon sysfs /devices/platform/14700000.ufs/health_descriptor         u:object
 genfscon sysfs /devices/platform/14700000.ufs/host0/target0:0:0/0:0:0:  u:object_r:sysfs_scsi_devices_0000:s0
 genfscon sysfs /devices/platform/14700000.ufs/ufs_stats                 u:object_r:sysfs_scsi_devices_0000:s0
 genfscon sysfs /devices/platform/14700000.ufs/attributes/wb_avail_buf   u:object_r:sysfs_scsi_devices_0000:s0
+genfscon sysfs /devices/platform/14700000.ufs/vendor                    u:object_r:sysfs_scsi_devices_0000:s0
+genfscon sysfs /devices/platform/14700000.ufs/model                     u:object_r:sysfs_scsi_devices_0000:s0
+genfscon sysfs /devices/platform/14700000.ufs/rev                       u:object_r:sysfs_scsi_devices_0000:s0
 
 # debugfs
-genfscon debugfs /f2fs                                                  u:object_r:debugfs_f2fs:s0
 genfscon debugfs /maxfg                                                 u:object_r:vendor_maxfg_debugfs:s0
-genfscon debugfs /dma_buf/bufinfo                                       u:object_r:vendor_dmabuf_debugfs:s0
+genfscon debugfs /maxfg_base                                            u:object_r:vendor_maxfg_debugfs:s0
+genfscon debugfs /maxfg_secondary                                       u:object_r:vendor_maxfg_debugfs:s0
 genfscon debugfs /pm_genpd/pm_genpd_summary                             u:object_r:vendor_pm_genpd_debugfs:s0
 genfscon debugfs /regmap                                                u:object_r:vendor_regmap_debugfs:s0
 genfscon debugfs /usb                                                   u:object_r:vendor_usb_debugfs:s0
@@ -204,38 +193,30 @@ genfscon debugfs /max77759_chg                                          u:object
 genfscon debugfs /max77729_pmic                                         u:object_r:vendor_charger_debugfs:s0
 genfscon debugfs /gvotables                                             u:object_r:vendor_votable_debugfs:s0
 genfscon debugfs /google_battery                                        u:object_r:vendor_battery_debugfs:s0
-genfscon debugfs /dri/0/crtc-                                           u:object_r:vendor_dri_debugfs:s0
-genfscon debugfs /page_pinner                                           u:object_r:vendor_page_pinner_debugfs:s0
-genfscon debugfs /cma                                                   u:object_r:vendor_cma_debugfs:s0
 
 # Battery
 genfscon sysfs /devices/platform/google,battery/power_supply/battery            u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/google,cpm                                     u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/google,charger                                 u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/10d60000.hsi2c                                 u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/pseudo_0/adapter0/host1/target1:0:0/1:0:0:0/block/sde   u:object_r:sysfs_devices_block:s0
 
 # P22 battery
 genfscon sysfs /devices/platform/10da0000.hsi2c/i2c-2/2-0050/eeprom             u:object_r:sysfs_batteryinfo:s0
-genfscon sysfs /devices/platform/10da0000.hsi2c/i2c-2/i2c-p9412                 u:object_r:sysfs_wlc:s0
 genfscon sysfs /devices/platform/10da0000.hsi2c/i2c-2/i2c-p9412/power_supply    u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/10da0000.hsi2c/i2c-3/3-0050/eeprom             u:object_r:sysfs_batteryinfo:s0
-genfscon sysfs /devices/platform/10da0000.hsi2c/i2c-3/i2c-p9412                 u:object_r:sysfs_wlc:s0
 genfscon sysfs /devices/platform/10da0000.hsi2c/i2c-3/i2c-p9412/power_supply    u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/10da0000.hsi2c/i2c-4/4-0050/eeprom             u:object_r:sysfs_batteryinfo:s0
-genfscon sysfs /devices/platform/10da0000.hsi2c/i2c-4/i2c-p9412                 u:object_r:sysfs_wlc:s0
 genfscon sysfs /devices/platform/10da0000.hsi2c/i2c-4/i2c-p9412/power_supply    u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/10da0000.hsi2c/i2c-5/5-0050/eeprom             u:object_r:sysfs_batteryinfo:s0
-genfscon sysfs /devices/platform/10da0000.hsi2c/i2c-5/i2c-p9412                 u:object_r:sysfs_wlc:s0
 genfscon sysfs /devices/platform/10da0000.hsi2c/i2c-5/i2c-p9412/power_supply    u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/10da0000.hsi2c/i2c-6/6-0050/eeprom             u:object_r:sysfs_batteryinfo:s0
-genfscon sysfs /devices/platform/10da0000.hsi2c/i2c-6/i2c-p9412                 u:object_r:sysfs_wlc:s0
 genfscon sysfs /devices/platform/10da0000.hsi2c/i2c-6/i2c-p9412/power_supply    u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/10da0000.hsi2c/i2c-7/7-0050/eeprom             u:object_r:sysfs_batteryinfo:s0
-genfscon sysfs /devices/platform/10da0000.hsi2c/i2c-7/i2c-p9412                 u:object_r:sysfs_wlc:s0
 genfscon sysfs /devices/platform/10da0000.hsi2c/i2c-7/i2c-p9412/power_supply    u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/10da0000.hsi2c/i2c-8/8-0050/eeprom             u:object_r:sysfs_batteryinfo:s0
-genfscon sysfs /devices/platform/10da0000.hsi2c/i2c-8/i2c-p9412                 u:object_r:sysfs_wlc:s0
 genfscon sysfs /devices/platform/10da0000.hsi2c/i2c-8/i2c-p9412/power_supply    u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/platform/10da0000.hsi2c/i2c-9/9-0050/eeprom             u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/10d60000.hsi2c/i2c-2/2-0069/power_supply       u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/10d60000.hsi2c/i2c-3/3-0069/power_supply       u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/10d60000.hsi2c/i2c-4/4-0069/power_supply       u:object_r:sysfs_batteryinfo:s0
@@ -355,6 +336,8 @@ genfscon sysfs /devices/platform/14520000.pcie/pci0001:00/0001:00:00.0/0001:01:0
 genfscon sysfs /devices/platform/14520000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/wakeup                                  u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/19000000.aoc/com.google.usf/wakeup                                                         u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/19000000.aoc/com.google.usf.non_wake_up/wakeup                                             u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/19000000.aoc/com.google.chre/wakeup                                                        u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/19000000.aoc/com.google.chre.non_wake_up/wakeup                                            u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/19000000.aoc/wakeup                                                                        u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/19000000.aoc/usb_control/wakeup                                                            u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/acpm_mfd_bus@18100000/i2c-7/i2c-s2mpg12mfd/s2mpg12-power-keys/wakeup                       u:object_r:sysfs_wakeup:s0
@@ -388,17 +371,7 @@ genfscon sysfs /devices/platform/100b0000.G3D                             u:obje
 genfscon sysfs /devices/platform/100b0000.TPU                             u:object_r:sysfs_thermal:s0
 genfscon sysfs /devices/platform/100b0000.AUR                             u:object_r:sysfs_thermal:s0
 
-genfscon sysfs /module/gs_thermal/parameters/tmu_reg_dump_state            u:object_r:sysfs_thermal:s0
-genfscon sysfs /module/gs_thermal/parameters/tmu_reg_dump_current_temp     u:object_r:sysfs_thermal:s0
-genfscon sysfs /module/gs_thermal/parameters/tmu_top_reg_dump_rise_thres   u:object_r:sysfs_thermal:s0
-genfscon sysfs /module/gs_thermal/parameters/tmu_top_reg_dump_fall_thres   u:object_r:sysfs_thermal:s0
-genfscon sysfs /module/gs_thermal/parameters/tmu_sub_reg_dump_rise_thres   u:object_r:sysfs_thermal:s0
-genfscon sysfs /module/gs_thermal/parameters/tmu_sub_reg_dump_fall_thres   u:object_r:sysfs_thermal:s0
-
-#vendor-metrics
-genfscon sysfs /kernel/metrics/temp_residency/temp_residency_all/stats    u:object_r:sysfs_vendor_metrics:s0
-genfscon sysfs /kernel/metrics/resume_latency/resume_latency_metrics      u:object_r:sysfs_vendor_metrics:s0
-genfscon sysfs /kernel/metrics/irq/long_irq_metrics                       u:object_r:sysfs_vendor_metrics:s0
+genfscon sysfs /thermal_zone14/mode                                        u:object_r:sysfs_thermal:s0
 
 # PCIe link
 genfscon sysfs /devices/platform/14520000.pcie/link_stats                 u:object_r:sysfs_exynos_pcie_stats:s0
@@ -409,14 +382,14 @@ genfscon sysfs /devices/platform/17000030.devfreq_intcam/devfreq/17000030.devfre
 genfscon sysfs /devices/platform/17000060.devfreq_tnr/devfreq/17000060.devfreq_tnr/max_freq          u:object_r:sysfs_camera:s0
 genfscon sysfs /devices/platform/17000060.devfreq_tnr/devfreq/17000060.devfreq_tnr/min_freq          u:object_r:sysfs_camera:s0
 
+# SJTAG
+genfscon sysfs /devices/platform/sjtag_ap/interface                       u:object_r:sysfs_sjtag:s0
+genfscon sysfs /devices/platform/sjtag_gsa/interface                      u:object_r:sysfs_sjtag:s0
+
 # USB-C throttling stats
 genfscon sysfs /devices/platform/google,usbc_port_cooling_dev/cleared_time      u:object_r:sysfs_usbc_throttling_stats:s0
 genfscon sysfs /devices/platform/google,usbc_port_cooling_dev/hysteresis_time   u:object_r:sysfs_usbc_throttling_stats:s0
 genfscon sysfs /devices/platform/google,usbc_port_cooling_dev/trip_time         u:object_r:sysfs_usbc_throttling_stats:s0
-
-# SJTAG
-genfscon sysfs /devices/platform/sjtag_ap/interface                       u:object_r:sysfs_sjtag:s0
-genfscon sysfs /devices/platform/sjtag_gsa/interface                      u:object_r:sysfs_sjtag:s0
 
 # Coresight ETM
 genfscon sysfs /devices/platform/2b840000.etm    u:object_r:sysfs_devices_cs_etm:s0
@@ -438,3 +411,24 @@ genfscon sysfs /kernel/pixel_em/active_profile                            u:obje
 # Privacy LED
 genfscon sysfs /devices/platform/pwmleds/leds/green/brightness            u:object_r:sysfs_leds:s0
 genfscon sysfs /devices/platform/pwmleds/leds/green/max_brightness        u:object_r:sysfs_leds:s0
+
+# AOC
+genfscon sysfs /devices/platform/19000000.aoc/aoc_clock_and_kernel_boottime u:object_r:sysfs_aoc_boottime:s0
+genfscon sysfs /devices/platform/19000000.aoc/firmware                      u:object_r:sysfs_aoc_firmware:s0
+genfscon sysfs /devices/platform/19000000.aoc                               u:object_r:sysfs_aoc:s0
+genfscon sysfs /devices/platform/19000000.aoc/reset                         u:object_r:sysfs_aoc_reset:s0
+genfscon sysfs /devices/platform/19000000.aoc/services                      u:object_r:sysfs_aoc_dumpstate:s0
+genfscon sysfs /devices/platform/19000000.aoc/restart_count                 u:object_r:sysfs_aoc_dumpstate:s0
+genfscon sysfs /devices/platform/19000000.aoc/coredump_count                u:object_r:sysfs_aoc_dumpstate:s0
+genfscon sysfs /devices/platform/19000000.aoc/control/ring_buffer_wakeup    u:object_r:sysfs_aoc_dumpstate:s0
+genfscon sysfs /devices/platform/19000000.aoc/control/host_ipc_wakeup       u:object_r:sysfs_aoc_dumpstate:s0
+genfscon sysfs /devices/platform/19000000.aoc/control/usf_wakeup            u:object_r:sysfs_aoc_dumpstate:s0
+genfscon sysfs /devices/platform/19000000.aoc/control/audio_wakeup          u:object_r:sysfs_aoc_dumpstate:s0
+genfscon sysfs /devices/platform/19000000.aoc/control/logging_wakeup        u:object_r:sysfs_aoc_dumpstate:s0
+genfscon sysfs /devices/platform/19000000.aoc/control/hotword_wakeup        u:object_r:sysfs_aoc_dumpstate:s0
+genfscon sysfs /devices/platform/19000000.aoc/control/memory_exception      u:object_r:sysfs_aoc_dumpstate:s0
+genfscon sysfs /devices/platform/19000000.aoc/control/memory_votes_a32      u:object_r:sysfs_aoc_dumpstate:s0
+genfscon sysfs /devices/platform/19000000.aoc/control/memory_votes_ff1      u:object_r:sysfs_aoc_dumpstate:s0
+
+# GPS
+genfscon sysfs /devices/platform/10940000.spi/spi_master/spi5/spi5.0/nstandby   u:object_r:sysfs_gps:s0

@@ -1,3 +1,0 @@
-# b/210363983
-#dontaudit clatd netd:rawip_socket { read write };
-#dontaudit clatd netd:rawip_socket { setopt };

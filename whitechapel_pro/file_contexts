@@ -11,21 +11,19 @@
 /vendor/bin/storageproxyd                                                   u:object_r:tee_exec:s0
 /vendor/bin/init\.radio\.sh                                                 u:object_r:init_radio_exec:s0
 /vendor/bin/tcpdump_logger                                                  u:object_r:tcpdump_logger_exec:s0
-/vendor/bin/init\.insmod\.sh                                                u:object_r:init-insmod-sh_exec:s0
+/vendor/bin/init\.display\.sh                                               u:object_r:init-display-sh_exec:s0
 /vendor/bin/trusty_apploader                                                u:object_r:trusty_apploader_exec:s0
 /vendor/bin/trusty_metricsd                                                 u:object_r:trusty_metricsd_exec:s0
-/vendor/bin/usf_stats                                                       u:object_r:vendor_usf_stats:s0
-/vendor/bin/usf_reg_edit                                                    u:object_r:vendor_usf_reg_edit:s0
 /vendor/bin/dumpsys                                                         u:object_r:vendor_dumpsys:s0
 /vendor/bin/init\.uwb\.calib\.sh                                            u:object_r:vendor_uwb_init_exec:s0
 /vendor/bin/hw/android\.hardware\.gatekeeper@1\.0-service\.trusty           u:object_r:hal_gatekeeper_default_exec:s0
 /vendor/bin/hw/android\.hardware\.gatekeeper-service\.trusty                u:object_r:hal_gatekeeper_default_exec:s0
 /vendor/bin/hw/android\.hardware\.security\.keymint-service\.trusty         u:object_r:hal_keymint_default_exec:s0
+/vendor/bin/hw/android\.hardware\.security\.keymint-service\.rust\.trusty   u:object_r:hal_keymint_default_exec:s0
 /vendor/bin/hw/vendor\.google\.radioext@1\.0-service                        u:object_r:hal_radioext_default_exec:s0
 /vendor/bin/hw/android\.hardware\.contexthub-service\.generic               u:object_r:hal_contexthub_default_exec:s0
 /vendor/bin/hw/android\.hardware\.boot@1\.2-service-gs201                   u:object_r:hal_bootctl_default_exec:s0
 /vendor/bin/hw/android\.hardware\.composer\.hwc3-service\.pixel             u:object_r:hal_graphics_composer_default_exec:s0
-/vendor/bin/hw/android\.hardware\.dumpstate-service\.gs201             u:object_r:hal_dumpstate_default_exec:s0
 /vendor/bin/hw/samsung\.hardware\.media\.c2@1\.0-service                    u:object_r:mediacodec_samsung_exec:s0
 /vendor/bin/hw/google\.hardware\.media\.c2@1\.0-service                     u:object_r:mediacodec_google_exec:s0
 /vendor/bin/hw/android\.hardware\.secure_element@1\.2-service-gto           u:object_r:hal_secure_element_st54spi_exec:s0
@@ -42,15 +40,14 @@
 /vendor/bin/hw/android\.hardware\.qorvo\.uwb\.service                       u:object_r:hal_uwb_vendor_default_exec:s0
 /vendor/bin/rlsservice                                                      u:object_r:rlsservice_exec:s0
 /vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.fpc u:object_r:fingerprint_factory_service_exec:s0
-/vendor/bin/hw/battery_mitigation                                           u:object_r:battery_mitigation_exec:s0
 /vendor/bin/hw/android\.hardware\.memtrack-service\.pixel                   u:object_r:hal_memtrack_default_exec:s0
 /system_ext/bin/convert_to_ext4\.sh                                         u:object_r:convert-to-ext4-sh_exec:s0
 /vendor/bin/hw/disable_contaminant_detection\.sh                            u:object_r:disable-contaminant-detection-sh_exec:s0
+/vendor/bin/dump/dump_power_gs201\.sh                                       u:object_r:dump_power_gs201_exec:s0
+/vendor/bin/ufs_firmware_update\.sh                                         u:object_r:ufs_firmware_update_exec:s0
 
 # Vendor Firmwares
 /vendor/firmware(/.*)?                                                      u:object_r:vendor_fw_file:s0
-/vendor/firmware/mali_csffw\.bin                                            u:object_r:same_process_hal_file:s0
-/vendor/firmware/gxp_fw_core[0-3]                                           u:object_r:same_process_hal_file:s0
 
 # Vendor libraries
 /vendor/lib(64)?/libdrm\.so                                                 u:object_r:same_process_hal_file:s0
@@ -72,11 +69,7 @@
 /vendor/lib(64)?/hw/vulkan\.mali\.so                                        u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libgpudataproducer\.so                                     u:object_r:same_process_hal_file:s0
 
-# Vendor kernel modules
-/vendor_dlkm/lib/modules/.*\.ko                                             u:object_r:vendor_kernel_modules:s0
-
 # Devices
-/dev/trusty-log0                                                            u:object_r:logbuffer_device:s0
 /dev/dma_heap/sensor_direct_heap                                            u:object_r:sensor_direct_heap_device:s0
 /dev/ttySAC0                                                                u:object_r:tty_device:s0
 /dev/dma_heap/faceauth_tpu-secure                                           u:object_r:faceauth_heap_device:s0
@@ -87,6 +80,7 @@
 /dev/dma_heap/vframe-secure                                                 u:object_r:dmabuf_system_secure_heap_device:s0
 /dev/dma_heap/vscaler-secure                                                u:object_r:vscaler_heap_device:s0
 /dev/dma_heap/vstream-secure                                                u:object_r:dmabuf_system_secure_heap_device:s0
+/dev/janeiro                                                                u:object_r:edgetpu_device:s0
 /dev/bigocean                                                               u:object_r:video_device:s0
 /dev/goodix_fp                                                              u:object_r:fingerprint_device:s0
 /dev/stmvl53l1_ranging                                                      u:object_r:rls_device:s0
@@ -197,10 +191,10 @@
 /dev/block/platform/14700000\.ufs/by-name/vbmeta_vendor_[ab]                u:object_r:custom_ab_block_device:s0
 /dev/block/platform/14700000\.ufs/by-name/vendor_boot_[ab]                  u:object_r:custom_ab_block_device:s0
 /dev/block/platform/14700000\.ufs/by-name/vendor_kernel_boot_[ab]           u:object_r:custom_ab_block_device:s0
+/dev/block/platform/14700000\.ufs/by-name/fips                              u:object_r:fips_block_device:s0
 
 # Data
 /data/vendor/slog(/.*)?                                                     u:object_r:vendor_slog_file:s0
-/data/vendor/radio(/.*)?                                                    u:object_r:radio_vendor_data_file:s0
 /data/vendor/modem_stat(/.*)?                                               u:object_r:modem_stat_data_file:s0
 /data/vendor/log(/.*)?                                                      u:object_r:vendor_log_file:s0
 /data/vendor/log/rfsd(/.*)?                                                 u:object_r:vendor_rfsd_log_file:s0
@@ -208,8 +202,6 @@
 /data/vendor/ss(/.*)?                                                       u:object_r:tee_data_file:s0
 /data/nfc(/.*)?                                                             u:object_r:nfc_data_file:s0
 /data/vendor/firmware/wifi(/.*)?                                            u:object_r:updated_wifi_firmware_data_file:s0
-/data/vendor/tcpdump_logger(/.*)?                                           u:object_r:tcpdump_vendor_data_file:s0
-/data/vendor/camera(/.*)?                                                   u:object_r:vendor_camera_data_file:s0
 /data/vendor/media(/.*)?                                                    u:object_r:vendor_media_data_file:s0
 /data/vendor/misc(/.*)?                                                     u:object_r:vendor_misc_data_file:s0
 /data/per_boot(/.*)?                                                        u:object_r:per_boot_file:s0
@@ -219,7 +211,6 @@
 /dev/maxfg_history                                                          u:object_r:battery_history_device:s0
 /dev/battery_history                                                        u:object_r:battery_history_device:s0
 /data/vendor/powerstats(/.*)?                                               u:object_r:powerstats_vendor_data_file:s0
-/data/vendor/mitigation(/.*)?                                               u:object_r:mitigation_vendor_data_file:s0
 
 # Persist
 /mnt/vendor/persist/battery(/.*)?                                           u:object_r:persist_battery_file:s0
@@ -229,7 +220,6 @@
 /mnt/vendor/persist/ss(/.*)?                                                u:object_r:persist_ss_file:s0
 /mnt/vendor/persist/uwb(/.*)?                                               u:object_r:persist_uwb_file:s0
 /mnt/vendor/persist/display(/.*)?                                           u:object_r:persist_display_file:s0
-/mnt/vendor/persist/led(/.*)?                                               u:object_r:persist_leds_file:s0
 
 # Extra mount images
 /mnt/vendor/modem_img(/.*)?                                                 u:object_r:modem_img_file:s0
