@@ -204,8 +204,6 @@
 /data/vendor/media(/.*)?                                                    u:object_r:vendor_media_data_file:s0
 /data/vendor/misc(/.*)?                                                     u:object_r:vendor_misc_data_file:s0
 /data/per_boot(/.*)?                                                        u:object_r:per_boot_file:s0
-/data/vendor/sensors/debug(/.*)?                                            u:object_r:sensor_debug_data_file:s0
-/data/vendor/sensors/registry(/.*)?                                         u:object_r:sensor_reg_data_file:s0
 /data/vendor/uwb(/.*)?                                                      u:object_r:uwb_data_vendor:s0
 /dev/maxfg_history                                                          u:object_r:battery_history_device:s0
 /dev/battery_history                                                        u:object_r:battery_history_device:s0
@@ -215,7 +213,6 @@
 /mnt/vendor/persist/battery(/.*)?                                           u:object_r:persist_battery_file:s0
 /mnt/vendor/persist/camera(/.*)?                                            u:object_r:persist_camera_file:s0
 /mnt/vendor/persist/modem(/.*)?                                             u:object_r:persist_modem_file:s0
-/mnt/vendor/persist/sensors/registry(/.*)?                                  u:object_r:persist_sensor_reg_file:s0
 /mnt/vendor/persist/ss(/.*)?                                                u:object_r:persist_ss_file:s0
 /mnt/vendor/persist/uwb(/.*)?                                               u:object_r:persist_uwb_file:s0
 /mnt/vendor/persist/display(/.*)?                                           u:object_r:persist_display_file:s0
