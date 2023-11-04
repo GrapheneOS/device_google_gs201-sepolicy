@@ -16,6 +16,8 @@ allow rlsservice mnt_vendor_file:dir search;
 allow rlsservice rls_device:chr_file rw_file_perms;
 
 binder_call(rlsservice, hal_camera_default)
+binder_call(rlsservice, servicemanager)
+
 
 # Allow access to display backlight information
 allow rlsservice sysfs_leds:dir search;
