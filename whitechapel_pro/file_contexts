@@ -222,6 +222,3 @@
 /mnt/vendor/efs(/.*)?                                                       u:object_r:modem_efs_file:s0
 /mnt/vendor/efs_backup(/.*)?                                                u:object_r:modem_efs_file:s0
 /mnt/vendor/modem_userdata(/.*)?                                            u:object_r:modem_userdata_file:s0
-
-# Raw HID device
-/dev/hidraw[0-9]*                        u:object_r:hidraw_device:s0
