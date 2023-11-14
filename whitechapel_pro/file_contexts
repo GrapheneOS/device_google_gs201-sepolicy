@@ -20,6 +20,7 @@
 /vendor/bin/hw/android\.hardware\.gatekeeper-service\.trusty                u:object_r:hal_gatekeeper_default_exec:s0
 /vendor/bin/hw/android\.hardware\.security\.keymint-service\.trusty         u:object_r:hal_keymint_default_exec:s0
 /vendor/bin/hw/android\.hardware\.security\.keymint-service\.rust\.trusty   u:object_r:hal_keymint_default_exec:s0
+/vendor/bin/hw/android\.hardware\.security\.secretkeeper\.trusty            u:object_r:hal_secretkeeper_default_exec:s0
 /vendor/bin/hw/vendor\.google\.radioext@1\.0-service                        u:object_r:hal_radioext_default_exec:s0
 /vendor/bin/hw/android\.hardware\.contexthub-service\.generic               u:object_r:hal_contexthub_default_exec:s0
 /vendor/bin/hw/android\.hardware\.composer\.hwc3-service\.pixel             u:object_r:hal_graphics_composer_default_exec:s0
