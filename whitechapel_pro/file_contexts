@@ -146,7 +146,6 @@
 /dev/gxp                                                                    u:object_r:gxp_device:s0
 /dev/dit2                                                                   u:object_r:vendor_toe_device:s0
 /dev/trusty-ipc-dev0                                                        u:object_r:tee_device:s0
-/dev/sg1                                                                    u:object_r:sg_device:s0
 /dev/st21nfc                                                                u:object_r:nfc_device:s0
 /dev/st54spi                                                                u:object_r:st54spi_device:s0
 /dev/st33spi                                                                u:object_r:st33spi_device:s0
